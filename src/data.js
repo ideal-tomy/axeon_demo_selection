@@ -179,12 +179,12 @@ export const DEMOS = [
     audience:'総務・人事・DX推進の決裁者と現場社員',
     url:'https://internal-knowledge-demo.vercel.app/',
     linkState:'available',
-    experienceNote:'質問から結論・根拠確認までの代表3手に対応。Sample / BYOK / Trial の接続モードも備えます。',
+    experienceNote:'架空の会社のサンプル規程で、質問から結論・根拠確認までの代表3手を体験できます。',
     when:'規程やマニュアルを探すのに時間がかかり、根拠が残らない社内問い合わせを想定しています。',
     can:['代表用件を1タップで質問し、結論・手続き・次のアクションを確認できます','根拠を見るから該当条文の抜粋と照合理由を確認できます','自社ナレッジ投入やアクセスモード切り替えを試せます'],
     planned:[],
     shots:[['form','質問する'],['card','結論を見る'],['list','根拠を見る']],
-    relatedIds:['product-flow-mfg','customer-support','assist-reception']
+    relatedIds:['construction-record','quality-incident','kaigo-handoff']
   },
   {
     id:'product-flow-mfg', listed:true,

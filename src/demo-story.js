@@ -1,5 +1,6 @@
 import { ICON, categoryLabel, getDemoById } from './data.js'
 import { constructionStory } from './construction-story.js'
+import { internalKnowledgeStory } from './internal-knowledge-story.js'
 import { storyCopy } from './demo-stories.js'
 import { storyImages } from './story-images.js'
 
@@ -43,6 +44,38 @@ function constructionModel(d, esc) {
   }
 }
 
+function internalKnowledgeModel(d) {
+  const s = internalKnowledgeStory
+  const images = storyImages[d.id] || []
+  const labels = s.steps.map((step) => step.title)
+  const previews = s.steps.map((step, i) => {
+    const fresh = images[i]
+    const image = fresh?.image
+    return {
+      label: step.title,
+      headline: step.headline,
+      caption: image ? (fresh?.label || step.caption) : step.caption,
+      image,
+      alt: fresh?.label || step.title,
+      diagram: labels,
+      active: i,
+      point: step.point,
+    }
+  })
+  return {
+    layout: 'thin',
+    title: s.title,
+    intro: s.intro,
+    eyebrow: s.eyebrow,
+    meta: s.meta,
+    cta: s.cta,
+    path: s.path,
+    previews,
+    conditionSummary: s.conditionSummary,
+    related: s.related,
+  }
+}
+
 function demoModel(d, esc) {
   const copy=storyCopy[d.id]
   const rawShots=(d.shots || []).map(s=>Array.isArray(s)?{cap:s[1]}:s)
@@ -77,10 +110,26 @@ function preview(p,i,esc) {
   return `<figure class="story-preview-card story-preview-${i}"><figcaption><span class="story-number">${number(i)} / ${esc(p.label)}</span><h3>${esc(p.headline)}</h3><p>${esc(p.caption)}</p></figcaption>${visual}</figure>`
 }
 
+function pickModel(d, esc) {
+  if (d.id === 'construction-record') return constructionModel(d, esc)
+  if (d.id === 'internal-knowledge') return internalKnowledgeModel(d)
+  return demoModel(d, esc)
+}
+
 export function buildDemoStory(d,esc) {
-  const m=d.id==='construction-record'?constructionModel(d,esc):demoModel(d,esc)
+  const m=pickModel(d,esc)
   const category=categoryLabel(d.category)
   const related=[...new Set(m.related)].map(getDemoById).filter(x=>x && x.id!==d.id && x.listed!==false).slice(0,4)
+  const relatedNav=related.length?`<nav class="story-section story-related" aria-label="関連するデモ"><h2>関連するデモも見る</h2>${related.map(x=>`<button type="button" data-goto="${esc(x.id)}"><span>${esc(x.plain)}<small>${esc(categoryLabel(x.category))}</small></span><span aria-hidden="true">→</span></button>`).join('')}</nav>`:''
+  if (m.layout === 'thin') {
+    return `<article class="demo-story story-theme-${esc(d.category)} story-layout-thin">
+    <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>ideal / ${esc(category)}</span></header>
+    <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div><div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
+    <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">代表3手で体験する</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
+    <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div></section>
+    ${relatedNav}
+  </article>`
+  }
   return `<article class="demo-story story-theme-${esc(d.category)}">
     <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>ideal / ${esc(category)}</span></header>
     <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div><div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
@@ -89,6 +138,6 @@ export function buildDemoStory(d,esc) {
     <section class="story-section"><p class="story-eyebrow">気になるところを、もう少し詳しく</p><h2>体験の見どころと進め方</h2><p class="story-section-lead">${esc(m.detailsLead)}</p>${m.details.map((s,i)=>disclosure(s.title,s.body,esc,i)).join('')}</section>
     <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p>${m.conditionBody?disclosure(m.conditionTitle,m.conditionBody,esc):''}</section>
     <section class="story-closing"><p class="story-eyebrow">自社の仕事に、置き換えてみる</p><h2>${lines(m.closingTitle,esc)}</h2><p>${lines(m.closing,esc)}</p>${external(d,m.path,m.cta,esc,'story-button')}${m.closingDetail?disclosure('自社で使うときに考えたいこと',m.closingDetail,esc):''}</section>
-    ${related.length?`<nav class="story-section story-related" aria-label="関連するデモ"><h2>関連するデモも見る</h2>${related.map(x=>`<button type="button" data-goto="${esc(x.id)}"><span>${esc(x.plain)}<small>${esc(categoryLabel(x.category))}</small></span><span aria-hidden="true">→</span></button>`).join('')}</nav>`:''}
+    ${relatedNav}
   </article>`
 }
