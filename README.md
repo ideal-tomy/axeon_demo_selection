@@ -1,6 +1,7 @@
-# ideal_pf_selected
+# axeon_demo_selection
 `ideal_pf` から独立して複製した厳選版の作業用プロジェクトです。フェーズ1のため掲載内容と画面は複製元と同じです。
 
+- ローカル：`C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection`（旧仮称 `ideal_pf_selected`）
 - 複製元：`../ideal_pf`（一覧版として維持）
 - このコピーの公開URL・Gitリモート・Vercel連携：未設定
 - 次の作業：別プロジェクトへのデプロイ（フェーズ2）。デモ選定はその後

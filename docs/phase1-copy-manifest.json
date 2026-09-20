@@ -1,7 +1,8 @@
 {
   "copiedAt": "2026-09-20T17:25:02.7482733+09:00",
   "source": "C:\\Users\\ryoji\\00myapp\\ai_demo_workspace\\ideal_pf",
-  "destination": "C:\\Users\\ryoji\\00myapp\\ai_demo_workspace\\ideal_pf_selected",
+  "destination": "C:\\Users\\ryoji\\00myapp\\ai_demo_workspace\\axeon_demo_selection",
+  "destinationFormerName": "ideal_pf_selected",
   "sourceCommit": "c82a5aa5c58c6f1b06792bc10018da3d4b62cffd",
   "sourceStatus": [
     "?? docs/厳選版の複製・公開・選定PLAN.md"
