@@ -1,0 +1,1122 @@
+{
+  "copiedAt": "2026-09-20T17:25:02.7482733+09:00",
+  "source": "C:\\Users\\ryoji\\00myapp\\ai_demo_workspace\\ideal_pf",
+  "destination": "C:\\Users\\ryoji\\00myapp\\ai_demo_workspace\\ideal_pf_selected",
+  "sourceCommit": "c82a5aa5c58c6f1b06792bc10018da3d4b62cffd",
+  "sourceStatus": [
+    "?? docs/厳選版の複製・公開・選定PLAN.md"
+  ],
+  "excluded": [
+    ".git",
+    ".vercel",
+    "node_modules",
+    "dist"
+  ],
+  "fileCount": 276,
+  "files": [
+    {
+      "path": "docs/all-detail-pages-rollout-plan.md",
+      "sha256": "1007C1FE6F0D9BC7C947FEFAD5A809375B300F034D6D7F96A1E6081EC292DE1A"
+    },
+    {
+      "path": "docs/construction-demo-check.png",
+      "sha256": "3A31A9965CC02705AEDEB037E5EDF51794ADB173D195F998E4F8835A04CB649A"
+    },
+    {
+      "path": "docs/construction-page-benefits.png",
+      "sha256": "21B3679AAD7CA307D81DA44BBD68672DC843028D7EF0414747F8E1E495FC241A"
+    },
+    {
+      "path": "docs/construction-page-copy.md",
+      "sha256": "708690127910D1E58128D53F0884D50DF0276FD6ADA48D7D4F8FC6D75094ACB2"
+    },
+    {
+      "path": "docs/construction-page-desktop.png",
+      "sha256": "B8108955233F378EB3EFE05F175496A595B50F3075A9527CA0871D9EAAA936F3"
+    },
+    {
+      "path": "docs/construction-page-mobile.png",
+      "sha256": "9D99EF5462A04EAF4E9E420A82D6B8D5B2EB9ACD6BA68EF6EEA6D8DCB81593A0"
+    },
+    {
+      "path": "docs/construction-page-small.png",
+      "sha256": "9FA7B8218D8ED7B441D1CDB3D37EEFB6937B715709108086B8E5728F270770F2"
+    },
+    {
+      "path": "docs/construction-page-verification.md",
+      "sha256": "66B270D33318468348EFE5A5EA51982C68C82D9B1C68FCF786FC621234918FFA"
+    },
+    {
+      "path": "docs/construction-preview-compact-1280.png",
+      "sha256": "05FF4E6E47E88D5189BC2BF30D11E2BFEB3299FC04A57BC281481F2F47CB50AE"
+    },
+    {
+      "path": "docs/construction-preview-compact-390.png",
+      "sha256": "4F04F19EEA6FD942440100D738DDDE2890CBF0AC6E51BE9E1046EAF4FBA969F2"
+    },
+    {
+      "path": "docs/construction-redesign-1280.png",
+      "sha256": "FAC8BDEDA77630E205AC489EE56B358F51A313A3CE44E769BDD88E9AFE7322BA"
+    },
+    {
+      "path": "docs/construction-redesign-320.png",
+      "sha256": "FC9AF4DBEE1F1ADE5EF85FDCC1384798DC7355918C2FAA2173A0610D3BFF1BE2"
+    },
+    {
+      "path": "docs/construction-redesign-390.png",
+      "sha256": "634810A0D1D1DE7C9352293BEC62AAA5E39F95C6AA03E254E08B77F30FDC5759"
+    },
+    {
+      "path": "docs/construction-redesign-768.png",
+      "sha256": "0E8AA36FC733A4B9FB5349E7A8AA25B68B5DEA8FF9DE03361A5CCCEADFB7BC7C"
+    },
+    {
+      "path": "docs/construction-redesign-details.png",
+      "sha256": "290F5CFF10C4A53D701C221DDF33F629CB71CF89D19506FF00C2CC4716201A1A"
+    },
+    {
+      "path": "docs/construction-redesign-reference.png",
+      "sha256": "5B2D57E01C0300E8C953B3375DFF754CD5598E92F550F82FA641C0751AC6EC6D"
+    },
+    {
+      "path": "docs/construction-redesign.md",
+      "sha256": "F5A3E73CC82381F7DF7A76104670F5DAD4B419044B0DB42B9C3A159E41A3F95A"
+    },
+    {
+      "path": "docs/demo-copy-review-2026-09-12.md",
+      "sha256": "2607D5E05C45E4CC2F03720E384654B7A05C640912C27353074A4DCB5919D841"
+    },
+    {
+      "path": "docs/demo-improvements.md",
+      "sha256": "0BBA82D3182DDD0AB39DAB1FEF8ED44FC7928E908EC0E309BCAB8405D0C9DF36"
+    },
+    {
+      "path": "docs/demo-problem-solution-experience-map.md",
+      "sha256": "02EE4E7F570782D4507C3C4329F5792A1F49F83DF3B771ADA6A02365DE0939B4"
+    },
+    {
+      "path": "docs/demo-publication-priorities.md",
+      "sha256": "0F27A9BCC9F40D304C06DCB10097A7CCADA864FD412415C6C08E7E6553C3B089"
+    },
+    {
+      "path": "docs/demo-ux-brushup-playbook.md",
+      "sha256": "2F85D495252B437DF6E1E2CD53DF9C60EE350610983452426A60F44D2E480B45"
+    },
+    {
+      "path": "docs/detail-rollout-tracker.md",
+      "sha256": "0402FCDCA6F5E3EACF4A63F70F9F5A427CC542D96145F4DC7D0E54E5FF9D640D"
+    },
+    {
+      "path": "docs/featured-demo-design-rollout-plan.md",
+      "sha256": "97B4B6B0349D08A00034F40934379089D84D760D1527E4245C18879A693B8D1A"
+    },
+    {
+      "path": "docs/linked-demos-detail-page-structure-proposal.md",
+      "sha256": "D35AB4034CCB6ABEC045AF0581FBE98E4B8ADF93DBF8C11F3038180AF943A4CB"
+    },
+    {
+      "path": "docs/screenshot-rollout.md",
+      "sha256": "151F12F695F20CFF959655906925B5D35976F1B1E587363C38705F808312FFEC"
+    },
+    {
+      "path": "docs/テキスト削除リスト.md",
+      "sha256": "B8B505879F15E687FE3B80727C6CE4E12BCFE38A39955AFD419F70A345045962"
+    },
+    {
+      "path": "docs/厳選版の複製・公開・選定PLAN.md",
+      "sha256": "C420B186030576F01E469C001D28C29761A55C1C992311C2332D1729B7CD7164"
+    },
+    {
+      "path": "docs/catalog-review/catalog-1280.png",
+      "sha256": "7E009A246A7DF0240421CE6F957563455AD0001B6ABD546213FD5181E4868E5C"
+    },
+    {
+      "path": "docs/catalog-review/catalog-390.png",
+      "sha256": "B3F63B243F2258EAE8E80FC1F8E523F95B206B7FBF4886A07D9B0E48DB5903F3"
+    },
+    {
+      "path": "docs/catalog-review/catalog-capture.json",
+      "sha256": "0005ACA957D545FA3E01BDECE1B973269CA5A8DC139702AB5D0D76BB412B5763"
+    },
+    {
+      "path": "docs/catalog-review/catalog-overlay-1280.png",
+      "sha256": "7680B782428BE531924264A8DEB31CEF9E6BD5CAFF22459079319734E3F95284"
+    },
+    {
+      "path": "docs/catalog-review/catalog-overlay-390.png",
+      "sha256": "92DEBA0DD74BF4F347577976A5CA67FF6C9B5E0580B41822F2A7AF6C2B41848B"
+    },
+    {
+      "path": "docs/catalog-review/factory-1280.png",
+      "sha256": "1ACFDFB15F8FF48BEA11B3831D31A09C3972FB2B2AEFBCFD410F5C6F874EEC52"
+    },
+    {
+      "path": "docs/catalog-review/factory-390.png",
+      "sha256": "8F6A3FE964254CAD1684AC5109CEDC30A9C50E458EF66BE27D5E8021B689CE2A"
+    },
+    {
+      "path": "docs/catalog-review/verification.json",
+      "sha256": "BAAB4B094C3BD21D445ADE4B1B246B2EE47BD924F6C1047680E970BA7D4C8770"
+    },
+    {
+      "path": "docs/detail-rollout/navigation-audit.json",
+      "sha256": "0ADDAFC6E3D5C58B11AE94FB5341A088F24F96F94BABA29A67C756EA52689A3F"
+    },
+    {
+      "path": "docs/detail-rollout/review-1280-conditions.jpg",
+      "sha256": "B4B876D952000F84923DA9CECA7F1D5774EAB6B6D6F570E67592B5EF7616683E"
+    },
+    {
+      "path": "docs/detail-rollout/review-1280-gallery.jpg",
+      "sha256": "51C886578EC26C8B408E78BBBF0178F5F585E24FD94DD2CF8FCA85CA30FA9D42"
+    },
+    {
+      "path": "docs/detail-rollout/review-1280-top.jpg",
+      "sha256": "B8FA89DDAD396A3F790079D324EFB3298BF1B262EDF22C0499C67343458E6195"
+    },
+    {
+      "path": "docs/detail-rollout/review-390-conditions.jpg",
+      "sha256": "875B39AE182DD2C95C49AE1A68FF8C81582009F8B0974C7D802669FBF13E9AC6"
+    },
+    {
+      "path": "docs/detail-rollout/review-390-gallery.jpg",
+      "sha256": "9F2331C79EEAB3D28564249B35F86CA64D41C14464444382FC66ADFD96D0FF18"
+    },
+    {
+      "path": "docs/detail-rollout/review-390-top.jpg",
+      "sha256": "6F6F954A5AA1BEDBCC87FFB10B9F0F225F3ACCA7E57DAB0BA2AF39C07AE05B0D"
+    },
+    {
+      "path": "docs/detail-rollout/source-audit.json",
+      "sha256": "F68480744AC44380318B02CFF3601BCED4A6FEC372745BD17159D033BEC24D63"
+    },
+    {
+      "path": "docs/detail-rollout/sources-0.jpg",
+      "sha256": "FFB31E8563D00D051190253F2B30B23559B6BC466771A5931283494A3E5C721C"
+    },
+    {
+      "path": "docs/detail-rollout/sources-18.jpg",
+      "sha256": "4B00CBACFE40B7D4011127979C83A5CBA0D91B4C4C6957C8738C2D180B987EF6"
+    },
+    {
+      "path": "docs/detail-rollout/sources-36.jpg",
+      "sha256": "E2CC1C0FC259D0DF30C4080613AA7D1D3229629351D9E24A3F9025A3DA8411DA"
+    },
+    {
+      "path": "docs/detail-rollout/text-200.png",
+      "sha256": "86609D17C14B78496282ADE7C3CB17C97DA93DD20F884E6E676A10EEFF4A4B6C"
+    },
+    {
+      "path": "docs/detail-rollout/verification.json",
+      "sha256": "CE53A4F180F8D81197F99625D49713F9D72B97849A2174FD1D5352B5452CD73F"
+    },
+    {
+      "path": "docs/detail-rollout/screens/approval-inspection-1280-conditions.jpg",
+      "sha256": "BB24FAB65B7210B1DF13C7158DBE06CECEA2C9E55BF8206FAC0D3B8ED9B4047C"
+    },
+    {
+      "path": "docs/detail-rollout/screens/approval-inspection-1280-gallery.jpg",
+      "sha256": "18CABAFF0D7B52FE2AB99CBB2C3AB3D9F2C55803D0FC749CF1ACC22472AD0BE4"
+    },
+    {
+      "path": "docs/detail-rollout/screens/approval-inspection-1280-top.jpg",
+      "sha256": "9965660A02C409922F45C34868CA1FA9CB4D834B14688F47FAFE4B5D09978854"
+    },
+    {
+      "path": "docs/detail-rollout/screens/approval-inspection-390-conditions.jpg",
+      "sha256": "1E67F52D6A7B1B088AC20BC03CEEAC47975F84425E20A3E16F83D40637049339"
+    },
+    {
+      "path": "docs/detail-rollout/screens/approval-inspection-390-gallery.jpg",
+      "sha256": "B94366C43582E87705F0B89B36D5F123D164234822E11ADFF9AD3519D5293324"
+    },
+    {
+      "path": "docs/detail-rollout/screens/approval-inspection-390-top.jpg",
+      "sha256": "F1E1CA81E7010C808B5B4AEE7E1B9B9CC6A9B52E25E4C6AAD80D87DDEF6356FE"
+    },
+    {
+      "path": "docs/detail-rollout/screens/cause-demo-1280-conditions.jpg",
+      "sha256": "83766C521C385754C064906A3811AF8738A649C8BA82F48AAD2280A0671392D5"
+    },
+    {
+      "path": "docs/detail-rollout/screens/cause-demo-1280-gallery.jpg",
+      "sha256": "D0F4DB6737CC888ED42A88CDF528087FBEF4F3853E23BDEA480891FF1FAA5958"
+    },
+    {
+      "path": "docs/detail-rollout/screens/cause-demo-1280-top.jpg",
+      "sha256": "C02B5C7FB5DCF84FC7CCF605F4238B5DA8DDE72279E23055D8472B02D7B54469"
+    },
+    {
+      "path": "docs/detail-rollout/screens/cause-demo-390-conditions.jpg",
+      "sha256": "83538C48831DEF8BDDF58A8638F1048BE07A034CF19E59D0814EEFADCB02C791"
+    },
+    {
+      "path": "docs/detail-rollout/screens/cause-demo-390-gallery.jpg",
+      "sha256": "827CC779DD8F5F09ECBFCA3F6F5D33F70DBE5436F85B25DB6AE86111EAE02E22"
+    },
+    {
+      "path": "docs/detail-rollout/screens/cause-demo-390-top.jpg",
+      "sha256": "F6E8AE8DE23662DBE616479589BEAC309A4DC8DA9BD44240BE9537D2F9F9E74B"
+    },
+    {
+      "path": "docs/detail-rollout/screens/chiiki-bunka-1280-conditions.jpg",
+      "sha256": "4888CA9B52159EEFC04E05FAC1598DB08F817776634663C7921AE8C7E80B0E47"
+    },
+    {
+      "path": "docs/detail-rollout/screens/chiiki-bunka-1280-gallery.jpg",
+      "sha256": "399919CB0ACB21EDE5DC493EE6EDE38C97AFDA9D38769E53A442ED6FAE946B46"
+    },
+    {
+      "path": "docs/detail-rollout/screens/chiiki-bunka-1280-top.jpg",
+      "sha256": "3C8E5D8387CF1B9E67133C6B1FD25898E30420BB90AC0E6ECD944C78F662B12E"
+    },
+    {
+      "path": "docs/detail-rollout/screens/chiiki-bunka-390-conditions.jpg",
+      "sha256": "A2553078C8384673DDF1B2D356B4E6357F94DAF131AC5DCF67646E726FCBC036"
+    },
+    {
+      "path": "docs/detail-rollout/screens/chiiki-bunka-390-gallery.jpg",
+      "sha256": "D6031622A578B4BE08D70090E0D3D8B3DB6EF9B5B244D7230767499376B01062"
+    },
+    {
+      "path": "docs/detail-rollout/screens/chiiki-bunka-390-top.jpg",
+      "sha256": "87676330FD3B835DCDB82D82C01E92E24E1FEE34E232B5B637908E53C23C1A33"
+    },
+    {
+      "path": "docs/detail-rollout/screens/childcare-1280-conditions.jpg",
+      "sha256": "09032DA9363DCE9BA8D9F802D82813FC7502133D88988DB80B56FA50180F2322"
+    },
+    {
+      "path": "docs/detail-rollout/screens/childcare-1280-gallery.jpg",
+      "sha256": "BFC2FF59F479BD255A13DF36E91B3166A64BB4DAD1BBB5265107D8D2B040D3F2"
+    },
+    {
+      "path": "docs/detail-rollout/screens/childcare-1280-top.jpg",
+      "sha256": "B3D5DD0A5D8AED7DFA323F62B53E7A4D9A60CCEE73EA3A4E8A65A135D4B5D25A"
+    },
+    {
+      "path": "docs/detail-rollout/screens/childcare-390-conditions.jpg",
+      "sha256": "8563420C1C51237B1D997C29E7FA9360EB595A4F97DD1FFF5A1789A9A6D989EF"
+    },
+    {
+      "path": "docs/detail-rollout/screens/childcare-390-gallery.jpg",
+      "sha256": "2516B85AE1CCE863C6A82C16E8FD2684088ABF244C6B6E9BFEA63941B541DF72"
+    },
+    {
+      "path": "docs/detail-rollout/screens/childcare-390-top.jpg",
+      "sha256": "A3DC65019C526D466CEE3C4AD32543F288452CF25AA50C405950536E7619ABF1"
+    },
+    {
+      "path": "docs/detail-rollout/screens/construction-record-1280-conditions.jpg",
+      "sha256": "A166ED1C84D647C07CFFEF0EC30024BC359C15251A915FA829753EDAC9C93826"
+    },
+    {
+      "path": "docs/detail-rollout/screens/construction-record-1280-gallery.jpg",
+      "sha256": "11366DA22DC752C1F8EF68E0DD7A1FD94A82507FAE991B541B961C0BF52C4F08"
+    },
+    {
+      "path": "docs/detail-rollout/screens/construction-record-1280-top.jpg",
+      "sha256": "6E5B64BEDB43ECE9EDEF9100E3786C9735C7972B6503AA9300F8E596EEF07AFA"
+    },
+    {
+      "path": "docs/detail-rollout/screens/construction-record-390-conditions.jpg",
+      "sha256": "78C565A11EB48C018EED792F1BCA8761B9F9FFA3AF551E0D33B0A89ED6E450FB"
+    },
+    {
+      "path": "docs/detail-rollout/screens/construction-record-390-gallery.jpg",
+      "sha256": "A4DAAEAEFC1C8545FF9CAC2DB6470E39F2C7E07B1E5CEF799A2574DA41775510"
+    },
+    {
+      "path": "docs/detail-rollout/screens/construction-record-390-top.jpg",
+      "sha256": "F627D6A70505B4BC835A5491B66C1C01FEC1EF87E20D91D0BFDF7648548C17CB"
+    },
+    {
+      "path": "docs/detail-rollout/screens/contractor-matching-1280-conditions.jpg",
+      "sha256": "99D91576B8A76C01DC87C427E1BF1B947A581E97EFA96C2F3CC6DA091E9AA7BD"
+    },
+    {
+      "path": "docs/detail-rollout/screens/contractor-matching-1280-gallery.jpg",
+      "sha256": "A66C174739D4ACE22D89DC745F35AAB19983976E11C042AE982415518383CDEC"
+    },
+    {
+      "path": "docs/detail-rollout/screens/contractor-matching-1280-top.jpg",
+      "sha256": "B980F48AAC714E2D2F5F37E1C58241F979CE15D877023F955DBCE4C0AEA23564"
+    },
+    {
+      "path": "docs/detail-rollout/screens/contractor-matching-390-conditions.jpg",
+      "sha256": "25FC73BE3F50EA5FFEBBD9EF341C5109EE8C9362BF2890B8B73730DE433A91F4"
+    },
+    {
+      "path": "docs/detail-rollout/screens/contractor-matching-390-gallery.jpg",
+      "sha256": "845A63F0201B8D14E581F51010B0BDCAC19544B8B3796280F6DFA57BA6159E7E"
+    },
+    {
+      "path": "docs/detail-rollout/screens/contractor-matching-390-top.jpg",
+      "sha256": "28D90FC8214CDECF8491928DEB0D7886655279C9B2F5B285972EB00B881C33FA"
+    },
+    {
+      "path": "docs/detail-rollout/screens/customer-support-1280-conditions.jpg",
+      "sha256": "18A94427A568A73CE735D6AF40BF2B012F0E9C7E490723A12D22EE8B13E7BF74"
+    },
+    {
+      "path": "docs/detail-rollout/screens/customer-support-1280-gallery.jpg",
+      "sha256": "FF425A9FD162F5A160303D05DDF568AE7965F37A1C1A43EABC0409FA882A132B"
+    },
+    {
+      "path": "docs/detail-rollout/screens/customer-support-1280-top.jpg",
+      "sha256": "BF779F71CF40AFCCB3F3D3673FB61F4A64F588CC5F204E6EACA58F84F2BA732D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/customer-support-390-conditions.jpg",
+      "sha256": "0DFC7AFFCF2701C3E100274B96E093AC2E12236B6B0482BA83CE64476B542864"
+    },
+    {
+      "path": "docs/detail-rollout/screens/customer-support-390-gallery.jpg",
+      "sha256": "01692AD674A46F029AEF9B6984DBB9D07E344422629A0D7103921DA2B4D5430D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/customer-support-390-top.jpg",
+      "sha256": "20A496EC55525E6B58E553E02707FFCB3AE6C00A32CF0813DFF07570C7B4A70C"
+    },
+    {
+      "path": "docs/detail-rollout/screens/disaster-facility-1280-conditions.jpg",
+      "sha256": "0052B9D6E5BCDC27BB16091EC6459210023C02974D28504F160776765D4149F2"
+    },
+    {
+      "path": "docs/detail-rollout/screens/disaster-facility-1280-gallery.jpg",
+      "sha256": "E953BB797C21E32956BE0A3F51BB4CE23B33E9EC296AA7FA5693ED9845B5ABDA"
+    },
+    {
+      "path": "docs/detail-rollout/screens/disaster-facility-1280-top.jpg",
+      "sha256": "4AEA7B4C9FDDF33769B50EB06469B70A712A1F75A62737555077070CF601C7D3"
+    },
+    {
+      "path": "docs/detail-rollout/screens/disaster-facility-390-conditions.jpg",
+      "sha256": "45C241DA04CC3851CF0A2AE2A5491D4BAB54E74725CF36A79A5D079845041E55"
+    },
+    {
+      "path": "docs/detail-rollout/screens/disaster-facility-390-gallery.jpg",
+      "sha256": "1B3F9781DA00F25995A7738B9511B12F1470D5069B8B9B9F34AE371260A159FB"
+    },
+    {
+      "path": "docs/detail-rollout/screens/disaster-facility-390-top.jpg",
+      "sha256": "44B2A97F5ED6DA120717A15509A54EFCE30BDA4BCE5E87D21ABA10EC6F2C65CF"
+    },
+    {
+      "path": "docs/detail-rollout/screens/field-dandori-1280-conditions.jpg",
+      "sha256": "39A57F6C96D98E9ADA3D1D32273B0759A5E86948D9E5DF6F9513B1749E8B1933"
+    },
+    {
+      "path": "docs/detail-rollout/screens/field-dandori-1280-gallery.jpg",
+      "sha256": "783944F71B180BCEB8563649BF54BC7C3240BEB8992EFE7FD6A4568D18C99DE5"
+    },
+    {
+      "path": "docs/detail-rollout/screens/field-dandori-1280-top.jpg",
+      "sha256": "29CEDB9C05140F24DCE6321E5744351A1B8014CE2EA5D00AC90E86E6AF91F7D1"
+    },
+    {
+      "path": "docs/detail-rollout/screens/field-dandori-390-conditions.jpg",
+      "sha256": "61854CBA6B56A6C0FD83DA2FD7E18A5349F3D7FA332812F28B9731A38F007CC7"
+    },
+    {
+      "path": "docs/detail-rollout/screens/field-dandori-390-gallery.jpg",
+      "sha256": "9C1F39A2F90A6CDAAE02A2E5C744CCA483EFE4E02000DBC165425CD42A051D03"
+    },
+    {
+      "path": "docs/detail-rollout/screens/field-dandori-390-top.jpg",
+      "sha256": "EEC3178954628AEC0CB4B64D67F553DD836001228BD5C42E76652AC4CBDE5CB6"
+    },
+    {
+      "path": "docs/detail-rollout/screens/gym-facility-1280-conditions.jpg",
+      "sha256": "9D265AA5D4C4DB8CEB6224AB84527E1BE87D0CE5CE168D6B0A5EC6949F0C6D9E"
+    },
+    {
+      "path": "docs/detail-rollout/screens/gym-facility-1280-gallery.jpg",
+      "sha256": "741F071D1608C0AF6CBD2D15596DA5600293C4C40DEAC1B6CA15EB3E048482A2"
+    },
+    {
+      "path": "docs/detail-rollout/screens/gym-facility-1280-top.jpg",
+      "sha256": "C33995D1A49360E4BAFC8B3F435402CDC5BF7E3C52AB036573CF9E8C97D6DC65"
+    },
+    {
+      "path": "docs/detail-rollout/screens/gym-facility-390-conditions.jpg",
+      "sha256": "D38282E3FB09C0F7956DD7965544730A9949059704DDD701683FCBC0B24EC734"
+    },
+    {
+      "path": "docs/detail-rollout/screens/gym-facility-390-gallery.jpg",
+      "sha256": "9945C29D62985E711D70A0BC71152DD234DFBEDD2DAD06A569779585EC836C92"
+    },
+    {
+      "path": "docs/detail-rollout/screens/gym-facility-390-top.jpg",
+      "sha256": "EC75B8194D98A485430FA35F29B819D1E0FDD6ADC92425F7C002141B0475FE90"
+    },
+    {
+      "path": "docs/detail-rollout/screens/haken-dash-1280-conditions.jpg",
+      "sha256": "CAAC310CCF4545791CE4B2D3D4DC732BA820A03874F5B6CF90329188999A28BA"
+    },
+    {
+      "path": "docs/detail-rollout/screens/haken-dash-1280-gallery.jpg",
+      "sha256": "972B8FB5F59CC436E975442394DD7D34704BF1B98AFDE135F73C1DF01E0D1200"
+    },
+    {
+      "path": "docs/detail-rollout/screens/haken-dash-1280-top.jpg",
+      "sha256": "F15C4FF22271981CB8AA3265C4575F7208587AC54036CAE96B9EBD7C3EBE5389"
+    },
+    {
+      "path": "docs/detail-rollout/screens/haken-dash-390-conditions.jpg",
+      "sha256": "71B4C470D5999FA52BE69DDA668049D84ADBDC14D6522D293ED55A6AA4F675B2"
+    },
+    {
+      "path": "docs/detail-rollout/screens/haken-dash-390-gallery.jpg",
+      "sha256": "587BFE69F8022D146EF2716B56BC819E79D0E26D59510A6483C07EACD5C3EB82"
+    },
+    {
+      "path": "docs/detail-rollout/screens/haken-dash-390-top.jpg",
+      "sha256": "E5B3E19CEBB93B8B6860C2E248A0AA6CF1DBD0150BB4F09CE40EC3640D534237"
+    },
+    {
+      "path": "docs/detail-rollout/screens/internal-knowledge-1280-conditions.jpg",
+      "sha256": "C739B31358CA2BBDC6C89087E53B03FE5785A7074465D100FD49F44415E45273"
+    },
+    {
+      "path": "docs/detail-rollout/screens/internal-knowledge-1280-gallery.jpg",
+      "sha256": "3F203FBF6B8357409A69CCD6C534F785BC18C82E95BEDCCE11DA3FE474896215"
+    },
+    {
+      "path": "docs/detail-rollout/screens/internal-knowledge-1280-top.jpg",
+      "sha256": "3304C82B5080905089C1440FD761557FD277B9785A0FF57C9403F92CF8FF5860"
+    },
+    {
+      "path": "docs/detail-rollout/screens/internal-knowledge-390-conditions.jpg",
+      "sha256": "582B1EAA8175BE484085D116A3DF8AE82B3044F0497F624B29839A489079D2B3"
+    },
+    {
+      "path": "docs/detail-rollout/screens/internal-knowledge-390-gallery.jpg",
+      "sha256": "D4433406BB32DD0DCB0DDBDBCAD4C69FD851F1B5F445650BA6E48B5736D1F93A"
+    },
+    {
+      "path": "docs/detail-rollout/screens/internal-knowledge-390-top.jpg",
+      "sha256": "A7269EEB8C019B39DA1BECCA91A5A11EDB1F265A340245A0455CAD4DC7645368"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-3role-1280-conditions.jpg",
+      "sha256": "240F79DF48205FA56A3BE6EA1B9DBCE5AC003A1E2F759D549AE890A175D82A3D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-3role-1280-gallery.jpg",
+      "sha256": "8DC3699A09381C61BC0032653B1CCA72A7C19AE487D76EE9563EA50829F20DD0"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-3role-1280-top.jpg",
+      "sha256": "7DBF9B0A282C2BBEEC685E66CD66FC8A8E219B5386519461F87CDD0B6518307E"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-3role-390-conditions.jpg",
+      "sha256": "22DEA8ADF092C35B0000D900CACC4B3EBF88EEA556B1B511294FE0A19C642961"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-3role-390-gallery.jpg",
+      "sha256": "5AFA837CA7DD12A3D151685D16E357ED3E8F005DFD206EF17C3D7E05267F4B6A"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-3role-390-top.jpg",
+      "sha256": "E49898CE928FB76738B68CA5AE9A74C2A3BE70532CE4B0AD4F2D505AEFCFFDCA"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-handoff-1280-conditions.jpg",
+      "sha256": "88C25507730E649DE92AB40CC187FCF50A0A640192840C6ADBEC07BAEEC3D8C4"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-handoff-1280-gallery.jpg",
+      "sha256": "B481DCDAFDE44904C0901FFE804E5702EF57DBF479EF3CEA7948908A22E00840"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-handoff-1280-top.jpg",
+      "sha256": "F2BC4C14B9D5D3493882EEE05A545179863F7DB8D31C8F2A294CC00F170D6788"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-handoff-390-conditions.jpg",
+      "sha256": "5D2EA50C206D42BC5BA901D7A5CBF433D3648A4BFFF1AFBC909CB986BFE33C89"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-handoff-390-gallery.jpg",
+      "sha256": "FBBCEDABC6C3D5499CB23397A9D949018901A1FE316B38227415E4588C26582B"
+    },
+    {
+      "path": "docs/detail-rollout/screens/kaigo-handoff-390-top.jpg",
+      "sha256": "15114630B23ADA8573E4F3AB0C5B496B7B85A3301959692680EE7C47FF50375D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/product-flow-mfg-1280-conditions.jpg",
+      "sha256": "21E673BB8888E373967F188C609DC02DC8EFE233079D7D51409063FF4AAF0FF0"
+    },
+    {
+      "path": "docs/detail-rollout/screens/product-flow-mfg-1280-gallery.jpg",
+      "sha256": "AF152B70E977312D5D361D5082B1DBFB57B0C698EC632D7EB27B15477AADB37E"
+    },
+    {
+      "path": "docs/detail-rollout/screens/product-flow-mfg-1280-top.jpg",
+      "sha256": "7321C86D42D198B13F843062406A74CFA8C767009A4739DD4DDCBA0E27C52D70"
+    },
+    {
+      "path": "docs/detail-rollout/screens/product-flow-mfg-390-conditions.jpg",
+      "sha256": "65C7D1951601D2B5FED9A5D9BC863AE142D2D17A2C724E7D19F1F74C87528F8D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/product-flow-mfg-390-gallery.jpg",
+      "sha256": "FD0461E3D4E9789E5AD8F86EA1467C66A1F46BF8ABADFAAA644D01F479242F5B"
+    },
+    {
+      "path": "docs/detail-rollout/screens/product-flow-mfg-390-top.jpg",
+      "sha256": "15A90F8109BD05B41CC4C9788969B53E8529B18C7C678D0A70EC4BE401904242"
+    },
+    {
+      "path": "docs/detail-rollout/screens/quality-incident-1280-conditions.jpg",
+      "sha256": "F95BF9B38E136B63FBF3730DB12E0BEBC7E8CD6A3504DF5BA69EA1213C4589BF"
+    },
+    {
+      "path": "docs/detail-rollout/screens/quality-incident-1280-gallery.jpg",
+      "sha256": "79B0EB26E2C7FD9CA9DCB0372C8ADA3A5563C3E6317802A48BAD2B1EE8818937"
+    },
+    {
+      "path": "docs/detail-rollout/screens/quality-incident-1280-top.jpg",
+      "sha256": "15B9F1B776901C23C92E9EF66C513CFAA338AD4B548A3FF28488FBFF3D0B481C"
+    },
+    {
+      "path": "docs/detail-rollout/screens/quality-incident-390-conditions.jpg",
+      "sha256": "C5F8FC9DE515DC30C817BE633423D61A1D1F20F9503C5A507E2B9A81CDC95220"
+    },
+    {
+      "path": "docs/detail-rollout/screens/quality-incident-390-gallery.jpg",
+      "sha256": "28CA949069D3C7FABB6FBAB25D2FCAE241720F07A97E94F789946300DF9162C7"
+    },
+    {
+      "path": "docs/detail-rollout/screens/quality-incident-390-top.jpg",
+      "sha256": "5E850922D595039AA6F78B86C5382E9D237442AFC19F6241BCB5E26C0C794D90"
+    },
+    {
+      "path": "docs/detail-rollout/screens/sfa-legal-1280-conditions.jpg",
+      "sha256": "F2E4EE58DC537AEC9B52EE858B0DEE596FE837097FE635CE08A148CE806F7EAD"
+    },
+    {
+      "path": "docs/detail-rollout/screens/sfa-legal-1280-gallery.jpg",
+      "sha256": "C1A0D67310DBFFC47CF7B93B893544BB9E568FD6CCED904C9E4C8F9C3B428B73"
+    },
+    {
+      "path": "docs/detail-rollout/screens/sfa-legal-1280-top.jpg",
+      "sha256": "486E2ECACA912C2BE1BAC91B4E9DF4F1647E04FDAFDB63E02F0F0FC6121E24F7"
+    },
+    {
+      "path": "docs/detail-rollout/screens/sfa-legal-390-conditions.jpg",
+      "sha256": "DE9D15E259656D0E4B6F1E6272343B380EA3F0CF1AC0E70C2D8AE57B3772F0CF"
+    },
+    {
+      "path": "docs/detail-rollout/screens/sfa-legal-390-gallery.jpg",
+      "sha256": "45DD296EC719CB194B044E5FE7C07D17B9C8AE767403342692FC0012CD26B935"
+    },
+    {
+      "path": "docs/detail-rollout/screens/sfa-legal-390-top.jpg",
+      "sha256": "4B59693C1D49F4608B9B7FDA3CBD00FEF6990299BCFEC67F1DF3435F9F71943D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shift-1280-conditions.jpg",
+      "sha256": "936A3D126C8D5B3B99FFFF614AAA526574C3E8507FB92B9878D8B71A08E2CF0D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shift-1280-gallery.jpg",
+      "sha256": "7C874E2D1099254FFFE9C7BE52369AC229D8EDF70AF949B62B7E6ED125FFC822"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shift-1280-top.jpg",
+      "sha256": "0BDE73CA18EDF24EF2879771A77C5A5B2653DEC6751F8F7371EE473C82A34281"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shift-390-conditions.jpg",
+      "sha256": "06D6168EE589593347E60AFC999E8983C34552B8BF6BD0EAFCDE1AB56D25FD8D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shift-390-gallery.jpg",
+      "sha256": "CC5AF1A5194F564387A8F956819AEAFB553FA0B6410579B3BE67DE7842D64512"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shift-390-top.jpg",
+      "sha256": "AF3F7DD95BF7641D74DEE95561662BAA588B4E3AFA905B2308AB1031749D84D5"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shikomi-record-1280-conditions.jpg",
+      "sha256": "C4976AED70421C003904D91785897FAE7A6DFF83C97F771CDAC91C53DE3E8762"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shikomi-record-1280-gallery.jpg",
+      "sha256": "3061F6BDBD3ED8ADA4F9E7A10A1C57774D323A9283DA4E3A9725356936095B24"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shikomi-record-1280-top.jpg",
+      "sha256": "8DDB3AC5896255ABD4DA924405868F32E40DCAEC72403B9E2BF65FAD177ED7D9"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shikomi-record-390-conditions.jpg",
+      "sha256": "2D61C5287B90E8F69598772C6E0E8D900C5A1295D5C25B32DDF1040FC0FC6529"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shikomi-record-390-gallery.jpg",
+      "sha256": "1CE8DCD7871500513709B1DA981864D4D7B9639B8F9F45099D7A1D05C2F2D55D"
+    },
+    {
+      "path": "docs/detail-rollout/screens/shikomi-record-390-top.jpg",
+      "sha256": "3786E7F7F2220C650ED4FE0A83458F3CFE3215BB4BE892F98D3BE52B7E87EEDF"
+    },
+    {
+      "path": "docs/detail-rollout/screens/vietnam-haken-1280-conditions.jpg",
+      "sha256": "9B39FDA021A8925D90F71556D36344E497919C0E2BE0A00C339E5F0D89FA64F3"
+    },
+    {
+      "path": "docs/detail-rollout/screens/vietnam-haken-1280-gallery.jpg",
+      "sha256": "677431E3ACAB01E485C209472FBEF21D21E5F51D11B5BFDDD4ACF1080534E5AB"
+    },
+    {
+      "path": "docs/detail-rollout/screens/vietnam-haken-1280-top.jpg",
+      "sha256": "0E638A27A046324DD0CFB844C6E1B96A16BBCA3321483A8E2F196A8EFCB013E9"
+    },
+    {
+      "path": "docs/detail-rollout/screens/vietnam-haken-390-conditions.jpg",
+      "sha256": "4ED94F3D2A57144B7D78FE7B23720D363ADDF7FF0ABE5C1DB1E478D351C49864"
+    },
+    {
+      "path": "docs/detail-rollout/screens/vietnam-haken-390-gallery.jpg",
+      "sha256": "4C391D264BE977415421031448F73E65E9F6F9EE04F9775B423323E32EAB0344"
+    },
+    {
+      "path": "docs/detail-rollout/screens/vietnam-haken-390-top.jpg",
+      "sha256": "2F283FFD84F363C957619F36C9CC19342FC8E2C0C344A7991970907FF461E7E7"
+    },
+    {
+      "path": "docs/detail-rollout/screens/voice-karte-simple-1280-conditions.jpg",
+      "sha256": "81EAF78F003264ACD61DAB3A4D1FED3CA02294F3DCFDD8C858978730D7EBBE01"
+    },
+    {
+      "path": "docs/detail-rollout/screens/voice-karte-simple-1280-gallery.jpg",
+      "sha256": "60070AE2202C495A004B572CF28AF88F1A3681BDCEA55121130D055E5360BA73"
+    },
+    {
+      "path": "docs/detail-rollout/screens/voice-karte-simple-1280-top.jpg",
+      "sha256": "04A290751C3A8524E706EBDB02B0C642E9F71084067D211C3BF8D1B270855EF3"
+    },
+    {
+      "path": "docs/detail-rollout/screens/voice-karte-simple-390-conditions.jpg",
+      "sha256": "93EF236888A266ED9114F5BEBF592194968A58CDF6367B2EA26A8F6484292EC0"
+    },
+    {
+      "path": "docs/detail-rollout/screens/voice-karte-simple-390-gallery.jpg",
+      "sha256": "C3978DFDA69EC455444CF6757255E37DC9BDE7E611C4875D59AF4BE838AF7324"
+    },
+    {
+      "path": "docs/detail-rollout/screens/voice-karte-simple-390-top.jpg",
+      "sha256": "35F82B2C78FB3B3E553BE7D5C04FB388FA3E7558D523DE20DC53B912C9B066C8"
+    },
+    {
+      "path": "public/images/catalog/assist-reception.svg",
+      "sha256": "E9AF3B28A379681131DC894E7D03E19638220A95DA9BD8FB8E744E6DDEEDE4CA"
+    },
+    {
+      "path": "public/images/catalog/expense-optimize.svg",
+      "sha256": "C01E4BBA19A0741E0FD623B1846E18559CAE306108FEF53FEEB65A1CE3C00302"
+    },
+    {
+      "path": "public/images/catalog/inspection-record.svg",
+      "sha256": "C4C1DE907342E5DF8AFBBB8057B2E97498B47E5C5DEE744AF79CEDD8698FDFC1"
+    },
+    {
+      "path": "public/images/catalog/manufacturing-compare.svg",
+      "sha256": "CB90094E55FDF0576FB5F48391D4ACD7CFE93B378E9CBB638C1F69E52980C11B"
+    },
+    {
+      "path": "public/images/catalog/pharmacy-transfer.svg",
+      "sha256": "4C07486EE45512C091801769F01F2023100243F59C9338A2CA93ABCA713CBD6B"
+    },
+    {
+      "path": "public/images/catalog/property-match.svg",
+      "sha256": "53B3EA2021ED9BB1B2B0A000106A9A98C491EFCB8A554657963D0609DFCBD05A"
+    },
+    {
+      "path": "public/images/catalog/sns-post.svg",
+      "sha256": "F217B70D7F1976C08A419541A79C545EE58D53AF73F77A4ED2A56CF2F7A031D1"
+    },
+    {
+      "path": "public/images/demos/approval-inspection/catalog.jpg",
+      "sha256": "9349332B25E650EE7C69FDD435F477CCC49D1845F8BABA1ACA3967F20FFB003A"
+    },
+    {
+      "path": "public/images/demos/approval-inspection/entry.jpg",
+      "sha256": "E669041231620AF913EA0FBCBCC190BA0EBB88E7746B5935018DFB4942B306AC"
+    },
+    {
+      "path": "public/images/demos/approval-inspection/view-1.jpg",
+      "sha256": "DB668D87938607E9CD661F688ED2967609D0DF0E190DA7CF9851E38D115C85F5"
+    },
+    {
+      "path": "public/images/demos/cause-demo/catalog.jpg",
+      "sha256": "2B5F784579BE6260D1AB322344EEE4F6862091C3C7DA00A51A572DE359D30D4E"
+    },
+    {
+      "path": "public/images/demos/cause-demo/entry.jpg",
+      "sha256": "EE856C96E0D0CA30B1DFAF288A60E034B32E1522D260C28A98FE097A14C587B0"
+    },
+    {
+      "path": "public/images/demos/cause-demo/view-1.jpg",
+      "sha256": "F7885C3B1246E0D72B4709F831CCE38C58212C8B6D7DD44A0A698474827F1670"
+    },
+    {
+      "path": "public/images/demos/chiiki-bunka/catalog.jpg",
+      "sha256": "37E7BBF9A7BB749BBB2631BD3E05F8B660190E7EA464EF57AB93F7613EF79EC5"
+    },
+    {
+      "path": "public/images/demos/chiiki-bunka/entry.jpg",
+      "sha256": "13D38A5D34BAF3BAA37BE0073BF02D6A590B1328236C61949D50BD6E126EDC5B"
+    },
+    {
+      "path": "public/images/demos/childcare/catalog.jpg",
+      "sha256": "A0FADB520435B6ABCEDBE5170ABBACDCB3511F867FD88E8078B3CC7489FBD52C"
+    },
+    {
+      "path": "public/images/demos/childcare/entry.jpg",
+      "sha256": "0E57AF331436762CD5D7CA020252A845C8B47DFC0383326A27666A39152E3125"
+    },
+    {
+      "path": "public/images/demos/childcare/view-1.jpg",
+      "sha256": "42428B33D5EA4DF69DDB6743D7F70879A21F224D30234F80FD3206DDB90575C3"
+    },
+    {
+      "path": "public/images/demos/childcare/view-2.jpg",
+      "sha256": "436537037FE4C3AA90C1F9993E08A7867FC2A0F831D67E2662DEC137E6172156"
+    },
+    {
+      "path": "public/images/demos/construction-record/001.png",
+      "sha256": "E269CD2CA3E7205A97C789D86D46D4F94FCB1E1452FF8F41509388CE5454C01C"
+    },
+    {
+      "path": "public/images/demos/construction-record/01.jpg",
+      "sha256": "42D4090E8974E9CE79BC837AB39CB7F2DC8F6DEEB6663C52D2EB307F60D96AC0"
+    },
+    {
+      "path": "public/images/demos/construction-record/02.jpg",
+      "sha256": "3F7F9E8BBA60FC01A0D59EFB1DA38F1CD89666A27A49C49383D7C6029D40CE44"
+    },
+    {
+      "path": "public/images/demos/construction-record/03.jpg",
+      "sha256": "BB32B6F333B8F49254D69DFDD4680B5FF2DDACE930725A6A795FC90FDA2228ED"
+    },
+    {
+      "path": "public/images/demos/contractor-matching/catalog.jpg",
+      "sha256": "198463ADF0A6B58597A94F3DC25086439025E888D506563A18D1398BF86A1B61"
+    },
+    {
+      "path": "public/images/demos/contractor-matching/entry.jpg",
+      "sha256": "A423D439AA7855EBE00047844B93A4C5688B6655FB0496D922E800EF9799CECC"
+    },
+    {
+      "path": "public/images/demos/contractor-matching/view-1.jpg",
+      "sha256": "72A9AAEFD9F4636A2D05CC073716B92A721B73879D6909457290CA7637DF4442"
+    },
+    {
+      "path": "public/images/demos/contractor-matching/view-2.jpg",
+      "sha256": "ACB227047C3F86F235F3F457831F37A942DB66CDBEF78B506F1CB441EED25F36"
+    },
+    {
+      "path": "public/images/demos/customer-support/01.jpg",
+      "sha256": "BCF75D20345EDBE0D9959BBBDA5E2644EB77BB47B01682808FC99FBA6D4311A0"
+    },
+    {
+      "path": "public/images/demos/customer-support/02.jpg",
+      "sha256": "CA105E2740749F88E438E5FE93715405F3065C7F9B9E8FD42BC5E95DD1314175"
+    },
+    {
+      "path": "public/images/demos/customer-support/03.jpg",
+      "sha256": "9A7E9A0EC9D81818DFB7C194C579E2D8967A714C7596432BE944119AABCF6F1E"
+    },
+    {
+      "path": "public/images/demos/disaster-facility/catalog.jpg",
+      "sha256": "F9755476F256D975E9C8E696FBB63B0D55C2F5A98C3ED88622EBD4AADCDFBB02"
+    },
+    {
+      "path": "public/images/demos/disaster-facility/entry.jpg",
+      "sha256": "F4081071C339910BACA2ED393CD95A21BDE097AE957E1BA97A115A22E10CD950"
+    },
+    {
+      "path": "public/images/demos/disaster-facility/view-1.jpg",
+      "sha256": "F35785DED9BBF7555A4AAA487C087EAA2793F0506B18B40032F1A2E78AF3505A"
+    },
+    {
+      "path": "public/images/demos/field-dandori/catalog.jpg",
+      "sha256": "603E7F14EDBB35C3772BF4E43E7931B0B5D5E15D5941543F0DE620C79DCA9DE2"
+    },
+    {
+      "path": "public/images/demos/field-dandori/entry.jpg",
+      "sha256": "00A161F08D9E9E4DE0CD580BD6F3295A229A1226B711DB58254157F1DA62B2E4"
+    },
+    {
+      "path": "public/images/demos/gym-facility/catalog.jpg",
+      "sha256": "B505E333BA194E78C9702488D61C25B203C0DCE957B4AF27BD9E0A3DCF610CA1"
+    },
+    {
+      "path": "public/images/demos/gym-facility/entry.jpg",
+      "sha256": "FE4D3D7EBD1CF8555585F0338E2646F2A14B9A4182991CD9D04296D80D9D1C34"
+    },
+    {
+      "path": "public/images/demos/gym-facility/view-1.jpg",
+      "sha256": "E2DB7D5B09FF1CD278A7960B1139744621A27CC2F60F2E01992034AB813FC964"
+    },
+    {
+      "path": "public/images/demos/haken-dash/catalog.jpg",
+      "sha256": "EE980BD25246E751950EAC823007226FEFA54CA9974681D08EBA8C4915E4F7BE"
+    },
+    {
+      "path": "public/images/demos/haken-dash/entry.jpg",
+      "sha256": "8FF62206A3329723FC15FEEBF42880FBCF1C3B483D021A651FFA15AAC293B726"
+    },
+    {
+      "path": "public/images/demos/haken-dash/view-1.jpg",
+      "sha256": "3CA3B3D70C020946D1C5FF265BECA36FBC669D1197C50E9B24A801A6433019FF"
+    },
+    {
+      "path": "public/images/demos/haken-dash/view-2.jpg",
+      "sha256": "2860FAEF2DB666BE20F4D994A410159556065D39DDEB8B28762847D7B8FA28B8"
+    },
+    {
+      "path": "public/images/demos/internal-knowledge/catalog.jpg",
+      "sha256": "5F01400FE3C04DF20B65492EC079110B431666450AF90C8CC777F88789AD9984"
+    },
+    {
+      "path": "public/images/demos/internal-knowledge/entry.jpg",
+      "sha256": "98AFF64D4C32820B90D9045E481E811135CB0B10B4200CCD272FDB63B95DC0C1"
+    },
+    {
+      "path": "public/images/demos/kaigo-3role/catalog.jpg",
+      "sha256": "C26F1D9099A08FE62F1EA5CBB930AAB41CC7C29778DE8C367FE9ABBE8C257D6F"
+    },
+    {
+      "path": "public/images/demos/kaigo-3role/entry.jpg",
+      "sha256": "1D53D9662D211FC04E236F4D930729B5901D4BE011F4407DE7FE247A76B34053"
+    },
+    {
+      "path": "public/images/demos/kaigo-handoff/01.jpg",
+      "sha256": "228DC37589F78DF568F4AFCCF46EC3AC8829C856B69D52A2C34014D6BB72D32F"
+    },
+    {
+      "path": "public/images/demos/kaigo-handoff/02.jpg",
+      "sha256": "C4636042377ACA90807545924C6C8A3D774E97519437AD46C462C4C20CAC9E44"
+    },
+    {
+      "path": "public/images/demos/kaigo-handoff/03.jpg",
+      "sha256": "33819F01D55709907C925F81B99C949A56CF8A38122D2B996AFE754E508610F7"
+    },
+    {
+      "path": "public/images/demos/product-flow-mfg/catalog.jpg",
+      "sha256": "1038ACDDCDEA00289BDD26CE27D85FF6C39A10FED134B7EBF41D25FE013AEAE0"
+    },
+    {
+      "path": "public/images/demos/product-flow-mfg/entry.jpg",
+      "sha256": "B3EA8F4C332C793E43291BDAA2A8CD079061097FD04058E75DF2DFE6C87C4CE7"
+    },
+    {
+      "path": "public/images/demos/product-flow-mfg/view-1.jpg",
+      "sha256": "42D99B80E9806705AD44C9E10DFF706A72EEDA7B09857D6065634461C59A1BDE"
+    },
+    {
+      "path": "public/images/demos/product-flow-mfg/view-2.jpg",
+      "sha256": "11A03991C408BC4168A54CDD2142B5D88537B971696929C806DA99736B57D1B0"
+    },
+    {
+      "path": "public/images/demos/quality-incident/01.jpg",
+      "sha256": "E38635256EA53F3B12986533D506D3C2B9AB40EEB77847CC60475AF2D63A46CC"
+    },
+    {
+      "path": "public/images/demos/quality-incident/02.jpg",
+      "sha256": "ADAADD973FA12FD8376FC452D390B6EB7539056038D69E3D9981D2257EACD500"
+    },
+    {
+      "path": "public/images/demos/quality-incident/03.jpg",
+      "sha256": "1441D61373D93641957A0039D26AE83FF0739699C26732F8B35ED8BF2B3495C4"
+    },
+    {
+      "path": "public/images/demos/sfa-legal/catalog.jpg",
+      "sha256": "4F19D8D90C4F70E2121832D33BACF157F57954CFC755BA6FFE53E9F75B95F2C7"
+    },
+    {
+      "path": "public/images/demos/sfa-legal/entry.jpg",
+      "sha256": "0F7F7B202F91B600A82C0DE2DB97D33CE5834DE7D7DE79C234C2F8BE272F3014"
+    },
+    {
+      "path": "public/images/demos/sfa-legal/view-1.jpg",
+      "sha256": "1AE0E2AD19160F643354EC8E575A7DB03CA89FA7366CB29805070D8F2455687C"
+    },
+    {
+      "path": "public/images/demos/sfa-legal/view-2.jpg",
+      "sha256": "5AC635DADFF4BBF07C32A5C8C4096B6F5F750831D3F7DCE8E617B9BAF4A41219"
+    },
+    {
+      "path": "public/images/demos/shift/01.jpg",
+      "sha256": "8D95D4BC4838DD663C777513C1E6ED7739EBBA45533E48ABD39438DB4289C91A"
+    },
+    {
+      "path": "public/images/demos/shift/02.jpg",
+      "sha256": "302584029CC8CFF6BAFAE811B3ADA23AD93D8B10F941A3C86C4B553D4D54CA51"
+    },
+    {
+      "path": "public/images/demos/shift/03.jpg",
+      "sha256": "541461B3695334B8FB96578CBE5D91036998192DE5F32D01308866767EDAEF54"
+    },
+    {
+      "path": "public/images/demos/shikomi-record/catalog.jpg",
+      "sha256": "0FF9B93A90418A9CAA33DD04F384F1F97FE8CADB6EBD7207F1D3B5BB0EE74B18"
+    },
+    {
+      "path": "public/images/demos/shikomi-record/entry.jpg",
+      "sha256": "0F6EA8E99B4383A143A38F93EA4AED4714F66F9FC35E330BA4CC07F43C8ED208"
+    },
+    {
+      "path": "public/images/demos/shikomi-record/view-1.jpg",
+      "sha256": "77E435BE7336E305B0181641EDCADE4214F68CBFD5C7A2464956AA00025D061E"
+    },
+    {
+      "path": "public/images/demos/shikomi-record/view-2.jpg",
+      "sha256": "21E5357E9B58D467ACA55ED2662F34D17013D7C04CAB376C76AFE496DDAACADC"
+    },
+    {
+      "path": "public/images/demos/vietnam-haken/catalog.jpg",
+      "sha256": "E80CAABB739293AFCCFEFE9F7C89B84C0F5D1EF7A927F6CA7687B165DBB923F4"
+    },
+    {
+      "path": "public/images/demos/vietnam-haken/entry.jpg",
+      "sha256": "803F4A37A4A60ABFEBF3374BD4B919FDCDDAF293EAE453648A01BAAE8FA5F9F5"
+    },
+    {
+      "path": "public/images/demos/vietnam-haken/view-1.jpg",
+      "sha256": "0BF39A41973F6945CAAF28DAD864C491D5BECC64CB70520FB0C3249E58107B5E"
+    },
+    {
+      "path": "public/images/demos/vietnam-haken/view-2.jpg",
+      "sha256": "7D6294B018154ABEBB37FFF51B126CFADB269D272110106A6ADB7CCC93015E00"
+    },
+    {
+      "path": "public/images/demos/voice-karte-simple/catalog.jpg",
+      "sha256": "41A56A0B15F203CD39E0F6EA2EB577105A54BC9181888B8501BF33AC4ECA53E3"
+    },
+    {
+      "path": "public/images/demos/voice-karte-simple/entry.jpg",
+      "sha256": "FFE1ED3E23CF5FF28F8EAC0934A180E50F9B8C11DA5FA216C651ABAB48B2C07A"
+    },
+    {
+      "path": "scripts/capture-catalog-shots.mjs",
+      "sha256": "678B1988445E880EE80ACC03364D3984541E13B7DD5493E426268ED0331E4880"
+    },
+    {
+      "path": "scripts/capture-detail-entries.mjs",
+      "sha256": "3D3248B2E676E051D3D3FD029B3F6510E492F8219D515E2D0D39EF64220C254E"
+    },
+    {
+      "path": "scripts/capture-detail-navigation.mjs",
+      "sha256": "DA79B5947AFF58AB7C5D70E2FC0BD23F8CB6B5BB58C63FAC42677FFD8CFDA393"
+    },
+    {
+      "path": "scripts/capture-featured.mjs",
+      "sha256": "C679BBEFDD27102931031F3D398F407A27ECCC58C30000E5C755F86F079B2EDB"
+    },
+    {
+      "path": "scripts/export-construction-copy.mjs",
+      "sha256": "2D2121115CB1003B84EA9534BC0A14B4BE7A619C5BAA51AA92FBB463D9F5DF41"
+    },
+    {
+      "path": "scripts/recapture-catalog-deep.mjs",
+      "sha256": "4FF161731F4C227AE2B696F1E8F8D8E4883A4CD3D7FB4A21FB9A4E60FBE5C578"
+    },
+    {
+      "path": "scripts/review-detail-images.mjs",
+      "sha256": "B438640C7840A70A5295524E7029A150109D0CD99D1777BC81600BC93FFD7C99"
+    },
+    {
+      "path": "scripts/review-detail-rollout.mjs",
+      "sha256": "460DB67B1F6E20E6845E38D0DD48DC8AE781CCFB368D9D4FA22B34B990B95E37"
+    },
+    {
+      "path": "scripts/verify-catalog-overlay.mjs",
+      "sha256": "A8D6C1F66AF3C27CE3505F81A186A900D972238BCC17388B959AC173D636BE5E"
+    },
+    {
+      "path": "scripts/verify-catalog.mjs",
+      "sha256": "1C62C67DA1F4940F7FA5650AAFFFACAE53C423EE12F313BCA12965F9D15DE594"
+    },
+    {
+      "path": "scripts/verify-construction-redesign.mjs",
+      "sha256": "DB9F02011D1D5B0F4B6A8FD8AD52DB1EA5E571503D3ED42CA747A51A8802ACFD"
+    },
+    {
+      "path": "scripts/verify-detail-rollout.mjs",
+      "sha256": "191950D3DA45A4D6B8AC710F037A2A5A8BA03C061D8BFC1812D962E0FCF18FF4"
+    },
+    {
+      "path": "src/catalog.js",
+      "sha256": "148F185C90F4E95B4B209A81215F4192497B82452286BC03DC9EBC5107303A37"
+    },
+    {
+      "path": "src/construction-story.js",
+      "sha256": "0829B051A38D76B24E77E9E4AE98B9DBF76C30BA6CA7EA5B92257033E89BD435"
+    },
+    {
+      "path": "src/data.js",
+      "sha256": "7B770239CF2CB50F4B2EB343FD9E98AF47C704C4289D22E577A6DFC5314EDA89"
+    },
+    {
+      "path": "src/demo-stories.js",
+      "sha256": "F9DC333F4C9B338EDE09D6EC3945FC73BBC09902B44FEF15A33EC36C07ED2891"
+    },
+    {
+      "path": "src/demo-story.js",
+      "sha256": "46281D8F1DBBF88B848CF805922711774F95DA3A2E63482128D3173578DA260B"
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "E50835880E22E96B74898AD77C42A113EDAEE1FD4596B7174E8FFF5D1F3E854B"
+    },
+    {
+      "path": "src/story-images.js",
+      "sha256": "B73186FEB5114614C835562951CC825A514EBA37742C8A4E7101CEB3385690E2"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "372370697DFF10462045984D629273280D9393E75A00D8ADAAF975AC071EFEAE"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "50801971A101D7430158A794B1D19392C78E66807A55011DB52B491F8CEE2558"
+    },
+    {
+      "path": "index.html",
+      "sha256": "662B37CEC6B4C6ED73CA144249A23E7FBC70EC1524E38CF405D4D8046C43D1D5"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "0C0B780DCD8E243FF6695DBFB7D11CD43C18F8E0D39DBC8B065564E98D228139"
+    },
+    {
+      "path": "package.json",
+      "sha256": "21141E7ECC44DE0BD551121689247511E85A8B9478A282F9FCB9C63A7D2E820D"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ECD8251AF6C9A38D93BEC588CDD3540370BF7C06ECA3480D65A66D1637602543"
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "44B2BC2E647F972B12EE1E051A1838A3FC3382386E18D4381ACB8E36A8607ABD"
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "B9EE16CBE8F23DE4666EDB81F060ACAFE344FCDD90CADFD206EACE7E874202FE"
+    },
+    {
+      "path": "掲載拡充の進め方.md",
+      "sha256": "172531FC1C129D9DB4E35EAC1AEE9D3F8FCFC34B7B7642857999FF48E2E18542"
+    }
+  ]
+}

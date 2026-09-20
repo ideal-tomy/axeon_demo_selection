@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-20T08:37:16.295Z",
+  "base": "http://127.0.0.1:4187",
+  "results": [
+    {
+      "width": 390,
+      "homeCards": 5,
+      "catalogCards": 28,
+      "detailAndReload": true,
+      "search": true
+    },
+    {
+      "width": 1280,
+      "homeCards": 5,
+      "catalogCards": 28,
+      "detailAndReload": true,
+      "search": true
+    }
+  ],
+  "detailsChecked": 28,
+  "pageErrors": []
+}
