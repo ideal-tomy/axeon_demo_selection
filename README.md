@@ -4,7 +4,7 @@
 | 項目 | 値 |
 |---|---|
 | ローカル | `C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection`（旧仮称 `ideal_pf_selected`） |
-| GitHub | https://github.com/ideal-tomy/axeon_demo_selection （リモート設定済み。初回 push は要認証） |
+| GitHub | https://github.com/ideal-tomy/axeon_demo_selection |
 | 公開URL（厳選版・検証用） | https://axeon-demo-selection.vercel.app |
 | Vercel プロジェクト | `axeon-demo-selection`（既存の `ideal-pf` とは別） |
 | 複製元ローカル | `../ideal_pf`（一覧版として維持） |

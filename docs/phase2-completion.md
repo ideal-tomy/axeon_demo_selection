@@ -12,12 +12,13 @@
 | Vercel プロジェクト | `axeon-demo-selection` |
 | 新規公開URL | https://axeon-demo-selection.vercel.app |
 | 既存公開URL（維持） | https://ideal-pf.vercel.app |
-| GitHub | https://github.com/ideal-tomy/axeon_demo_selection （origin 設定済み。初回 push は CLI 認証待ち） |
+| GitHub | https://github.com/ideal-tomy/axeon_demo_selection |
 
 ## 実施内容
 
 - Vite / `dist` / `vercel.json` の SPA rewrite を確認したうえで本番デプロイ
 - Vercel CLI を 59.x へ更新してからデプロイ（旧 41.x ではアップロード不可）
+- GitHub リポジトリへ `main` を push
 - 既存版・新規版の両方をブラウザ自動確認
 
 ## 公開後の確認
@@ -33,8 +34,7 @@
 
 リンク先デモ本体の操作審査は対象外（フェーズ3以降）。
 
-## 残作業
+## 次の作業
 
-- GitHub への初回 push（`gh auth login` 後に `git push -u origin main`）
 - 必要なら `vercel git connect` で Git 連携（任意）
 - フェーズ3：厳選する 5〜10件の検討
