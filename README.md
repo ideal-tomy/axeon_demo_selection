@@ -1,12 +1,19 @@
 # axeon_demo_selection
 `ideal_pf` から独立して複製した厳選版の作業用プロジェクトです。フェーズ1のため掲載内容と画面は複製元と同じです。
 
-- ローカル：`C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection`（旧仮称 `ideal_pf_selected`）
-- 複製元：`../ideal_pf`（一覧版として維持）
-- このコピーの公開URL・Gitリモート・Vercel連携：未設定
-- 次の作業：別プロジェクトへのデプロイ（フェーズ2）。デモ選定はその後
+| 項目 | 値 |
+|---|---|
+| ローカル | `C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection`（旧仮称 `ideal_pf_selected`） |
+| GitHub | https://github.com/ideal-tomy/axeon_demo_selection （リモート設定済み。初回 push は要認証） |
+| 公開URL（厳選版・検証用） | https://axeon-demo-selection.vercel.app |
+| Vercel プロジェクト | `axeon-demo-selection`（既存の `ideal-pf` とは別） |
+| 複製元ローカル | `../ideal_pf`（一覧版として維持） |
+| 複製元公開URL | https://ideal-pf.vercel.app |
+
+- 次の作業：公開確認完了後に掲載デモの選定（フェーズ3）
 - 複製記録：`docs/phase1-copy-manifest.json`
-- 作業結果：`docs/phase1-completion.md`
+- フェーズ1結果：`docs/phase1-completion.md`
+- フェーズ2結果：`docs/phase2-completion.md`
 
 
 ideal合同会社の公開デモ紹介ページ（Vite 静的ホスト）。
@@ -16,7 +23,8 @@ ideal合同会社の公開デモ紹介ページ（Vite 静的ホスト）。
 - 紹介: 全画面オーバーレイ（`?demo=<id>` で共有可）
 - 外部デモ URL は `src/data.js` の `url` / `linkState` で管理
 
-複製元の本番（このコピーの公開先ではありません）: https://ideal-pf.vercel.app
+一覧版の本番: https://ideal-pf.vercel.app  
+厳選版の本番（検証用）: https://axeon-demo-selection.vercel.app
 
 ## 開発
 
@@ -64,4 +72,5 @@ linkState: 'available',
 
 ## デプロイ
 
-Vercel（Vite / `dist`）を使用予定。このコピーは未デプロイです。フェーズ2で独立したプロジェクトに接続します。
+独立した Vercel プロジェクト `axeon-demo-selection` へ本番デプロイ済み。
+既存の `ideal-pf` プロジェクト・ドメインは変更していない。
