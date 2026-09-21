@@ -117,16 +117,16 @@ export const DEMOS = [
     audience:'品質と製造の担当',
     url:'https://axeonmanufacturing02.vercel.app/',
     linkState:'available',
-    experienceNote:'ナビ名と画面の対応にずれがあります。シナリオ内の操作と、まだ動かない保存・提出は区別して見てください。',
+    experienceNote:'架空の工場・固定シナリオです。PDF保存は印刷プレビュー、提出はデモ内通知です。',
     when:'品質トラブルの記録が紙やメールに散らばり、是正まで見えにくい工場を想定しています。',
-    can:['発見から是正・承認までの画面を辿れます','原因候補と架空データを確認できます','コンソール上の状態表示を見られます'],
-    planned:['ナビと画面対応の修正','PDF保存・提出の実動作'],
+    can:['ダッシュボードから優先案件の発見とAI分析を確認できます','原因候補を根拠付きで見比べられます','是正・承認画面でPDF保存と提出をデモ内で試せます'],
+    planned:[],
     shots:[
       { key:'list', cap:'発見', image:'/images/demos/quality-incident/01.jpg' },
       { key:'card', cap:'原因候補', image:'/images/demos/quality-incident/02.jpg' },
       { key:'form', cap:'是正・承認', image:'/images/demos/quality-incident/03.jpg' }
     ],
-    relatedIds:['manufacturing-compare','cause-demo','approval-inspection']
+    relatedIds:['approval-inspection','internal-knowledge','kaigo-handoff']
   },
   {
     id:'kaigo-handoff', listed:true, featuredOrder:5,
@@ -139,16 +139,16 @@ export const DEMOS = [
     audience:'介護職員と管理者',
     url:'https://kaigo-handoff-demo.vercel.app/',
     linkState:'available',
-    experienceNote:'録音や固定入力の範囲、保存期限、架空データがあります。入口の説明を読んでから進めてください。',
+    experienceNote:'架空の利用者データです。録音は枠タップまたは入力の演出で、記録は sessionStorage に保持されます。',
     when:'申し送りを紙や口頭だけに頼り、後から書き直している事業所を想定しています。',
-    can:['申し送りメモの整理と確認ができます','面談・日報の画面に進めます','記録一覧への反映を確認できます'],
-    planned:['要確認項目→提出→一覧の実画面検証'],
+    can:['申し送りの3枠を清書し、要確認欄を直して提出できます','面談記録で会話から経過記録を清書し、記録まで進めます','日報で提出物を確認し、フロアの日報欄に反映できます'],
+    planned:[],
     shots:[
       { key:'form', cap:'録音する', image:'/images/demos/kaigo-handoff/01.jpg' },
       { key:'list', cap:'面談を確認', image:'/images/demos/kaigo-handoff/02.jpg' },
       { key:'card', cap:'日報を見る', image:'/images/demos/kaigo-handoff/03.jpg' }
     ],
-    relatedIds:['voice-karte-simple','kaigo-3role','childcare']
+    relatedIds:['internal-knowledge','gym-facility','quality-incident']
   },
   {
     id:'manufacturing-compare', listed:true,
@@ -251,12 +251,12 @@ export const DEMOS = [
     audience:'検査と品質の担当',
     url:'https://approval-diagram.vercel.app/',
     linkState:'available',
-    experienceNote:'確認記録・割当・履歴出力など、まだ動かない操作があります。画面紹介としてご覧ください。',
+    experienceNote:'タブで照合・保留・承認・基準改定の4画面を追えます。画像内のボタンは操作対象外です。',
     when:'受入検査の照合と承認が紙と口頭に分かれ、保留の理由が残らない現場を想定しています。',
-    can:['照合・保留・承認の画面を辿れます','基準改定の提示を確認できます'],
-    planned:['無効ボタンの実装または画面紹介としての明示'],
+    can:['照合・保留・承認・基準改定をタブで辿れます','画面紹介としてご覧ください（画像内ボタンは操作対象外）'],
+    planned:['Vercel反映'],
     shots:[['list','照合'],['check','保留・承認'],['form','基準']],
-    relatedIds:['quality-incident','inspection-record','construction-record']
+    relatedIds:['quality-incident','construction-record','internal-knowledge']
   },
   {
     id:'inspection-record', listed:true,
@@ -341,12 +341,48 @@ export const DEMOS = [
     audience:'指定管理者と施設担当',
     url:'https://disaster-prevention-demo02.vercel.app/',
     linkState:'available',
-    experienceNote:'判断訂正・保存範囲・履歴の一致など、確認中の点があります。',
+    experienceNote:'架空の指定管理・固定日時です。画像判定はタブ内のみで、リロードで消えます。',
     when:'単一施設の状態と履歴が散らばり、判断の根拠が残りにくい指定管理を想定しています。',
-    can:['体育館向けの施設管理画面を確認できます','判断と結果の流れを追えます'],
-    planned:['判断訂正と保存範囲の整合確認'],
+    can:['施設の状況・カルテ・画像確認を辿れます','判定の記録とやり直しをデモ内で試せます'],
+    planned:['Vercel反映'],
     shots:[['list','施設'],['card','カルテ'],['form','判断']],
-    relatedIds:['disaster-facility','inspection-record','chiiki-bunka']
+    relatedIds:['construction-record','kaigo-handoff','internal-knowledge']
+  },
+  {
+    id:'logistics-dispatch', listed:true,
+    category:'cross-industry', tile:null, tags:['運送','配車','帰り荷'],
+    cls:'c3', icon:'list',
+    title:'空で戻る車に<br>帰り荷候補を出す',
+    plain:'空で戻る車に帰り荷候補を出す',
+    lead:'依頼を同じ一覧に揃え、空で戻る車へ隣の荷物を候補として出します。載せるかは人が決めます。',
+    one:'配車コンソールで帰り荷候補を載せる／載せない体験です。',
+    audience:'配車担当と運行管理者',
+    url:'https://driver-dash-demo.vercel.app/',
+    linkState:'available',
+    experienceNote:'架空の fixtures・API不要です。自動配車・運賃確定はありません。',
+    when:'依頼が入口ごとに分かれ、空で戻る車と隣の荷物がつながらない配車室を想定しています。',
+    can:['今日の手配と帰り荷候補を確認できます','載せる／載せないを人が決められます'],
+    planned:['カード公開（波0）'],
+    shots:[['list','今日の手配'],['card','帰り荷候補'],['form','人が確定']],
+    relatedIds:['dd-ma','construction-record','approval-inspection']
+  },
+  {
+    id:'dd-ma', listed:true, featuredOrder:9,
+    category:'cross-industry', tile:null, tags:['DD','M&A','買収','EXIT'],
+    cls:'c3', icon:'search',
+    title:'DDからEXIT試算まで<br>ひとつの画面で',
+    plain:'DDからEXIT試算までひとつの画面で',
+    lead:'サンプル企業で主軸を変え、簿外処置と株式価値の連動を試せます。買収・再生の伴走向けです。',
+    one:'DD診断からバリューアップ・EXIT試算までの画面体験です。',
+    audience:'買収・再生の担当と決裁者',
+    url:'https://dd-demo-red.vercel.app/',
+    linkState:'available',
+    experienceNote:'架空のサンプル企業・固定試算です。サンプルモードはAPIキー不要です。',
+    when:'買収後の再生で、試算と処置方針が表計算に散らばり、判断の問いが残らない場面を想定しています。',
+    can:['サンプル企業でEXIT試算を確認できます','主軸切替と問い・返した時間を辿れます'],
+    planned:['カード公開（波0）'],
+    shots:[['card','企業選択'],['list','主軸切替'],['form','問いと時間']],
+    relatedIds:['internal-knowledge','quality-incident','construction-record']
   },
   {
     id:'voice-karte-simple', listed:true,

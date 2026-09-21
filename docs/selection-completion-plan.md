@@ -62,20 +62,20 @@ flowchart LR
 |---|---|---|---|---|---|---|
 | 1 | 建設 | `construction-record` | `construction_demo` | 作らない | [ ] `docs/impl/construction-record-plan.md` | [x] |
 | 2 | 社内ボット | `internal-knowledge` | `internal_knowledge_demo` | 別LP原則なし | [x] `docs/impl/internal-knowledge-plan.md` | [x] |
-| 3 | 製造 | `quality-incident` | `axeon_manufacturing02` | 完走後に判断 | [ ] `docs/impl/quality-incident-plan.md` | [ ] |
-| 4 | 運送 | `logistics-dispatch`（未登録） | `driver_dash_demo` | 完走後に判断 | [ ] `docs/impl/logistics-dispatch-plan.md` | [ ] |
-| 5 | 受け入れ | `approval-inspection` | `Approval_diagram` | 完走後に判断 | [ ] `docs/impl/approval-inspection-plan.md` | [ ] |
-| 6 | 介護 | `kaigo-handoff` | `kaigo_handoff_demo` | 原則なし | [ ] `docs/impl/kaigo-handoff-plan.md` | [ ] |
+| 3 | 製造 | `quality-incident` | `axeon_manufacturing02` | 完走後に判断 | [x] `docs/impl/quality-incident-plan.md` | [x] |
+| 4 | 運送 | `logistics-dispatch` | `driver_dash_demo` | `/lp`（体験 `/board` のあと） | [x] `docs/impl/logistics-dispatch-plan.md` | [x] |
+| 5 | 受け入れ | `approval-inspection` | `Approval_diagram` | 完走後に判断 | [x] `docs/impl/approval-inspection-plan.md` | [x] |
+| 6 | 介護 | `kaigo-handoff` | `kaigo_handoff_demo` | 原則なし | [x] `docs/impl/kaigo-handoff-plan.md` | [x] |
 | 7 | 電気工事の段取り | `field-dandori` | 現行URLの段取りデモ | 原則なし | [ ] `docs/impl/field-dandori-plan.md` | [ ] |
-| 8 | 施設管理 | `gym-facility` | `disaster_prevention_demo02` | 完走後に判断 | [ ] `docs/impl/gym-facility-plan.md` | [ ] |
-| 9 | DD | `dd-ma`（未登録） | `dd_demo` | 候補 | [ ] `docs/impl/dd-ma-plan.md` | [ ] |
+| 8 | 施設管理 | `gym-facility` | `disaster_prevention_demo02` | 完走後に判断 | [x] `docs/impl/gym-facility-plan.md` | [x] |
+| 9 | DD | `dd-ma` | `dd_demo` | 候補 | [x] `docs/impl/dd-ma-plan.md` | [x] |
 | 10 | 卸 | `wholesale-quote`（未登録） | 未作成 | 完走後に判断 | [ ] `docs/impl/wholesale-quote-plan.md` | [ ] |
 
 補足：
 
 - 建設は代表。トップ先頭。ハブ＋3体験あり。
 - 施設は `gym-facility`（指定管理）。`disaster-facility` は厳選版に出さない。
-- 運送・DD・卸は `data.js` 未登録。カード化は納品後。
+- 卸は `data.js` 未登録。カード化は納品後。運送（`logistics-dispatch`）・DD（`dd-ma`）は登録済み・流れ完成。
 - 卸は体験版ができるまでカードに出さない。
 
 ---
@@ -88,7 +88,7 @@ flowchart LR
 | 1 | 建設 | 紹介を3ステップ＋開始に削る。デモの納品UI点検。戻り導線の試作。LPなし | [x] |
 | 1 | 社内ボット | 紹介ページを薄くする。デモ内の重複説明を削る | [x] |
 | 2 | 介護 → 段取り → 施設 → 製造 → 受け入れ | 既存を1本ずつ納品UIまで。製造と受け入れは同時に触らない | [ ] |
-| 3 | 運送、DD | 未掲載資産を納品UIにしてからカード追加。DDのLP要否 | [ ] |
+| 3 | 運送、DD | 未掲載資産を納品UIにしてからカード追加。DDのLP要否 | [x] DD・運送とも流れ完成 |
 | 4 | 卸 | 新規。他の納品を止めない | [ ] |
 
 波1の建設が「紹介 → デモ → 相談」まで通ってから、厳選版サイトの本格差し替え（カード数の制限など）を進める。名簿確定だけで全カードを一度に差し替えない。最初の公開カードは建設＋社内ボットでもよい。

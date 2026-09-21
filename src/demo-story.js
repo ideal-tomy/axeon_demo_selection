@@ -1,6 +1,12 @@
 import { ICON, categoryLabel, getDemoById } from './data.js'
 import { constructionStory } from './construction-story.js'
 import { internalKnowledgeStory } from './internal-knowledge-story.js'
+import { kaigoHandoffStory } from './kaigo-handoff-story.js'
+import { qualityIncidentStory } from './quality-incident-story.js'
+import { approvalInspectionStory } from './approval-inspection-story.js'
+import { gymFacilityStory } from './gym-facility-story.js'
+import { ddMaStory } from './dd-ma-story.js'
+import { logisticsDispatchStory } from './logistics-dispatch-story.js'
 import { storyCopy } from './demo-stories.js'
 import { storyImages } from './story-images.js'
 
@@ -44,19 +50,20 @@ function constructionModel(d, esc) {
   }
 }
 
-function internalKnowledgeModel(d) {
-  const s = internalKnowledgeStory
+function thinStoryModel(d, s) {
   const images = storyImages[d.id] || []
+  const shots = (d.shots || []).map(x => (Array.isArray(x) ? { cap: x[1], image: x[2] } : x))
   const labels = s.steps.map((step) => step.title)
   const previews = s.steps.map((step, i) => {
     const fresh = images[i]
-    const image = fresh?.image
+    const shot = shots[i]
+    const image = fresh?.image || shot?.image
     return {
       label: step.title,
       headline: step.headline,
-      caption: image ? (fresh?.label || step.caption) : step.caption,
+      caption: image ? (fresh?.label || shot?.cap || step.caption) : step.caption,
       image,
-      alt: fresh?.label || step.title,
+      alt: fresh?.label || shot?.cap || step.title,
       diagram: labels,
       active: i,
       point: step.point,
@@ -74,6 +81,34 @@ function internalKnowledgeModel(d) {
     conditionSummary: s.conditionSummary,
     related: s.related,
   }
+}
+
+function internalKnowledgeModel(d) {
+  return thinStoryModel(d, internalKnowledgeStory)
+}
+
+function kaigoHandoffModel(d) {
+  return thinStoryModel(d, kaigoHandoffStory)
+}
+
+function qualityIncidentModel(d) {
+  return thinStoryModel(d, qualityIncidentStory)
+}
+
+function approvalInspectionModel(d) {
+  return thinStoryModel(d, approvalInspectionStory)
+}
+
+function gymFacilityModel(d) {
+  return thinStoryModel(d, gymFacilityStory)
+}
+
+function ddMaModel(d) {
+  return thinStoryModel(d, ddMaStory)
+}
+
+function logisticsDispatchModel(d) {
+  return thinStoryModel(d, logisticsDispatchStory)
 }
 
 function demoModel(d, esc) {
@@ -113,6 +148,12 @@ function preview(p,i,esc) {
 function pickModel(d, esc) {
   if (d.id === 'construction-record') return constructionModel(d, esc)
   if (d.id === 'internal-knowledge') return internalKnowledgeModel(d)
+  if (d.id === 'kaigo-handoff') return kaigoHandoffModel(d)
+  if (d.id === 'quality-incident') return qualityIncidentModel(d)
+  if (d.id === 'approval-inspection') return approvalInspectionModel(d)
+  if (d.id === 'gym-facility') return gymFacilityModel(d)
+  if (d.id === 'dd-ma') return ddMaModel(d)
+  if (d.id === 'logistics-dispatch') return logisticsDispatchModel(d)
   return demoModel(d, esc)
 }
 
