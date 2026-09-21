@@ -4,7 +4,7 @@
 
 ## 1. 目的と対象
 
-`docs/demo-intro-design.md` と `docs/demo-intro-playbook.md` を紹介アニメーションの設計上の正本とし、`ideal_pf` に掲載されているデモのうち、確認済みの体験 URL がある21件を対象に、詳細ページの情報設計を統一する。
+`docs/demo-intro-design.md` と `docs/demo-intro-playbook.md` を紹介アニメーションの設計上の正本とし、`AXEON_pf` に掲載されているデモのうち、確認済みの体験 URL がある21件を対象に、詳細ページの情報設計を統一する。
 
 対象は「一覧カードから体験デモへ進める」ことを前提にする。`preparing` の7件（`manufacturing-compare`、`assist-reception`、`inspection-record`、`expense-optimize`、`pharmacy-transfer`、`property-match`、`sns-post`）は今回の対象外とし、URL公開後に同じ型へ追加する。
 

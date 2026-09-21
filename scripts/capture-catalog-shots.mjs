@@ -57,7 +57,7 @@ const targets = [
   },
   {
     id: 'childcare',
-    url: 'https://ideal-tomy.github.io/childcare_demo/',
+    url: 'https://AXEON-tomy.github.io/childcare_demo/',
     after: async (page) => {
       const go = page.getByRole('button', {name: /記録|はじめる|今日/}).first()
       if (await go.count()) await go.click({timeout: 3000}).catch(() => {})

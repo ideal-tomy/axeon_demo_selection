@@ -108,7 +108,7 @@
 | 11 `approval-inspection` | [デモ](https://approval-diagram.vercel.app/) | 確認記録・割り当て・履歴出力等に未対応操作あり。閲覧できる範囲を明示し、保存できると断定しない |
 | 12 `inspection-record` | 公開準備中 | 正常・異常の入力から記録・印刷までを確認。再読み込みで記録が消える想定について実動作を確認する |
 | 13 `shikomi-record` | [デモ](https://shikomi-record-demo.vercel.app/) | 録音は固定内容の演出。実音声認識・実AIではない。記録追加・取り消し・再開は確認待ち |
-| 14 `childcare` | [デモ](https://ideal-tomy.github.io/childcare_demo/) | 固定シナリオ・録音演出あり。記録→確認→帳票をスマートフォンで確認。実際の帳票出力や保護者送信は未確認 |
+| 14 `childcare` | [デモ](https://AXEON-tomy.github.io/childcare_demo/) | 固定シナリオ・録音演出あり。記録→確認→帳票をスマートフォンで確認。実際の帳票出力や保護者送信は未確認 |
 | 15 `disaster-facility` | [デモ](https://disaster-prevention-demo.vercel.app/) | 架空自治体。実際の開設判断ではない。判断後の一覧・履歴反映を確認する |
 | 16 `gym-facility` | [デモ](https://disaster-prevention-demo02.vercel.app/) | 判断訂正、保存範囲、履歴の整合を確認する。現在は状態と判断の画面紹介を軸にする |
 | 17 `voice-karte-simple` | [デモ](https://lambent-smakager-7bcf0a.netlify.app/) | 自動再生・演出あり。録音と固定入力の違いを確認。短い概要体験としての役割を明示する |

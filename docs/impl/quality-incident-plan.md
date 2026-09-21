@@ -57,7 +57,7 @@
 - [x] 代表3手が詰まらず完走
 - [x] PDF保存・責任者へ提出がクリック可能でフィードバックあり
 - [x] `from=axeon-demo-selection` で「← 紹介へ」表示
-- [x] 別LPなし / `ideal_pf` 未変更
+- [x] 別LPなし / `AXEON_pf` 未変更
 
 ## やらないこと
 

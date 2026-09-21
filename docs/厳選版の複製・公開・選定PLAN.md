@@ -1,11 +1,11 @@
-# ideal_pf 厳選版の複製・公開・選定PLAN
+# AXEON_pf 厳選版の複製・公開・選定PLAN
 
 作成日：2026-09-20  
 状態：フェーズ1・2完了。フェーズ3は掲載10件と各層の役割を確定（`docs/phase3-selection-draft.md`）。完成大枠は `docs/selection-completion-plan.md`。カード差し替え・デモ改修は未実施。厳選版は https://axeon-demo-selection.vercel.app で公開済み（検証用・当面は複製内容のまま）。
 
 ## 1. 目的と確定方針
 
-現在の `ideal_pf` は、全件を閲覧できる一覧版としてそのまま残す。
+現在の `AXEON_pf` は、全件を閲覧できる一覧版としてそのまま残す。
 別プロジェクトへ同じ状態で複製し、別の公開先へデプロイした後に、掲載する5〜10件を検討する。
 
 厳選版は名刺裏面のQRコードやURL共有から案内する、自社の技術・商材・開発紹介サイトとする。カード形式のトップと、アプリ紹介のような詳細ページから実際のデモへ進む体験を活かす。
@@ -16,7 +16,7 @@
 
 | 項目 | 既存の一覧版 | 新しい厳選版 |
 |---|---|---|
-| ローカル | `C:/Users/ryoji/00myapp/ai_demo_workspace/ideal_pf` | `C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection` |
+| ローカル | `C:/Users/ryoji/00myapp/ai_demo_workspace/AXEON_pf` | `C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection` |
 | 役割 | 全件カタログとして維持 | 名刺・URL共有から案内する紹介サイト |
 | 初回の内容 | 現状維持 | 既存版と同じ内容・構成 |
 | 選定後の内容 | 現状の一覧を維持 | 厳選した5〜10件 |
@@ -150,4 +150,4 @@
 
 **掲載10件は確定（`docs/phase3-selection-draft.md`）。完成までの大枠は `docs/selection-completion-plan.md`。次は波1・建設の個別PLANから着手する。**
 
-本計画は、厳選版について過去資料の「掲載内容を先に整理する」案より優先する。既存の `ideal_pf` には、厳選のための掲載削減や構成変更を適用しない。
+本計画は、厳選版について過去資料の「掲載内容を先に整理する」案より優先する。既存の `AXEON_pf` には、厳選のための掲載削減や構成変更を適用しない。

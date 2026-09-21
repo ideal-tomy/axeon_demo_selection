@@ -54,12 +54,12 @@
 - [x] IntroPage に3手のテキスト説明ブロックが無い
 - [x] カード → 紹介 → `/#demo` → 代表3手完走 → ROI（後段）が通る
 - [x] 別LPは作っていない
-- [x] `ideal_pf` は変更していない
+- [x] `AXEON_pf` は変更していない
 
 ## やらないこと
 
 - 他デモの改修
-- ideal_pf の変更
+- AXEON_pf の変更
 - 波0（全カード差し替え）
 - IntroPage アニメの7場面削減
 - 新規LP、Intent Tree 増殖、Core 再接続

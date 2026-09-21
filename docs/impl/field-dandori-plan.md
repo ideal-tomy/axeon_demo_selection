@@ -64,7 +64,7 @@
 - [x] inbox → ingest → result（根拠・確定）→ execute まで完走
 - [x] 実申請・自動計画と読める文言が無い
 - [x] `from=axeon-demo-selection` で「← 紹介へ」表示
-- [x] 別LPなし / `ideal_pf` 未変更
+- [x] 別LPなし / `AXEON_pf` 未変更
 
 ## やらないこと
 
@@ -72,7 +72,7 @@
 - 実 AI/API、実申請提出、マスタ連携、現場データの大幅拡充
 - `executive-ux-roadmap.md` 新設と UX-1 以降
 - 他デモ・波0・カード差し替え
-- `ideal_pf` の変更
+- `AXEON_pf` の変更
 
 ## 完了後
 

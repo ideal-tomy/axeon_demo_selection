@@ -31,7 +31,7 @@ const context = await browser.newContext({
 
 {
   const page = await context.newPage()
-  await page.goto('https://ideal-tomy.github.io/childcare_demo/', {waitUntil: 'domcontentloaded', timeout: 60000})
+  await page.goto('https://AXEON-tomy.github.io/childcare_demo/', {waitUntil: 'domcontentloaded', timeout: 60000})
   await page.waitForTimeout(1500)
   await clickAny(page, ['今日の様子を開く', '今日の様子', 'はじめる', '記録'])
   await page.waitForTimeout(800)

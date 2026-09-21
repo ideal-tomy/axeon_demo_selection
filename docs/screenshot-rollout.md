@@ -1,7 +1,7 @@
 # URL付きデモのスクショ／ヒーロー展開
 
 作成日：2026-09-11  
-対象：`ideal_pf` の詳細下層（3枚）と、詳細ヒーロー／トップカードの斜め端末
+対象：`AXEON_pf` の詳細下層（3枚）と、詳細ヒーロー／トップカードの斜め端末
 
 トップのおすすめ5件は実装済み。残りは **同じデータ形に `image` を足すだけ**で、ヒーローも下層も実画像になる。描画コードの追加は原則不要。
 
@@ -51,7 +51,7 @@ shots: [
 |---|---|---|
 | `voice-karte-simple` | lambent-smakager-7bcf0a.netlify.app | メモ / 整理 / 結果 |
 | `kaigo-3role` | kaigo-operation-demo.vercel.app | 現場 / 内勤 / 医療連携 |
-| `childcare` | ideal-tomy.github.io/childcare_demo | 記録する / 確認する / 帳票 |
+| `childcare` | AXEON-tomy.github.io/childcare_demo | 記録する / 確認する / 帳票 |
 
 ### 2. 製造
 

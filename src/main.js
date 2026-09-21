@@ -370,7 +370,7 @@ function openDetail(id, opts) {
   }
   state.demoId = id
   setDetailBackground(hasStory(d) || state.view === 'v-all')
-  document.title = hasStory(d) ? d.plain + ' | ideal' : defaultTitle
+  document.title = hasStory(d) ? d.plain + ' | AXEON' : defaultTitle
   dIn.classList.toggle('d-in-story', hasStory(d))
   dIn.innerHTML = buildDetail(d)
   detail.scrollTop = 0

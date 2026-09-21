@@ -329,7 +329,7 @@ export const DEMOS = [
     lead:'園児の記録作成→確認→帳票までの流れを、入口とダッシュボードで体験できます。',
     one:'保育施設向けの記録・連絡デモです。',
     audience:'保育士と園の管理者',
-    url:'https://ideal-tomy.github.io/childcare_demo/',
+    url:'https://AXEON-tomy.github.io/childcare_demo/',
     linkState:'available',
     experienceNote:'録音演出・固定シナリオがあります。入口の説明を読んでから進めてください。',
     when:'保育の記録と保護者連絡が紙と口頭に分かれ、確認に時間がかかる園を想定しています。',

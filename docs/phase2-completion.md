@@ -4,15 +4,15 @@
 
 ## 結果
 
-新規 Vercel プロジェクト `axeon-demo-selection` を作成し、`axeon_demo_selection` だけを本番デプロイした。既存の `ideal-pf` プロジェクト・公開URLは変更していない。
+新規 Vercel プロジェクト `axeon-demo-selection` を作成し、`axeon_demo_selection` だけを本番デプロイした。既存の `AXEON-pf` プロジェクト・公開URLは変更していない。
 
 | 項目 | 値 |
 |---|---|
 | ローカル | `C:/Users/ryoji/00myapp/ai_demo_workspace/axeon_demo_selection` |
 | Vercel プロジェクト | `axeon-demo-selection` |
 | 新規公開URL | https://axeon-demo-selection.vercel.app |
-| 既存公開URL（維持） | https://ideal-pf.vercel.app |
-| GitHub | https://github.com/ideal-tomy/axeon_demo_selection |
+| 既存公開URL（維持） | https://AXEON-pf.vercel.app |
+| GitHub | https://github.com/AXEON-tomy/axeon_demo_selection |
 
 ## 実施内容
 
