@@ -28,7 +28,8 @@
         <em class="count-link" id="countLinks"></em>
       </div>
     </div>
-    <div class="tiles" id="tiles"></div>
+    <!-- 厳選版: 業種タイル・全件検索は出さない（#v-all も非表示） -->
+    <div class="tiles" id="tiles" hidden></div>
   </div>
 </header>
 
@@ -37,14 +38,14 @@
 
   <section class="view on" id="v-works">
     <div class="cards" id="cards"></div>
-    <button type="button" class="more-all" id="openAll">
+    <button type="button" class="more-all" id="openAll" hidden>
       <span class="more-all-tt">そのほかのデモを見る</span>
       <span class="more-all-cc" id="moreAllCc">全件一覧</span>
       <span class="go">›</span>
     </button>
   </section>
 
-  <section class="view" id="v-all" aria-labelledby="catalogTitle">
+  <section class="view" id="v-all" hidden aria-hidden="true" aria-labelledby="catalogTitle">
     <div class="catalog-intro"><div><p class="catalog-eyebrow">ideal / DEMO COLLECTION</p><h1 id="catalogTitle">デモを探す</h1><p>あなたの仕事に近い画面から。</p></div></div>
     <div class="search-wrap">
       <label class="sr-only" for="q">デモを検索</label>
@@ -58,7 +59,7 @@
   </section>
 
   <section class="view" id="v-cat">
-    <div class="block rv"><h3>業種から探す</h3><p>同じ仕組みでも、業種によって呼び方も帳票も変わります。近い業種のものから見てください。</p></div>
+    <div class="block rv"><h3>業種から見る</h3><p>同じ仕組みでも、業種によって呼び方も帳票も変わります。掲載中のデモだけ、近い業種から開けます。</p></div>
     <div class="list" id="catList" style="margin-top:12px"></div>
   </section>
 

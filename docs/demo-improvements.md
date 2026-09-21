@@ -26,9 +26,10 @@
 | gym-facility | 掲載 | available | 流れ完成（紹介→コンソール→3手）。Vercel反映 | 完了 | 2026-09-21 |
 | dd-ma | 掲載 | available | 流れ完成（紹介→/ai→3手）。Vercel反映済み | 完了 | 2026-09-21 |
 | logistics-dispatch | 掲載 | available | 体験先出し＋`/lp`説明（図埋め込み）。Vercel要再反映 | 完了 | 2026-09-21 |
+| wholesale-quote | 未掲載 | preparing | 机画面と`/lp`作成。公開URLとカードは波0 | 進行 | 2026-09-22 |
 | voice-karte-simple | 掲載 | available | 介護申し送り版との役割分担明示 | 3 | 2026-09-10（URL応答） |
 | cause-demo | 掲載 | available | モバイルでの読みやすさ | 3 | 2026-09-10（Vercel本番） |
-| field-dandori | 掲載 | available | 独自ドメイン整理 | 3 | 2026-09-10（Netlify本番） |
+| field-dandori | 掲載 | available | Phase2/3完了（根拠・確定・準備）。Netlify反映・LP要否判断 | 完了 | 2026-09-22 |
 | expense-optimize | 掲載 | preparing | 代表入口統合と公開 | 3 | 2026-09-10（コード） |
 | pharmacy-transfer | 掲載 | preparing | 代表入口と完走確認 | 3 | 2026-09-10（コード） |
 | chiiki-bunka | 掲載 | available | 代表シナリオのさらなる絞り込み | 3 | 2026-09-10（Vercel本番） |

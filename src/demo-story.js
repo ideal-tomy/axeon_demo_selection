@@ -7,6 +7,8 @@ import { approvalInspectionStory } from './approval-inspection-story.js'
 import { gymFacilityStory } from './gym-facility-story.js'
 import { ddMaStory } from './dd-ma-story.js'
 import { logisticsDispatchStory } from './logistics-dispatch-story.js'
+import { wholesaleQuoteStory } from './wholesale-quote-story.js'
+import { fieldDandoriStory } from './field-dandori-story.js'
 import { storyCopy } from './demo-stories.js'
 import { storyImages } from './story-images.js'
 
@@ -111,6 +113,14 @@ function logisticsDispatchModel(d) {
   return thinStoryModel(d, logisticsDispatchStory)
 }
 
+function wholesaleQuoteModel(d) {
+  return thinStoryModel(d, wholesaleQuoteStory)
+}
+
+function fieldDandoriModel(d) {
+  return thinStoryModel(d, fieldDandoriStory)
+}
+
 function demoModel(d, esc) {
   const copy=storyCopy[d.id]
   const rawShots=(d.shots || []).map(s=>Array.isArray(s)?{cap:s[1]}:s)
@@ -154,6 +164,8 @@ function pickModel(d, esc) {
   if (d.id === 'gym-facility') return gymFacilityModel(d)
   if (d.id === 'dd-ma') return ddMaModel(d)
   if (d.id === 'logistics-dispatch') return logisticsDispatchModel(d)
+  if (d.id === 'wholesale-quote') return wholesaleQuoteModel(d)
+  if (d.id === 'field-dandori') return fieldDandoriModel(d)
   return demoModel(d, esc)
 }
 

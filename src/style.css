@@ -121,6 +121,13 @@ a{color:inherit;text-decoration:none;}
 .more-all-cc{font-size:11px;color:var(--tx-2);margin-left:auto;}
 .more-all .go{color:var(--tx-2);font-size:18px;}
 
+/* 厳選版: 業種タイル・全件一覧を出さない（.tiles/.more-all の display が [hidden] を上書きするため） */
+.appbar .tiles,
+#openAll,
+#v-all{
+  display:none !important;
+}
+
 .search-wrap{margin-top:4px;}
 .search{
   width:100%;box-sizing:border-box;

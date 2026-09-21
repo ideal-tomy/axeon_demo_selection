@@ -1,5 +1,31 @@
 /** 公開デモ紹介データ。URL は確認済み本番のみ。未確認は空＋preparing。 */
 
+/** 厳選名簿。カードに出すのは listed:true かつここにあるもの。卸は名簿に残し、公開URLまで非掲載。 */
+export const SELECTED_IDS = [
+  'construction-record',
+  'internal-knowledge',
+  'quality-incident',
+  'logistics-dispatch',
+  'approval-inspection',
+  'kaigo-handoff',
+  'field-dandori',
+  'gym-facility',
+  'dd-ma',
+  'wholesale-quote',
+]
+
+export const SELECTED_FEATURED = {
+  'construction-record': 1,
+  'internal-knowledge': 2,
+  'quality-incident': 3,
+  'logistics-dispatch': 4,
+  'approval-inspection': 5,
+  'kaigo-handoff': 6,
+  'field-dandori': 7,
+  'gym-facility': 8,
+  'dd-ma': 9,
+}
+
 export const ICON = {
   camera:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/></svg>',
   check:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9"><path d="M4 12l5 5L20 6"/></svg>',
@@ -60,10 +86,10 @@ export const DEMOS = [
       { key:'form', cap:'報告書', image:'/images/demos/construction-record/02.jpg' },
       { key:'list', cap:'現場オペ', image:'/images/demos/construction-record/03.jpg' }
     ],
-    relatedIds:['field-dandori','contractor-matching','approval-inspection']
+    relatedIds:['field-dandori','approval-inspection','gym-facility']
   },
   {
-    id:'customer-support', listed:true, featuredOrder:2,
+    id:'customer-support', listed:false,
     category:'cross-industry', tile:null, tags:['サポート','小売','問い合わせ'],
     cls:'c3', icon:'chat', mock:'chat',
     title:'業種別の案内<br>チャットを試す',
@@ -85,7 +111,7 @@ export const DEMOS = [
     relatedIds:['assist-reception','internal-knowledge','sns-post']
   },
   {
-    id:'shift', listed:true, featuredOrder:3,
+    id:'shift', listed:false,
     category:'food', tile:null, tags:['飲食','シフト','割当'],
     cls:'c4', icon:'cal', mock:'shift',
     title:'希望から<br>シフト案をつくる',
@@ -107,7 +133,7 @@ export const DEMOS = [
     relatedIds:['expense-optimize','customer-support','assist-reception']
   },
   {
-    id:'quality-incident', listed:true, featuredOrder:4,
+    id:'quality-incident', listed:true, featuredOrder:3,
     category:'factory', tile:'factory', tags:['製造','品質','是正'],
     cls:'c2', icon:'gear', mock:'incident',
     title:'品質インシデントを<br>画面で追う',
@@ -129,7 +155,7 @@ export const DEMOS = [
     relatedIds:['approval-inspection','internal-knowledge','kaigo-handoff']
   },
   {
-    id:'kaigo-handoff', listed:true, featuredOrder:5,
+    id:'kaigo-handoff', listed:true, featuredOrder:6,
     category:'care', tile:'care', tags:['介護','申し送り','面談','日報'],
     cls:'c4', icon:'user', mock:'handoff',
     title:'申し送り・面談・<br>日報をまとめる',
@@ -151,7 +177,7 @@ export const DEMOS = [
     relatedIds:['internal-knowledge','gym-facility','quality-incident']
   },
   {
-    id:'manufacturing-compare', listed:true,
+    id:'manufacturing-compare', listed:false,
     category:'factory', tile:'factory', tags:['製造','判断','比較'],
     cls:'c2', icon:'list',
     title:'現場情報から<br>対応案を比較する',
@@ -169,7 +195,7 @@ export const DEMOS = [
     relatedIds:['quality-incident','product-flow-mfg','cause-demo']
   },
   {
-    id:'internal-knowledge', listed:true,
+    id:'internal-knowledge', listed:true, featuredOrder:2,
     category:'cross-industry', tile:null, tags:['ナレッジ','社内','規程'],
     cls:'c3', icon:'search',
     title:'規程・マニュアルに<br>聞いてみる',
@@ -187,7 +213,7 @@ export const DEMOS = [
     relatedIds:['construction-record','quality-incident','kaigo-handoff']
   },
   {
-    id:'product-flow-mfg', listed:true,
+    id:'product-flow-mfg', listed:false,
     category:'factory', tile:'factory', tags:['製造','ナレッジ','判断'],
     cls:'c2', icon:'search',
     title:'製造の判断を<br>ナレッジで支える',
@@ -205,7 +231,7 @@ export const DEMOS = [
     relatedIds:['internal-knowledge','manufacturing-compare','quality-incident']
   },
   {
-    id:'contractor-matching', listed:true,
+    id:'contractor-matching', listed:false,
     category:'construction', tile:'construction', tags:['建設','協力業者','選定'],
     cls:'c1', icon:'user',
     title:'協力業者の選定を<br>支援する',
@@ -223,7 +249,7 @@ export const DEMOS = [
     relatedIds:['construction-record','field-dandori','approval-inspection']
   },
   {
-    id:'assist-reception', listed:true,
+    id:'assist-reception', listed:false,
     category:'cross-industry', tile:null, tags:['受付','整理','管理'],
     cls:'c3', icon:'chat',
     title:'5業種の受付を<br>画面で整理する',
@@ -241,7 +267,7 @@ export const DEMOS = [
     relatedIds:['customer-support','internal-knowledge','sfa-legal']
   },
   {
-    id:'approval-inspection', listed:true,
+    id:'approval-inspection', listed:true, featuredOrder:5,
     category:'factory', tile:'factory', tags:['製造','受入検査','承認'],
     cls:'c2', icon:'check',
     title:'受入検査の照合と<br>承認を見る',
@@ -259,7 +285,7 @@ export const DEMOS = [
     relatedIds:['quality-incident','construction-record','internal-knowledge']
   },
   {
-    id:'inspection-record', listed:true,
+    id:'inspection-record', listed:false,
     category:'factory', tile:'factory', tags:['製造','点検','記録'],
     cls:'c2', icon:'check',
     title:'設備の点検を<br>記録に残す',
@@ -277,7 +303,7 @@ export const DEMOS = [
     relatedIds:['approval-inspection','quality-incident','disaster-facility']
   },
   {
-    id:'shikomi-record', listed:true,
+    id:'shikomi-record', listed:false,
     category:'food', tile:null, tags:['食品','仕込み','知見'],
     cls:'c5', icon:'doc',
     title:'仕込みの記録と<br>知見をつなぐ',
@@ -295,7 +321,7 @@ export const DEMOS = [
     relatedIds:['shift','expense-optimize','product-flow-mfg']
   },
   {
-    id:'childcare', listed:true,
+    id:'childcare', listed:false,
     category:'care', tile:'care', tags:['保育','記録','連絡'],
     cls:'c4', icon:'doc',
     title:'保育の記録と<br>連絡を整える',
@@ -313,7 +339,7 @@ export const DEMOS = [
     relatedIds:['kaigo-handoff','voice-karte-simple','kaigo-3role']
   },
   {
-    id:'disaster-facility', listed:true,
+    id:'disaster-facility', listed:false,
     category:'gov', tile:'gov', tags:['自治体','防災','施設'],
     cls:'c5', icon:'bldg',
     title:'防災施設の状態を<br>まとめて見る',
@@ -331,7 +357,7 @@ export const DEMOS = [
     relatedIds:['gym-facility','inspection-record','chiiki-bunka']
   },
   {
-    id:'gym-facility', listed:true,
+    id:'gym-facility', listed:true, featuredOrder:8,
     category:'gov', tile:'gov', tags:['指定管理','体育館','施設'],
     cls:'c5', icon:'bldg',
     title:'総合体育館の<br>施設管理を見る',
@@ -349,7 +375,7 @@ export const DEMOS = [
     relatedIds:['construction-record','kaigo-handoff','internal-knowledge']
   },
   {
-    id:'logistics-dispatch', listed:true,
+    id:'logistics-dispatch', listed:true, featuredOrder:4,
     category:'cross-industry', tile:null, tags:['運送','配車','帰り荷'],
     cls:'c3', icon:'list',
     title:'空で戻る車に<br>帰り荷候補を出す',
@@ -385,7 +411,25 @@ export const DEMOS = [
     relatedIds:['internal-knowledge','quality-incident','construction-record']
   },
   {
-    id:'voice-karte-simple', listed:true,
+    id:'wholesale-quote', listed:false,
+    category:'cross-industry', tile:null, tags:['卸','見積','在庫確認'],
+    cls:'c3', icon:'doc',
+    title:'型番の問い合わせから<br>見積下書き',
+    plain:'型番の問い合わせから見積下書き',
+    lead:'届いた問い合わせに確認結果と返信下書きを並べます。根拠の表を見てから、返す内容は人が決めます。',
+    one:'問い合わせ机で、確認結果・根拠・下書きまでを体験します。',
+    audience:'卸の営業・受注担当と決裁者',
+    url:'',
+    linkState:'preparing',
+    experienceNote:'架空の電材卸です。自動返信・価格の自動確定・在庫引当はありません。',
+    when:'メールの問い合わせと在庫表が別の場所にあり、返すまでに探す・聞くが分かれている卸を想定しています。',
+    can:['確認結果と返信下書きを同じ画面で見られます','根拠の表を見てから人が返せます'],
+    planned:['公開URL','カード公開（波0）'],
+    shots:[['list','問い合わせを開く'],['card','根拠を見る'],['form','人が返す']],
+    relatedIds:['logistics-dispatch','internal-knowledge','approval-inspection']
+  },
+  {
+    id:'voice-karte-simple', listed:false,
     category:'care', tile:'care', tags:['介護','申し送り','短い体験'],
     cls:'c4', icon:'user',
     title:'短い申し送りを<br>体験する',
@@ -403,7 +447,7 @@ export const DEMOS = [
     relatedIds:['kaigo-handoff','kaigo-3role','childcare']
   },
   {
-    id:'cause-demo', listed:true,
+    id:'cause-demo', listed:false,
     category:'factory', tile:'factory', tags:['製造','原因','説明'],
     cls:'c2', icon:'search',
     title:'製造の原因特定を<br>説明する',
@@ -421,7 +465,7 @@ export const DEMOS = [
     relatedIds:['quality-incident','manufacturing-compare','product-flow-mfg']
   },
   {
-    id:'field-dandori', listed:true,
+    id:'field-dandori', listed:true, featuredOrder:7,
     category:'construction', tile:'construction', tags:['電気工事','段取り','現場'],
     cls:'c1', icon:'list',
     title:'現場の段取り案を<br>組み立てる',
@@ -431,15 +475,15 @@ export const DEMOS = [
     audience:'現場監督と手配担当',
     url:'https://rainbow-tarsier-5ce845.netlify.app/',
     linkState:'available',
-    experienceNote:'サンプル現場のデモです。所轄・期限・人員などは説明用の値です。',
+    experienceNote:'サンプル現場のデモです。所轄・期限・人員は説明用の値です。実申請や自動提出は行いません。',
     when:'段取りが個人の経験に依存し、変更のたびに手戻りが大きい現場を想定しています。',
-    can:['現場を選んで段取り案を確認できます','申請・人員・書類の組み立てを追えます'],
-    planned:['独自ドメインへの整理'],
+    can:['現場を選んで段取り案を確認できます','申請・人員・書類の組み立てを追えます','申請書の下書きを開けます'],
+    planned:['独自ドメインへの整理','LPの要否判断'],
     shots:[['form','条件を入れる'],['list','計画'],['card','出力']],
-    relatedIds:['construction-record','contractor-matching','expense-optimize']
+    relatedIds:['construction-record','approval-inspection','gym-facility']
   },
   {
-    id:'expense-optimize', listed:true,
+    id:'expense-optimize', listed:false,
     category:'cross-industry', tile:null, tags:['経費','建設','製造','飲食'],
     cls:'c3', icon:'doc',
     title:'経費の見直しを<br>業種別に試す',
@@ -457,7 +501,7 @@ export const DEMOS = [
     relatedIds:['shift','construction-record','manufacturing-compare']
   },
   {
-    id:'pharmacy-transfer', listed:true,
+    id:'pharmacy-transfer', listed:false,
     category:'care', tile:'care', tags:['薬局','在庫','融通'],
     cls:'c4', icon:'doc',
     title:'薬局間の在庫を<br>融通する',
@@ -475,7 +519,7 @@ export const DEMOS = [
     relatedIds:['childcare','kaigo-handoff','assist-reception']
   },
   {
-    id:'chiiki-bunka', listed:true,
+    id:'chiiki-bunka', listed:false,
     category:'gov', tile:'gov', tags:['地域','観光','移住'],
     cls:'c5', icon:'bldg',
     title:'地域の文化・観光を<br>提案する',
@@ -493,7 +537,7 @@ export const DEMOS = [
     relatedIds:['disaster-facility','gym-facility','property-match']
   },
   {
-    id:'haken-dash', listed:true,
+    id:'haken-dash', listed:false,
     category:'talent', tile:null, tags:['人材','派遣','営業'],
     cls:'c3', icon:'user',
     title:'派遣の営業状況を<br>一覧で見る',
@@ -511,7 +555,7 @@ export const DEMOS = [
     relatedIds:['vietnam-haken','sfa-legal','contractor-matching']
   },
   {
-    id:'sfa-legal', listed:true,
+    id:'sfa-legal', listed:false,
     category:'talent', tile:null, tags:['士業','SFA','相談'],
     cls:'c3', icon:'doc',
     title:'士業の相談案件を<br>進める',
@@ -529,7 +573,7 @@ export const DEMOS = [
     relatedIds:['haken-dash','assist-reception','vietnam-haken']
   },
   {
-    id:'vietnam-haken', listed:true,
+    id:'vietnam-haken', listed:false,
     category:'talent', tile:null, tags:['人材紹介','選考','マッチング'],
     cls:'c3', icon:'user',
     title:'人材紹介の選考を<br>進める',
@@ -547,7 +591,7 @@ export const DEMOS = [
     relatedIds:['haken-dash','sfa-legal','property-match']
   },
   {
-    id:'property-match', listed:true,
+    id:'property-match', listed:false,
     category:'realestate', tile:null, tags:['不動産','マッチング','条件'],
     cls:'c5', icon:'bldg',
     title:'条件から物件を<br>順位付けする',
@@ -565,7 +609,7 @@ export const DEMOS = [
     relatedIds:['vietnam-haken','chiiki-bunka','contractor-matching']
   },
   {
-    id:'sns-post', listed:true,
+    id:'sns-post', listed:false,
     category:'cross-industry', tile:null, tags:['SNS','投稿','生成'],
     cls:'c3', icon:'chat',
     title:'投稿文の下書きを<br>つくる',
@@ -583,7 +627,7 @@ export const DEMOS = [
     relatedIds:['customer-support','shift','assist-reception']
   },
   {
-    id:'kaigo-3role', listed:true,
+    id:'kaigo-3role', listed:false,
     category:'care', tile:'care', tags:['介護','3ロール','記録'],
     cls:'c4', icon:'user',
     title:'現場・内勤・医療の<br>3ロールで見る',

@@ -181,12 +181,11 @@ function setDetailBackground(inert) {
 }
 
 function dismissDetail() {
-  if (state.view === 'v-all' || hasStory(getDemoById(state.demoId))) {
-    var closingId = catalogOriginId || state.demoId
+  if (hasStory(getDemoById(state.demoId))) {
+    var closingId = state.demoId
     closeDetail({ skipUrl: true })
-    showView('v-all', { replace: true, keepScroll: true })
-    window.scrollTo(0, detailOriginScroll)
-    var card = document.querySelector('#allList [data-id="' + closingId + '"]')
+    showView('v-works', { replace: true })
+    var card = document.querySelector('#cards [data-id="' + closingId + '"]')
     if (card) card.focus({ preventScroll: true })
   } else history.back()
 }
@@ -195,11 +194,7 @@ function syncUrl(replace) {
   var params = new URLSearchParams()
   if (state.demoId) params.set('demo', state.demoId)
   else {
-    if (state.view === 'v-all') {
-      params.set('view', 'all')
-      if (state.category) params.set('cat', state.category)
-      if (state.query) params.set('q', state.query)
-    } else if (state.view === 'v-cat') params.set('view', 'cat')
+    if (state.view === 'v-cat') params.set('view', 'cat')
     else if (state.view === 'v-how') params.set('view', 'how')
     else if (state.view === 'v-me') params.set('view', 'me')
   }
@@ -218,20 +213,18 @@ function setTabHighlight(viewId) {
 
 function showView(viewId, opts) {
   opts = opts || {}
+  // 厳選版: 全件カタログは出さない。旧URL・内部呼び出しは一覧へ寄せる
+  if (viewId === 'v-all') viewId = 'v-works'
   if (!state.demoId && state.view === 'v-all' && viewId !== 'v-all') rememberCatalog()
   state.view = viewId
-  document.body.classList.toggle('catalog-mode', viewId === 'v-all')
+  document.body.classList.toggle('catalog-mode', false)
   fitHeader()
   document.querySelectorAll('.view').forEach(function (v) { v.classList.remove('on') })
   var el = document.getElementById(viewId)
   if (el) el.classList.add('on')
-  // tab highlight: v-all uses つくったもの tab visually? Plan says 業種 goes to v-all.
-  // Keep bottom tabs for works/cat/how/me. v-all is under works flow — highlight works when on all.
-  if (viewId === 'v-all') setTabHighlight('v-works')
-  else setTabHighlight(viewId)
+  setTabHighlight(viewId)
   if (!opts.keepScroll) window.scrollTo(0, 0)
   watch(el || document)
-  if (viewId === 'v-all') renderAllList(opts)
   if (!opts.skipUrl) syncUrl(!!opts.replace)
   if (!reduce) requestAnimationFrame(onScroll)
 }
@@ -244,7 +237,8 @@ function setCategory(catId, opts) {
   if (opts.clearQuery && qInput) qInput.value = ''
   updateTileHighlight()
   updateFilterBar()
-  showView('v-all', { replace: opts.replace, skipUrl: opts.skipUrl })
+  // 厳選版: 業種選択はカード一覧へ。全件棚は開かない
+  showView('v-works', { replace: opts.replace, skipUrl: opts.skipUrl })
 }
 
 function updateTileHighlight() {
@@ -365,7 +359,7 @@ function openDetail(id, opts) {
   var d = getDemoById(id)
   if (!d || d.listed === false) {
     state.demoId = null
-    showView('v-all', { replace: true })
+    showView('v-works', { replace: true })
     return
   }
   if (!state.demoId) {
@@ -418,27 +412,20 @@ detail.addEventListener('error', function (event) {
   }
 }, true)
 document.getElementById('openAll').addEventListener('click', function () {
-  state.category = null
-  state.query = ''
-  var qInput = document.getElementById('q')
-  if (qInput) qInput.value = ''
-  updateTileHighlight()
-  updateFilterBar()
-  showView('v-all')
+  // 厳選版: 全件一覧へは行かない
+  showView('v-works')
 })
 
 document.addEventListener('click', function (e) {
   var category = e.target.closest('[data-catalog-category]')
   if (category) {
-    rememberCatalog()
-    setCategory(category.dataset.catalogCategory || null)
-    document.querySelector('[data-catalog-category="' + (state.category || '') + '"]').focus({preventScroll:true})
+    // 厳選版: カタログ業種チップは使わない
     return
   }
   var arrow = e.target.closest('[data-shelf][data-direction]')
   if (arrow) {
     var track = document.getElementById('shelf-' + arrow.dataset.shelf)
-    track.scrollBy({left: Number(arrow.dataset.direction) * track.clientWidth * .85, behavior: reduce ? 'instant' : 'smooth'})
+    if (track) track.scrollBy({left: Number(arrow.dataset.direction) * track.clientWidth * .85, behavior: reduce ? 'instant' : 'smooth'})
     return
   }
   var storyJump = e.target.closest('[data-story-scroll]')
@@ -449,9 +436,8 @@ document.addEventListener('click', function (e) {
   }
   var tile = e.target.closest('.tile')
   if (tile) {
-    var tid = tile.dataset.tile
-    if (state.category === tid && state.view === 'v-all') setCategory(null)
-    else setCategory(tid)
+    // 厳選版: タイルから全件へ飛ばない。該当の先頭カード詳細を開く
+    setCategory(tile.dataset.tile)
     return
   }
 
@@ -463,19 +449,13 @@ document.addEventListener('click', function (e) {
 
   var clear = e.target.closest('[data-clear]')
   if (clear) {
-    var kind = clear.dataset.clear
-    if (kind === 'cat') state.category = null
-    else if (kind === 'q') {
-      state.query = ''
-      document.getElementById('q').value = ''
-    } else {
-      state.category = null
-      state.query = ''
-      document.getElementById('q').value = ''
-    }
+    state.category = null
+    state.query = ''
+    var qClear = document.getElementById('q')
+    if (qClear) qClear.value = ''
     updateTileHighlight()
     updateFilterBar()
-    renderAllList()
+    showView('v-works')
     syncUrl(true)
     return
   }
@@ -494,12 +474,9 @@ document.addEventListener('click', function (e) {
   }
 })
 
-document.getElementById('q').addEventListener('input', function (e) {
-  state.query = e.target.value.trim()
-  if (state.view !== 'v-all') showView('v-all', { skipUrl: true, keepScroll: true })
-  updateFilterBar()
-  renderAllList()
-  syncUrl(true)
+document.getElementById('q').addEventListener('input', function () {
+  // 厳選版: 検索バーは非表示。入力があっても全件へ行かない
+  showView('v-works', { skipUrl: true })
 })
 
 document.querySelectorAll('.tab').forEach(function (t) {
@@ -559,14 +536,12 @@ function applyFromLocation(replace) {
   var demo = params.get('demo')
   if (demo) {
     var d = getDemoById(demo)
-    if (!d) {
+    if (!d || d.listed === false) {
       state.demoId = null
-      showView('v-all', { replace: true })
+      showView('v-works', { replace: true })
       return
     }
-    var viewHint = params.get('view')
-    if (viewHint === 'all') state.view = 'v-all'
-    else state.view = 'v-works'
+    state.view = 'v-works'
     showView(state.view, { skipUrl: true, replace: true })
     openDetail(demo, { skipUrl: true, replace: true })
     syncUrl(true)
@@ -579,7 +554,8 @@ function applyFromLocation(replace) {
   if (qInput) qInput.value = state.query
   updateTileHighlight()
   updateFilterBar()
-  if (view === 'all') showView('v-all', { replace: !!replace, skipUrl: true })
+  // 厳選版: view=all はカード一覧へ
+  if (view === 'all') showView('v-works', { replace: !!replace, skipUrl: true })
   else if (view === 'cat') showView('v-cat', { replace: !!replace, skipUrl: true })
   else if (view === 'how') showView('v-how', { replace: !!replace, skipUrl: true })
   else if (view === 'me') showView('v-me', { replace: !!replace, skipUrl: true })
