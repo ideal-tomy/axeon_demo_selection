@@ -24,6 +24,7 @@ export const SELECTED_FEATURED = {
   'field-dandori': 7,
   'gym-facility': 8,
   'dd-ma': 9,
+  'wholesale-quote': 10,
 }
 
 export const ICON = {
@@ -411,7 +412,7 @@ export const DEMOS = [
     relatedIds:['internal-knowledge','quality-incident','construction-record']
   },
   {
-    id:'wholesale-quote', listed:false,
+    id:'wholesale-quote', listed:true, featuredOrder:10,
     category:'cross-industry', tile:null, tags:['卸','見積','在庫確認'],
     cls:'c3', icon:'doc',
     title:'型番の問い合わせから<br>見積下書き',
@@ -419,12 +420,12 @@ export const DEMOS = [
     lead:'届いた問い合わせに確認結果と返信下書きを並べます。根拠の表を見てから、返す内容は人が決めます。',
     one:'問い合わせ机で、確認結果・根拠・下書きまでを体験します。',
     audience:'卸の営業・受注担当と決裁者',
-    url:'',
-    linkState:'preparing',
+    url:'https://wholesale-quote-demo-lovat.vercel.app/',
+    linkState:'available',
     experienceNote:'架空の電材卸です。自動返信・価格の自動確定・在庫引当はありません。',
     when:'メールの問い合わせと在庫表が別の場所にあり、返すまでに探す・聞くが分かれている卸を想定しています。',
     can:['確認結果と返信下書きを同じ画面で見られます','根拠の表を見てから人が返せます'],
-    planned:['公開URL','カード公開（波0）'],
+    planned:[],
     shots:[['list','問い合わせを開く'],['card','根拠を見る'],['form','人が返す']],
     relatedIds:['logistics-dispatch','internal-knowledge','approval-inspection']
   },
@@ -473,12 +474,12 @@ export const DEMOS = [
     lead:'入力から計画・出力まで、電気工事の段取り生成を想定したデモです。',
     one:'電気工事の現場段取りを、画面上で組み立てる体験です。',
     audience:'現場監督と手配担当',
-    url:'https://rainbow-tarsier-5ce845.netlify.app/',
+    url:'https://denkigenba-dandori-demo.vercel.app/',
     linkState:'available',
     experienceNote:'サンプル現場のデモです。所轄・期限・人員は説明用の値です。実申請や自動提出は行いません。',
     when:'段取りが個人の経験に依存し、変更のたびに手戻りが大きい現場を想定しています。',
     can:['現場を選んで段取り案を確認できます','申請・人員・書類の組み立てを追えます','申請書の下書きを開けます'],
-    planned:['独自ドメインへの整理','LPの要否判断'],
+    planned:['LPの要否判断'],
     shots:[['form','条件を入れる'],['list','計画'],['card','出力']],
     relatedIds:['construction-record','approval-inspection','gym-facility']
   },

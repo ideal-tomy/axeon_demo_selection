@@ -69,7 +69,7 @@ flowchart LR
 | 7 | 電気工事の段取り | `field-dandori` | `denkigenba_dandori_demo` | 原則なし（完走後に判断） | [x] `docs/impl/field-dandori-plan.md` | [x] |
 | 8 | 施設管理 | `gym-facility` | `disaster_prevention_demo02` | 完走後に判断 | [x] `docs/impl/gym-facility-plan.md` | [x] |
 | 9 | DD | `dd-ma` | `dd_demo` | 候補 | [x] `docs/impl/dd-ma-plan.md` | [x] |
-| 10 | 卸 | `wholesale-quote`（未公開） | `wholesale_quote_demo` | `/lp`（体験 `/desk` のあと） | [x] `docs/impl/wholesale-quote-plan.md` | [ ] |
+| 10 | 卸 | `wholesale-quote` | `wholesale_quote_demo` | `/lp`（体験 `/desk` のあと） | [x] `docs/impl/wholesale-quote-plan.md` | [x] |
 
 補足：
 
@@ -89,7 +89,7 @@ flowchart LR
 | 1 | 社内ボット | 紹介ページを薄くする。デモ内の重複説明を削る | [x] |
 | 2 | 介護 → 段取り → 施設 → 製造 → 受け入れ | 既存を1本ずつ納品UIまで。製造と受け入れは同時に触らない | [x] 介護・段取り・施設・製造・受け入れは流れ完成。カード公開は波0 |
 | 3 | 運送、DD | 未掲載資産を納品UIにしてからカード追加。DDのLP要否 | [x] DD・運送とも流れ完成 |
-| 4 | 卸 | 新規。机画面と `/lp` を作成。カードは未公開 | [ ] 公開URL待ち |
+| 4 | 卸 | 新規。机画面と `/lp` を作成。カード公開 | [x] |
 
 波1の建設が「紹介 → デモ → 相談」まで通ってから、厳選版サイトの本格差し替え（カード数の制限など）を進める。名簿確定だけで全カードを一度に差し替えない。最初の公開カードは建設＋社内ボットでもよい。
 

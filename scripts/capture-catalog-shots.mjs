@@ -13,7 +13,7 @@ const outRoot = path.join(root, 'public', 'images', 'demos')
 const targets = [
   {
     id: 'field-dandori',
-    url: 'https://rainbow-tarsier-5ce845.netlify.app/',
+    url: 'https://denkigenba-dandori-demo.vercel.app/desk',
   },
   {
     id: 'contractor-matching',

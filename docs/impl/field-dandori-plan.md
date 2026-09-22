@@ -4,7 +4,7 @@
 波：2  
 対象ID：`field-dandori`  
 本体パス：`denkigenba_dandori_demo`（Vite + React：`/desk`。legacy HTML あり）  
-公開URL：`https://rainbow-tarsier-5ce845.netlify.app/`  
+公開URL：`https://denkigenba-dandori-demo.vercel.app/`  
 参照：docs/selection-completion-plan.md
 
 ## 今回の範囲（1つに絞る。混ぜすぎない）
@@ -54,7 +54,7 @@
 - [x] ExtractReview / EvidenceModal / ApproveBar / ExecuteView
 - [x] DemoStore に planStatus・seenEvidence・taskStates
 - [x] field-dandori-story を確認・準備の3手に更新
-- [ ] Netlify 反映（手動）
+- [x] Vercel 反映（`denkigenba-dandori-demo.vercel.app`）
 
 ## 受け入れ（画面で Yes/No）
 
