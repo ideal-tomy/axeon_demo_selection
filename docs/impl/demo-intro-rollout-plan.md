@@ -16,16 +16,16 @@
 | `quality-incident` | `axeon_manufacturing02` | 同上 |
 | `construction-record` | `construction_demo` | 同上 |
 | `kaigo-handoff` | `kaigo_handoff_demo` | 同上（**詳細のみ**。デモ本体トップには出さない） |
+| `logistics-dispatch` | `driver_dash_demo` | 同上（**詳細のみ**） |
 
 厳選版側の登録先：[`src/demo-intro-registry.js`](../src/demo-intro-registry.js)。ここに1件足すと詳細ページの hero と「代表3手」の間に自動表示される。
 
 ---
 
-## 2. 未作成6件
+## 2. 未作成5件
 
 | 順 | ID | 本体 | 代表3手（設計の起点） | 推奨型 |
 |---|---|---|---|---|
-| 2 | `logistics-dispatch` | `driver_dash_demo` | 今日の手配 → 帰り荷候補 → 人が確定 | B |
 | 3 | `wholesale-quote` | `wholesale_quote_demo` | 問い合わせ → 在庫表 → 人が返す | B |
 | 4 | `approval-inspection` | `Approval_diagram` | 照合 → 保留 → 承認 | B / C |
 | 5 | `gym-facility` | `disaster_prevention_demo02` | 施設状況 → カルテ → 画像確認 | B |

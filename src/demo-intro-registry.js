@@ -23,6 +23,11 @@ export const DEMO_INTRO_EMBEDS = {
     title: '申し送り・面談・日報の使い方',
     height: 540,
   },
+  'logistics-dispatch': {
+    src: 'https://driver-dash-demo.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: '配車と帰り荷候補の使い方',
+    height: 540,
+  },
 }
 
 export function getDemoIntroEmbed(id) {
