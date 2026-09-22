@@ -18,6 +18,11 @@ export const DEMO_INTRO_EMBEDS = {
     title: '現場写真から報告書までの使い方',
     height: 440,
   },
+  'kaigo-handoff': {
+    src: 'https://kaigo-handoff-demo.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: '申し送り・面談・日報の使い方',
+    height: 540,
+  },
 }
 
 export function getDemoIntroEmbed(id) {

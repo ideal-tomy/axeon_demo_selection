@@ -15,16 +15,16 @@
 | `internal-knowledge` | `internal_knowledge_demo` | `/?embed=intro&from=axeon-demo-selection` |
 | `quality-incident` | `axeon_manufacturing02` | 同上 |
 | `construction-record` | `construction_demo` | 同上 |
+| `kaigo-handoff` | `kaigo_handoff_demo` | 同上（**詳細のみ**。デモ本体トップには出さない） |
 
 厳選版側の登録先：[`src/demo-intro-registry.js`](../src/demo-intro-registry.js)。ここに1件足すと詳細ページの hero と「代表3手」の間に自動表示される。
 
 ---
 
-## 2. 未作成7件
+## 2. 未作成6件
 
 | 順 | ID | 本体 | 代表3手（設計の起点） | 推奨型 |
 |---|---|---|---|---|
-| 1 | `kaigo-handoff` | `kaigo_handoff_demo` | 録音 → 面談 → 日報 | B（段階遷移） |
 | 2 | `logistics-dispatch` | `driver_dash_demo` | 今日の手配 → 帰り荷候補 → 人が確定 | B |
 | 3 | `wholesale-quote` | `wholesale_quote_demo` | 問い合わせ → 在庫表 → 人が返す | B |
 | 4 | `approval-inspection` | `Approval_diagram` | 照合 → 保留 → 承認 | B / C |
@@ -40,7 +40,7 @@
 
 1. **設計メモ** — `docs/impl/<id>-intro-design.md` に4問・型・場面表を書く。秒数・場面数は社内ナレッジに合わせない。
 2. **エンジン移植** — 外部デモに `components/demo-intro/`（または vanilla なら `src/demo-intro/`）を置く。`story` と `screens` だけデモ固有に書き直す。
-3. **トップ配置** — デモの LP / ハブに紹介を載せる（未設置の場合）。
+3. **トップ配置** — 新規は置かない。詳細ページの iframe のみ。
 4. **`?embed=intro`** — LP ヒーロー・CTA・フッターなしで紹介だけ返す。背景は intro のダークトーン。
 5. **レジストリ** — [`demo-intro-registry.js`](../src/demo-intro-registry.js) に `src` / `title` / `height` を追加。
 6. **確認** — 厳選版 `?demo=<id>` で 390 / 1440。一時停止・最初から・reduced-motion。詳細を閉じると iframe が止まること。
@@ -48,8 +48,7 @@
 ```mermaid
 flowchart LR
   design[intro-design.md] --> engine[demo-intro]
-  engine --> top[LPに配置]
-  top --> embed["?embed=intro"]
+  engine --> embed["?embed=intro"]
   embed --> registry[demo-intro-registry.js]
   registry --> detail[厳選版詳細]
 ```
@@ -67,7 +66,7 @@ flowchart LR
 
 ## 5. 受け入れ（1件）
 
-- 外部トップに「使い方を見てみる」相当の紹介がある
+- 新規は外部トップに紹介を置かない（`/?embed=intro` のみ）
 - `/?embed=intro` で紹介だけが表示される
 - 厳選版詳細に iframe が出て、停止・字幕・場面進行が動く
 - 他デモの紹介・レジストリを壊していない
