@@ -5,8 +5,7 @@ export const internalKnowledgeStory = {
   intro: ['社内の用件から質問。', '結論と手続き、根拠の条文を確認できます。'],
   audience: '総務・人事・DX推進の決裁者と現場社員',
   cta: 'チャットで体験する',
-  /** 厳選版CTAは IntroPage を経由せずチャットへ直入。戻り導線用クエリ付き */
-  path: '/?from=axeon-demo-selection#demo',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '総務・人事'],
     ['体験の流れ', '代表3手'],

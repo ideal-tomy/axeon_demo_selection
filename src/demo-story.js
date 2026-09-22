@@ -11,19 +11,44 @@ import { wholesaleQuoteStory } from './wholesale-quote-story.js'
 import { fieldDandoriStory } from './field-dandori-story.js'
 import { storyCopy } from './demo-stories.js'
 import { storyImages } from './story-images.js'
+import { getDemoIntroEmbed } from './demo-intro-registry.js'
 
 export function hasStory(d) {
   return Boolean(d && d.linkState === 'available' && /^https:\/\//i.test(d.url || ''))
+}
+
+/** 厳選版からの体験リンクは各デモのトップ（LP）へ。深い path / hash は使わない。 */
+export function demoEntryUrl(url) {
+  try {
+    const u = new URL(url)
+    u.searchParams.set('from', 'axeon-demo-selection')
+    u.hash = ''
+    return u.toString()
+  } catch {
+    return url
+  }
 }
 
 const list = (items, esc) => `<ul>${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`
 const lines = (text, esc) => (Array.isArray(text) ? text : [text]).map(esc).join('<br>')
 const number = i => String(i + 1).padStart(2, '0')
 
-function external(d, path, label, esc, cls = 'story-link') {
+function external(d, _path, label, esc, cls = 'story-link') {
   if (!hasStory(d)) return ''
-  const url = path ? d.url.replace(/\/$/, '') + path : d.url
+  const url = demoEntryUrl(d.url)
   return `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} <span aria-hidden="true">↗</span><span class="sr-only">（別タブで開きます）</span></a>`
+}
+
+function introEmbedHtml(d, esc) {
+  const emb = getDemoIntroEmbed(d.id)
+  if (!emb) return ''
+  const h = Number(emb.height) || 480
+  return `<section class="story-intro-embed" aria-labelledby="introTitle">
+    <div class="story-section-heading"><h2 id="introTitle">使い方を見てみる</h2></div>
+    <div class="story-intro-frame" style="--intro-height:${h}px">
+      <iframe data-intro-embed data-intro-src="${esc(emb.src)}" title="${esc(emb.title)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="autoplay"></iframe>
+    </div>
+  </section>`
 }
 
 function disclosure(title, body, esc, index) {
@@ -37,7 +62,7 @@ function constructionModel(d, esc) {
   return {
     title: ['現場写真から、', '報告書まで。'], intro: ['写真を整え、下書きを確認。', '現場と事務をつなぐ流れを、体験できます。'],
     eyebrow: c.eyebrow, meta: [['使う人','現場・事務'],['体験の流れ','3ステップ'],['下書きの仕上げ','人が確認']],
-    cta: '写真整理から体験する', path: '/photo',
+    cta: '写真整理から体験する', path: '/?from=axeon-demo-selection',
     previews: c.steps.map((s,i) => ({label:s.title,headline:headlines[i],caption:captions[i],image:s.image,alt:s.cap})),
     changeTitle:['探す・書き写す時間を、','確認して仕上げる時間へ。'], changes:c.before.map((b,i)=>[b,c.after[i]]),
     background:`<p>${esc(c.audience)}</p>${list(c.problems,esc)}<p>${esc(c.approach)}</p>`,
@@ -59,13 +84,14 @@ function thinStoryModel(d, s) {
   const previews = s.steps.map((step, i) => {
     const fresh = images[i]
     const shot = shots[i]
-    const image = fresh?.image || shot?.image
+    // shots[].image が正本（カード／詳細ギャラリー）。story-images は未設置時のフォールバック
+    const image = shot?.image || fresh?.image
     return {
       label: step.title,
       headline: step.headline,
-      caption: image ? (fresh?.label || shot?.cap || step.caption) : step.caption,
+      caption: image ? (shot?.cap || fresh?.label || step.caption) : step.caption,
       image,
-      alt: fresh?.label || shot?.cap || step.title,
+      alt: shot?.cap || fresh?.label || step.title,
       diagram: labels,
       active: i,
       point: step.point,
@@ -178,6 +204,7 @@ export function buildDemoStory(d,esc) {
     return `<article class="demo-story story-theme-${esc(d.category)} story-layout-thin">
     <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>AXEON / ${esc(category)}</span></header>
     <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div><div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
+    ${introEmbedHtml(d, esc)}
     <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">代表3手で体験する</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
     <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div></section>
     ${relatedNav}
@@ -186,6 +213,7 @@ export function buildDemoStory(d,esc) {
   return `<article class="demo-story story-theme-${esc(d.category)}">
     <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>AXEON / ${esc(category)}</span></header>
     <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div><div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
+    ${introEmbedHtml(d, esc)}
     <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">画面で見る、仕事の変化</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
     <section class="story-section" id="story-benefits"><p class="story-eyebrow">この体験でわかること</p><h2>${lines(m.changeTitle,esc)}</h2><div class="story-changes">${m.changes.map(([before,after],i)=>`<div><span class="story-number">${number(i)}</span><div><p>${esc(before)}</p><h3>${esc(after)}</h3></div><span aria-hidden="true">↗</span></div>`).join('')}</div>${disclosure('どんな業務の悩みに役立つ？',m.background,esc)}${m.note?`<p class="story-note">${esc(m.note)}</p>`:''}</section>
     <section class="story-section"><p class="story-eyebrow">気になるところを、もう少し詳しく</p><h2>体験の見どころと進め方</h2><p class="story-section-lead">${esc(m.detailsLead)}</p>${m.details.map((s,i)=>disclosure(s.title,s.body,esc,i)).join('')}</section>

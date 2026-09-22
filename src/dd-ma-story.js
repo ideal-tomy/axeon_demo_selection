@@ -5,7 +5,7 @@ export const ddMaStory = {
   intro: ['サンプル企業で主軸を変え、', '簿外処置と株式価値の連動を試せます。'],
   audience: '買収・再生の担当と決裁者',
   cta: 'EXIT試算から体験する',
-  path: '/ai?from=axeon-demo-selection',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '買収・再生'],
     ['体験の流れ', '代表3手'],

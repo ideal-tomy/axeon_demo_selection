@@ -284,6 +284,10 @@ a{color:inherit;text-decoration:none;}
 .story-meta span{display:block;font-size:10px;color:var(--story-muted);}
 .story-meta strong{display:block;font-size:15px;margin-top:5px;}
 .story-preview{padding-top:26px;}
+.story-intro-embed{margin:26px 32px 0;padding:0;}
+.story-intro-embed .story-section-heading{margin:0 0 14px;}
+.story-intro-frame{position:relative;width:100%;max-width:100%;height:var(--intro-height,480px);border-radius:24px;overflow:hidden;border:1px solid #ffffff14;background:#111e2e;box-shadow:0 12px 36px #0004;}
+.story-intro-frame iframe{display:block;width:100%;height:100%;border:0;background:#111e2e;}
 .story-section-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 32px;}
 .story-section-heading h2,.story-section h2{font-size:22px;line-height:1.5;letter-spacing:-.025em;}
 
@@ -333,7 +337,7 @@ a{color:inherit;text-decoration:none;}
 .demo-story :is(a,button,summary,.story-gallery):focus-visible{outline:3px solid #ffd69f;outline-offset:4px;}
 @media(min-width:701px){.story-hero{padding-top:32px;}.story-hero h1 br{display:none;}.story-intro br{display:none;}.story-meta{max-width:540px;text-align:left;}.story-meta>div+div{padding-left:24px;}}
 @media(max-width:700px){
-.story-top{padding:8px 22px;}.story-hero{padding:12px 22px 0;}.story-hero h1{font-size:27px;}.story-app-icon{width:74px;height:74px;border-radius:21px;}.story-app-heading{gap:15px;}.story-intro{font-size:13px;margin-top:17px;}.story-actions{gap:12px;}.story-button{font-size:12px;padding:11px 18px;}.story-meta{margin-top:20px;padding:15px 0;}.story-meta strong{font-size:13px;}.story-section-heading{margin:0 22px;}.story-section-heading h2{font-size:19px;}.story-gallery{padding:14px 22px 20px;scroll-padding-inline:22px;}.story-preview-card{flex-basis:80%;min-width:0;}.story-preview-card h3{font-size:24px;}.story-preview-card img{width:calc(100% - 48px);margin:0 24px;}.story-section{margin:0 22px;padding:26px 0;}.story-section h2{font-size:21px;}.story-closing{margin:26px 22px 0;padding:24px;}.story-conditions h2,.story-related h2{font-size:19px;}}
+.story-top{padding:8px 22px;}.story-hero{padding:12px 22px 0;}.story-hero h1{font-size:27px;}.story-app-icon{width:74px;height:74px;border-radius:21px;}.story-app-heading{gap:15px;}.story-intro{font-size:13px;margin-top:17px;}.story-actions{gap:12px;}.story-button{font-size:12px;padding:11px 18px;}.story-meta{margin-top:20px;padding:15px 0;}.story-meta strong{font-size:13px;}.story-intro-embed{margin:20px 22px 0;}.story-intro-frame{border-radius:18px;height:min(var(--intro-height,480px),70vh);}.story-section-heading{margin:0 22px;}.story-section-heading h2{font-size:19px;}.story-gallery{padding:14px 22px 20px;scroll-padding-inline:22px;}.story-preview-card{flex-basis:80%;min-width:0;}.story-preview-card h3{font-size:24px;}.story-preview-card img{width:calc(100% - 48px);margin:0 24px;}.story-section{margin:0 22px;padding:26px 0;}.story-section h2{font-size:21px;}.story-closing{margin:26px 22px 0;padding:24px;}.story-conditions h2,.story-related h2{font-size:19px;}}
 @media(max-width:360px){.story-actions{gap:8px;}.story-button{padding-inline:14px;}.story-preview-card h3{font-size:21px;}}
 
 /* 共通詳細：配色だけを業種ごとに変える */

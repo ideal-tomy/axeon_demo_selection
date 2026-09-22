@@ -5,7 +5,7 @@ export const gymFacilityStory = {
   intro: ['施設の状況からカルテ、画像確認へ。', '指定管理の仕事を画面で追えます。'],
   audience: '指定管理者と施設担当',
   cta: '施設の状況から見る',
-  path: '/console?from=axeon-demo-selection',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '指定管理・施設'],
     ['体験の流れ', '代表3手'],

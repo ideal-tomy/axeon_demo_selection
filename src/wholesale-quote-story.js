@@ -5,7 +5,7 @@ export const wholesaleQuoteStory = {
   intro: ['確認結果と返信下書きが並び、', '返す内容は人が決めます。'],
   audience: '卸の営業・受注担当と決裁者',
   cta: '今日の問い合わせから体験する',
-  path: '/desk?from=axeon-demo-selection',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '営業・受注'],
     ['体験の流れ', '代表3手'],

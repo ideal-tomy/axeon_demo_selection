@@ -1,6 +1,6 @@
 import './style.css'
 import { catalogShelves, catalogCopy } from './catalog.js'
-import { buildDemoStory, hasStory } from './demo-story.js'
+import { buildDemoStory, demoEntryUrl, hasStory } from './demo-story.js'
 import {
   ICON, SCR, CATEGORIES, DEMOS,
   featuredDemos, listedDemos, getDemoById,
@@ -302,7 +302,7 @@ var dIn = document.getElementById('dIn')
 
 function openCta(d) {
   if (hasLink(d)) {
-    return '<a class="go" href="' + esc(d.url) + '" target="_blank" rel="noopener">体験版を開く</a>'
+    return '<a class="go" href="' + esc(demoEntryUrl(d.url)) + '" target="_blank" rel="noopener">体験版を開く</a>'
       + '<div class="note">' + esc(d.experienceNote || '別のページが開きます。') + '</div>'
   }
   return '<span class="go is-off" aria-disabled="true">体験版を開く</span>'
@@ -376,6 +376,11 @@ function openDetail(id, opts) {
   detail.scrollTop = 0
   detail.classList.add('open')
   document.body.classList.add('lock')
+  var introFrame = dIn.querySelector('[data-intro-embed]')
+  if (introFrame) {
+    var src = introFrame.getAttribute('data-intro-src')
+    if (src) introFrame.setAttribute('src', src)
+  }
   var back = document.getElementById('dBack')
   if (back) back.focus()
   if (!opts.skipUrl) syncUrl(!!opts.replace)
@@ -383,6 +388,8 @@ function openDetail(id, opts) {
 
 function closeDetail(opts) {
   opts = opts || {}
+  var introFrame = dIn.querySelector('[data-intro-embed]')
+  if (introFrame) introFrame.setAttribute('src', '')
   detail.classList.remove('open')
   document.body.classList.remove('lock')
   setDetailBackground(false)

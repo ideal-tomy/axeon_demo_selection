@@ -5,7 +5,7 @@ export const logisticsDispatchStory = {
   intro: ['依頼が同じ一覧に並び、', '載せるかは人が決めます。'],
   audience: '配車担当と運行管理者',
   cta: '今日の配車から体験する',
-  path: '/board?from=axeon-demo-selection',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '配車・運行'],
     ['体験の流れ', '代表3手'],

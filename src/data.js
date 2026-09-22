@@ -210,7 +210,11 @@ export const DEMOS = [
     when:'規程やマニュアルを探すのに時間がかかり、根拠が残らない社内問い合わせを想定しています。',
     can:['代表用件を1タップで質問し、結論・手続き・次のアクションを確認できます','根拠を見るから該当条文の抜粋と照合理由を確認できます','自社ナレッジ投入やアクセスモード切り替えを試せます'],
     planned:[],
-    shots:[['form','質問する'],['card','結論を見る'],['list','根拠を見る']],
+    shots:[
+      { key:'form', cap:'質問する', image:'/images/demos/internal-knowledge/01.jpg' },
+      { key:'card', cap:'結論を見る', image:'/images/demos/internal-knowledge/02.jpg' },
+      { key:'list', cap:'根拠を見る', image:'/images/demos/internal-knowledge/03.jpg' }
+    ],
     relatedIds:['construction-record','quality-incident','kaigo-handoff']
   },
   {
@@ -282,7 +286,11 @@ export const DEMOS = [
     when:'受入検査の照合と承認が紙と口頭に分かれ、保留の理由が残らない現場を想定しています。',
     can:['照合・保留・承認・基準改定をタブで辿れます','画面紹介としてご覧ください（画像内ボタンは操作対象外）'],
     planned:['Vercel反映'],
-    shots:[['list','照合'],['check','保留・承認'],['form','基準']],
+    shots:[
+      { key:'list', cap:'照合', image:'/images/demos/approval-inspection/01.jpg' },
+      { key:'check', cap:'保留一覧', image:'/images/demos/approval-inspection/02.jpg' },
+      { key:'form', cap:'承認', image:'/images/demos/approval-inspection/03.jpg' }
+    ],
     relatedIds:['quality-incident','construction-record','internal-knowledge']
   },
   {
@@ -372,7 +380,11 @@ export const DEMOS = [
     when:'単一施設の状態と履歴が散らばり、判断の根拠が残りにくい指定管理を想定しています。',
     can:['施設の状況・カルテ・画像確認を辿れます','判定の記録とやり直しをデモ内で試せます'],
     planned:['Vercel反映'],
-    shots:[['list','施設'],['card','カルテ'],['form','判断']],
+    shots:[
+      { key:'list', cap:'施設状況', image:'/images/demos/gym-facility/01.jpg' },
+      { key:'card', cap:'設備カルテ', image:'/images/demos/gym-facility/02.jpg' },
+      { key:'form', cap:'画像確認', image:'/images/demos/gym-facility/03.jpg' }
+    ],
     relatedIds:['construction-record','kaigo-handoff','internal-knowledge']
   },
   {
@@ -390,7 +402,11 @@ export const DEMOS = [
     when:'依頼が入口ごとに分かれ、空で戻る車と隣の荷物がつながらない配車室を想定しています。',
     can:['今日の手配と帰り荷候補を確認できます','載せる／載せないを人が決められます'],
     planned:['カード公開（波0）'],
-    shots:[['list','今日の手配'],['card','帰り荷候補'],['form','人が確定']],
+    shots:[
+      { key:'list', cap:'今日の手配', image:'/images/demos/logistics-dispatch/01.jpg' },
+      { key:'card', cap:'帰り荷候補', image:'/images/demos/logistics-dispatch/02.jpg' },
+      { key:'form', cap:'人が確定', image:'/images/demos/logistics-dispatch/03.jpg' }
+    ],
     relatedIds:['dd-ma','construction-record','approval-inspection']
   },
   {
@@ -408,7 +424,11 @@ export const DEMOS = [
     when:'買収後の再生で、試算と処置方針が表計算に散らばり、判断の問いが残らない場面を想定しています。',
     can:['サンプル企業でEXIT試算を確認できます','主軸切替と問い・返した時間を辿れます'],
     planned:['カード公開（波0）'],
-    shots:[['card','企業選択'],['list','主軸切替'],['form','問いと時間']],
+    shots:[
+      { key:'card', cap:'EXIT', image:'/images/demos/dd-ma/01.jpg' },
+      { key:'list', cap:'主軸切替', image:'/images/demos/dd-ma/02.jpg' },
+      { key:'form', cap:'問いと時間', image:'/images/demos/dd-ma/03.jpg' }
+    ],
     relatedIds:['internal-knowledge','quality-incident','construction-record']
   },
   {
@@ -426,7 +446,11 @@ export const DEMOS = [
     when:'メールの問い合わせと在庫表が別の場所にあり、返すまでに探す・聞くが分かれている卸を想定しています。',
     can:['確認結果と返信下書きを同じ画面で見られます','根拠の表を見てから人が返せます'],
     planned:[],
-    shots:[['list','問い合わせを開く'],['card','根拠を見る'],['form','人が返す']],
+    shots:[
+      { key:'list', cap:'問い合わせを開く', image:'/images/demos/wholesale-quote/01.jpg' },
+      { key:'card', cap:'在庫表', image:'/images/demos/wholesale-quote/02.jpg' },
+      { key:'form', cap:'人が返す', image:'/images/demos/wholesale-quote/03.jpg' }
+    ],
     relatedIds:['logistics-dispatch','internal-knowledge','approval-inspection']
   },
   {
@@ -480,7 +504,11 @@ export const DEMOS = [
     when:'段取りが個人の経験に依存し、変更のたびに手戻りが大きい現場を想定しています。',
     can:['現場を選んで段取り案を確認できます','申請・人員・書類の組み立てを追えます','申請書の下書きを開けます'],
     planned:['LPの要否判断'],
-    shots:[['form','条件を入れる'],['list','計画'],['card','出力']],
+    shots:[
+      { key:'list', cap:'依頼一覧', image:'/images/demos/field-dandori/01.jpg' },
+      { key:'form', cap:'段取り案', image:'/images/demos/field-dandori/02.jpg' },
+      { key:'card', cap:'申請の準備', image:'/images/demos/field-dandori/03.jpg' }
+    ],
     relatedIds:['construction-record','approval-inspection','gym-facility']
   },
   {

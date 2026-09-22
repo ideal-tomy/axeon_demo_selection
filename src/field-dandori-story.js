@@ -5,7 +5,7 @@ export const fieldDandoriStory = {
   intro: ['メールやFAXの依頼を開き、根拠を見て確定する。', '申請と人員の準備まで同じ流れで進めます。'],
   audience: '現場監督と手配担当',
   cta: '届いた依頼から見る',
-  path: '/desk?from=axeon-demo-selection',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '現場・手配'],
     ['体験の流れ', '代表3手'],

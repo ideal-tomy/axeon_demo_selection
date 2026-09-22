@@ -5,7 +5,7 @@ export const approvalInspectionStory = {
   intro: ['図面と証明書の照合・保留・承認。', '実画面をタブで追えます。'],
   audience: '検査と品質の担当',
   cta: '照合画面から見る',
-  path: '/screens.html?screen=match&from=axeon-demo-selection',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '検査・品質'],
     ['体験の流れ', '代表3手'],

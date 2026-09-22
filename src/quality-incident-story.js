@@ -5,7 +5,7 @@ export const qualityIncidentStory = {
   intro: ['発見から原因候補、是正・承認へ。', '架空の事例で対応の流れを試せます。'],
   audience: '品質と製造の担当',
   cta: '対応の流れを体験する',
-  path: '/?from=axeon-demo-selection&start=dashboard',
+  path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '品質・製造'],
     ['体験の流れ', '代表3手'],
