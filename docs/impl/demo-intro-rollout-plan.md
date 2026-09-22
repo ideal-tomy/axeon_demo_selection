@@ -1,4 +1,4 @@
-# 紹介アニメ横展開 PLAN（未作成7件）
+# 紹介アニメ横展開 PLAN
 
 作成日：2026-09-22  
 前提：厳選版詳細への埋め込み方式は **iframe + 外部 `?embed=intro`**（[詳細ページ紹介アニメ PLAN](../../.cursor/plans/) Phase 1 済み）。  
@@ -17,22 +17,19 @@
 | `construction-record` | `construction_demo` | 同上 |
 | `kaigo-handoff` | `kaigo_handoff_demo` | 同上（**詳細のみ**。デモ本体トップには出さない） |
 | `logistics-dispatch` | `driver_dash_demo` | 同上（**詳細のみ**） |
+| `wholesale-quote` | `wholesale_quote_demo` | 同上（**詳細のみ**） |
+| `approval-inspection` | `Approval_diagram` | 同上（**詳細のみ**） |
+| `gym-facility` | `disaster_prevention_demo02` | 同上（**詳細のみ**） |
+| `field-dandori` | `denkigenba_dandori_demo` | 同上（**詳細のみ**） |
+| `dd-ma` | `dd_demo` | 同上（**詳細のみ**。`/?embed=intro` は `/ai.html` へ寄せる） |
 
 厳選版側の登録先：[`src/demo-intro-registry.js`](../src/demo-intro-registry.js)。ここに1件足すと詳細ページの hero と「代表3手」の間に自動表示される。
 
 ---
 
-## 2. 未作成5件
+## 2. 未作成
 
-| 順 | ID | 本体 | 代表3手（設計の起点） | 推奨型 |
-|---|---|---|---|---|
-| 3 | `wholesale-quote` | `wholesale_quote_demo` | 問い合わせ → 在庫表 → 人が返す | B |
-| 4 | `approval-inspection` | `Approval_diagram` | 照合 → 保留 → 承認 | B / C |
-| 5 | `gym-facility` | `disaster_prevention_demo02` | 施設状況 → カルテ → 画像確認 | B |
-| 6 | `field-dandori` | `denkigenba_dandori_demo` | 依頼一覧 → 段取り案 → 申請準備 | B |
-| 7 | `dd-ma` | `dd_demo` | EXIT → 主軸切替 → 問いと時間 | B |
-
-着手順は依存・難易度の近い順（上から）。**1デモ・1フェーズ**で進める。
+なし。listed の紹介は上記で一通り揃う。
 
 ---
 

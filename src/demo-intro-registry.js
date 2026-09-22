@@ -28,6 +28,31 @@ export const DEMO_INTRO_EMBEDS = {
     title: '配車と帰り荷候補の使い方',
     height: 540,
   },
+  'wholesale-quote': {
+    src: 'https://wholesale-quote-demo-lovat.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: '型番問い合わせから返信下書きまでの使い方',
+    height: 540,
+  },
+  'approval-inspection': {
+    src: 'https://approval-diagram.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: '受入検査の照合と承認の使い方',
+    height: 540,
+  },
+  'gym-facility': {
+    src: 'https://disaster-prevention-demo02.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: '総合体育館の施設管理の使い方',
+    height: 540,
+  },
+  'field-dandori': {
+    src: 'https://denkigenba-dandori-demo.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: '現場の段取り案の使い方',
+    height: 540,
+  },
+  'dd-ma': {
+    src: 'https://dd-demo-red.vercel.app/?embed=intro&from=axeon-demo-selection',
+    title: 'DDからEXIT試算までの使い方',
+    height: 540,
+  },
 }
 
 export function getDemoIntroEmbed(id) {
