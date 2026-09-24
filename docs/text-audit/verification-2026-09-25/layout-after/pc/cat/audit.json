@@ -1,0 +1,31 @@
+{
+  "device": "pc",
+  "id": "cat",
+  "url": "/?view=cat",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "業種から見る",
+      "selector": "h3",
+      "lines": [
+        "業種から見る"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "業種を選ぶと、関連するデモを見られます。",
+      "selector": "p",
+      "lines": [
+        "業種を選ぶと、関連するデモを見られます。"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 388,
+  "links": [],
+  "badImages": []
+}

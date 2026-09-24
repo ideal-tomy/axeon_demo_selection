@@ -1,0 +1,42 @@
+{
+  "device": "pc",
+  "id": "me",
+  "url": "/?view=me",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "AXEON株式会社",
+      "selector": "h3",
+      "lines": [
+        "AXEON株式会社"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "横浜で、Webサイトと業務システムをつくっています。中小企業の現場で使うシステムを、必要なところからつくり、使いながら直していきます。",
+      "selector": "p",
+      "lines": [
+        "横浜で、Webサイトと業務システムをつくっています。中",
+        "小企業の現場で使うシステムを、必要なところから",
+        "つくり、使いながら直していきます。"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 388,
+  "links": [
+    {
+      "text": "相談するメールで受け付けています›",
+      "href": "#"
+    },
+    {
+      "text": "会社のサイトAXEON株式会社›",
+      "href": "#"
+    }
+  ],
+  "badImages": []
+}

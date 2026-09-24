@@ -1,0 +1,187 @@
+{
+  "device": "pc",
+  "id": "wholesale-quote",
+  "url": "/?demo=wholesale-quote",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "卸・受注",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "卸・受注"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "型番の問い合わせを確認し、返信の下書きを見直す。",
+      "selector": "h1",
+      "lines": [
+        "型番の問い合わせを確認し、返信の下書きを見直す。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "在庫などの確認結果と、返信の下書きを見られます。在庫表と照らし合わせ、担当者が返信内容を決めます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "在庫などの確認結果と、返信の下書きを見られます。在庫表と照らし合わせ、担当者が返信内容を決めます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "問い合わせ対応のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "問い合わせ対応のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "営業・受注担当",
+      "selector": "strong",
+      "lines": [
+        "営業・受注担当"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "在庫確認と返信",
+      "selector": "strong",
+      "lines": [
+        "在庫確認と返信"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "担当者が確認",
+      "selector": "strong",
+      "lines": [
+        "担当者が確認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "在庫の確認結果と返信下書きを見る。",
+      "selector": "h3",
+      "lines": [
+        "在庫の確認結果と",
+        "返信下書きを見る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "届いた問い合わせを確認。",
+      "selector": "p",
+      "lines": [
+        "届いた問い合わせを確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "在庫表の該当行を見る。",
+      "selector": "h3",
+      "lines": [
+        "在庫表の該当行を見る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "在庫数を照らし合わせる。",
+      "selector": "p",
+      "lines": [
+        "在庫数を照らし合わせる。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "下書きのまま返すか、直す。",
+      "selector": "h3",
+      "lines": [
+        "下書きのまま",
+        "返すか、直す。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "デモでは実際に送信しません。",
+      "selector": "p",
+      "lines": [
+        "デモでは実際に送信しません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の電材卸の問い合わせで、在庫確認と返信下書きの確認を試せます。APIキーは不要です。実際の返信や価格の自動確定、在庫引当は行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の電材卸の問い合わせで、在庫確認と返信下書きの確認を試せます。APIキーは不要です。",
+        "実際の返信や価格の自動確定、在庫引当は行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "問い合わせ対応のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "問い合わせ対応のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 940,
+  "links": [
+    {
+      "text": "問い合わせ対応のデモを開く ↗（別タブで開きます）",
+      "href": "https://wholesale-quote-demo-lovat.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "問い合わせ対応のデモを開く ↗（別タブで開きます）",
+      "href": "https://wholesale-quote-demo-lovat.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

@@ -1,0 +1,192 @@
+{
+  "device": "mobile",
+  "id": "dd-ma",
+  "url": "/?demo=dd-ma",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "買収・再生・DD",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "買収・再生・DD"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "DDの結果を確認し、EXITを試算する。",
+      "selector": "h1",
+      "lines": [
+        "DDの結果を確認し、",
+        "EXITを試算する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "サンプル企業の改善策を切り替えて、株式価値の試算と、目標との差を比較できます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "サンプル企業の改善策を切り替えて、",
+        "株式価値の試算と、目標との差を比較できます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "EXIT試算のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "買収・再生の担当者",
+      "selector": "strong",
+      "lines": [
+        "買収・再生の担当者"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "改善策ごとの試算",
+      "selector": "strong",
+      "lines": [
+        "改善策ごとの試算"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "問いと返した時間",
+      "selector": "strong",
+      "lines": [
+        "問いと返した時間"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "サンプル企業のEXIT試算を見る。",
+      "selector": "h3",
+      "lines": [
+        "サンプル企業の",
+        "EXIT試算を見る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "企業情報と試算結果を確認。",
+      "selector": "p",
+      "lines": [
+        "企業情報と試算結果を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "改善策を変えて、試算結果を比較する。",
+      "selector": "h3",
+      "lines": [
+        "改善策を変えて、",
+        "試算結果を比較する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "効率化・不採算整理・戦略見直し。",
+      "selector": "p",
+      "lines": [
+        "効率化・不採算整理・戦略見直し。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "判断の問いと返した時間。",
+      "selector": "h3",
+      "lines": [
+        "判断の問いと",
+        "返した時間。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "問いと時間",
+      "selector": "p",
+      "lines": [
+        "問いと時間"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の企業を使い、用意された条件で試算するデモです。サンプルはAPIキーを用意せずに試せます。提出・本番保管は行いません。自社入力やライブ層は代表3手の範囲外です。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の企業を使い、用意された条件で試算するデモです。",
+        "サンプルはAPIキーを用意せずに試せます。",
+        "提出・本番保管は行いません。自社入力やライブ層は代表",
+        "3手の範囲外です。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "EXIT試算のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 390,
+  "viewportWidth": 390,
+  "rootWidth": 390,
+  "links": [
+    {
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "href": "https://dd-demo-red.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "href": "https://dd-demo-red.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

@@ -1,0 +1,609 @@
+{
+  "device": "pc",
+  "id": "construction-record",
+  "url": "/?demo=construction-record",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "建設・現場の業務改善",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "建設・現場の業務改善"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "現場写真から、報告書まで。",
+      "selector": "h1",
+      "lines": [
+        "現場写真から、報告書まで。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真を整理し、報告書の下書きを確認。提出した日報を、管理側で確認する操作も試せます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "写真を整理し、報告書の下書きを確認。提出した日報を、管理側で確認する操作も試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真整理のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "写真整理のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "現場・事務",
+      "selector": "strong",
+      "lines": [
+        "現場・事務"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "3ステップ",
+      "selector": "strong",
+      "lines": [
+        "3ステップ"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "担当者が確認",
+      "selector": "strong",
+      "lines": [
+        "担当者が確認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真整理から提出後の確認まで",
+      "selector": "h2",
+      "lines": [
+        "写真整理から提出後の確認まで"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "工種ごとに写真を整理する。",
+      "selector": "h3",
+      "lines": [
+        "工種ごとに写真を",
+        "整理する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "現場名・工種・日付でファイル名を付ける。",
+      "selector": "p",
+      "lines": [
+        "現場名・工種・日付でファイル名を付ける。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "報告書の下書きを確認する。",
+      "selector": "h3",
+      "lines": [
+        "報告書の下書きを",
+        "確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "日報サンプルを選んで試せます。",
+      "selector": "p",
+      "lines": [
+        "日報サンプルを選んで試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "提出された日報を確認する。",
+      "selector": "h3",
+      "lines": [
+        "提出された日報を",
+        "確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "日報の内容と確認状況を、管理画面で確認。",
+      "selector": "p",
+      "lines": [
+        "日報の内容と確認状況を、管理画面で確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモでできること",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "このデモでできること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真整理と報告書作成を、サンプルで試せます。",
+      "selector": "h2",
+      "lines": [
+        "写真整理と報告書作成を、",
+        "サンプルで試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真を一枚ずつ探す",
+      "selector": "p",
+      "lines": [
+        "写真を一枚ずつ探す"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真を工種別に分類し、ファイル名を付ける",
+      "selector": "h3",
+      "lines": [
+        "写真を工種別に分類し、ファイル名を付ける"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "報告書に貼り直して文章を書く",
+      "selector": "p",
+      "lines": [
+        "報告書に貼り直して文章を書く"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "下書きをもとに内容を確認・修正する",
+      "selector": "h3",
+      "lines": [
+        "下書きをもとに内容を確認・修正する"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "提出後の確認や不足写真の依頼を個別に行う",
+      "selector": "p",
+      "lines": [
+        "提出後の確認や不足写真の依頼を個別に行う"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "管理画面で提出内容と確認状況を見る",
+      "selector": "h3",
+      "lines": [
+        "管理画面で提出内容と確認状況を見る"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "こんな業務で使えます",
+      "selector": "summary",
+      "lines": [
+        "こんな業務で使えます"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "現場監督・事務担当者・工事責任者、業務改善を検討する経営者の方へ",
+      "selector": "p",
+      "lines": [
+        "現場監督・事務担当者・工事責任者、業務改善を検討する経営者の方へ"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモでは、写真を工種別に整理し、報告書の下書きを確認・修正して提出できます。管理側では、届いた日報を確認し、不足写真の依頼画面を見ることができます。",
+      "selector": "p",
+      "lines": [
+        "このデモでは、写真を工種別に整理し、報告書の下書きを確認・修正して提出できます。管理側では、届いた日報を確認し、不足写真の依頼画面を",
+        "見ることができます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "削減できる時間は業務や使い方によって異なります。このデモでは、写真整理と報告書作成の手順を試せます。",
+      "selector": "p.story-note",
+      "lines": [
+        "削減できる時間は業務や使い方によって異なります。このデモでは、写真整理と報告書作成の手順を試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "詳しい操作方法",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "詳しい操作方法"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "デモの操作手順",
+      "selector": "h2",
+      "lines": [
+        "デモの操作手順"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真整理から、日報の提出後の確認まで順番に試せます。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "写真整理から、日報の提出後の確認まで順番に試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "01写真を整理する",
+      "selector": "summary",
+      "lines": [
+        "01",
+        "写真を整理する"
+      ],
+      "short": [
+        "01"
+      ],
+      "overflow": false
+    },
+    {
+      "text": "写真を工種別に整理する",
+      "selector": "h3",
+      "lines": [
+        "写真を工種別に整理する"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "工種ごとの分類と、現場名・工種・日付を含むファイル名への変更を確認できます。",
+      "selector": "p",
+      "lines": [
+        "工種ごとの分類と、現場名・工種・日付を含むファイル名への変更を確認できます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "見るポイント写真の整理前と整理後を見比べる",
+      "selector": "p.story-look",
+      "lines": [
+        "見るポイント",
+        "写真の整理前と整理後を見比べる"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "操作の流れ",
+      "selector": "h3",
+      "lines": [
+        "操作の流れ"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "「整理する」を押し、工種別の分類とファイル名の変更を確認します。そのあと「報告書下書きへ」を選びます。",
+      "selector": "p",
+      "lines": [
+        "「整理する」を押し、工種別の分類とファイル名の変更を確認します。そのあと「報告書下書きへ」を選びます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "02下書きを確認・修正する",
+      "selector": "summary",
+      "lines": [
+        "02",
+        "下書きを確認・修正する"
+      ],
+      "short": [
+        "02"
+      ],
+      "overflow": false
+    },
+    {
+      "text": "報告書の下書きを確認する",
+      "selector": "h3",
+      "lines": [
+        "報告書の下書きを確認する"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真付きの報告書に、作業内容や進捗などの下書きが入ります。内容を確認し、必要な箇所を修正できます。",
+      "selector": "p",
+      "lines": [
+        "写真付きの報告書に、作業内容や進捗などの下書きが入ります。内容を確認し、必要な箇所を修正できます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "見るポイント日報サンプルから下書きを表示する",
+      "selector": "p.story-look",
+      "lines": [
+        "見るポイント",
+        "日報サンプルから下書きを表示する"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "提出前に内容を見直す",
+      "selector": "h3",
+      "lines": [
+        "提出前に内容を見直す"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "下書きの「要確認」欄や写真、記載内容を見直し、修正してから帳票の確認へ進めます。",
+      "selector": "p",
+      "lines": [
+        "下書きの「要確認」欄や写真、記載内容を見直し、修正してから帳票の確認へ進めます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "見るポイント要確認欄を修正して「確認する」へ進む",
+      "selector": "p.story-look",
+      "lines": [
+        "見るポイント",
+        "要確認欄を修正して「確認する」へ進む"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "操作の流れ",
+      "selector": "h3",
+      "lines": [
+        "操作の流れ"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "「AIで下書き」を押すと、サンプルの文章が入ります。内容を見直し、「確認する」から「提出する」へ進みます。",
+      "selector": "p",
+      "lines": [
+        "「AIで下書き」を押すと、サンプルの文章が入ります。内容を見直し、「確認する」から「提出する」へ進みます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "下書きから試す場合は「サンプルで試す」から日報サンプルを選びます。スマートフォンでは「体験をはじめる」から進みます。",
+      "selector": "p",
+      "lines": [
+        "下書きから試す場合は「サンプルで試す」から日報サンプルを選びます。スマートフォンでは「体験をはじめる」から進みます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "03管理側で確認する",
+      "selector": "summary",
+      "lines": [
+        "03",
+        "管理側で確認する"
+      ],
+      "short": [
+        "03"
+      ],
+      "overflow": false
+    },
+    {
+      "text": "提出された日報を確認する",
+      "selector": "h3",
+      "lines": [
+        "提出された日報を確認する"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "提出された日報を管理画面で開き、確認済みにする操作を試せます。不足写真の催促画面も見られます。",
+      "selector": "p",
+      "lines": [
+        "提出された日報を管理画面で開き、確認済みにする操作を試せます。不足写真の催促画面も見られます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "見るポイント提出後に「管理画面で確認」へ進む",
+      "selector": "p.story-look",
+      "lines": [
+        "見るポイント",
+        "提出後に「管理画面で確認」へ進む"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "操作の流れ",
+      "selector": "h3",
+      "lines": [
+        "操作の流れ"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "「管理画面で確認」から届いた日報を開き、内容を確認します。確認済みにする操作まで試せます。",
+      "selector": "p",
+      "lines": [
+        "「管理画面で確認」から届いた日報を開き、内容を確認します。確認済みにする操作まで試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "用意された写真と文章で試すデモです。提出・通知・催促はデモ内の操作です。実際の送信やサーバーへの保存は行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "用意された写真と文章で試すデモです。",
+        "提出・通知・催促はデモ内の操作です。実際の送信やサーバーへの保存は行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験の範囲と、写真を使う際の注意",
+      "selector": "summary",
+      "lines": [
+        "体験の範囲と、写真を使う際の注意"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "自社で使う場合を考える",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "自社で使う場合を考える"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真整理と報告書づくりを、試してみてください。",
+      "selector": "h2",
+      "lines": [
+        "写真整理と報告書づくりを、",
+        "試してみてください。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "毎回書く項目や、現場に聞き直すことが多い項目。今の仕事と比べながら、操作してみてください。",
+      "selector": "p",
+      "lines": [
+        "毎回書く項目や、現場に聞き直すことが多い項目。",
+        "今の仕事と比べながら、操作してみてください。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "写真整理のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "写真整理のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "自社で使うときに考えたいこと",
+      "selector": "summary",
+      "lines": [
+        "自社で使うときに考えたいこと"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "今の報告書で毎回書いている項目、現場への聞き直しが多い項目、提出前に確認したい項目を思い浮かべてみてください。どの作業を自動化し、どこを担当者が確認するかを検討できます。",
+      "selector": "p",
+      "lines": [
+        "今の報告書で毎回書いている項目、現場への聞き直しが多い項目、提出前に確認したい項目を思い浮かべてみてください。どの作業を",
+        "自動化し、どこを担当者が確認するかを検討できます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 940,
+  "links": [
+    {
+      "text": "写真整理のデモを開く ↗（別タブで開きます）",
+      "href": "https://construction-demo-six.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "写真整理のデモを開く ↗（別タブで開きます）",
+      "href": "https://construction-demo-six.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "報告書のデモを開く ↗（別タブで開きます）",
+      "href": "https://construction-demo-six.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "管理側のデモを開く ↗（別タブで開きます）",
+      "href": "https://construction-demo-six.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "写真整理のデモを開く ↗（別タブで開きます）",
+      "href": "https://construction-demo-six.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "建設デモを開く ↗（別タブで開きます）",
+      "href": "https://construction-demo-six.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

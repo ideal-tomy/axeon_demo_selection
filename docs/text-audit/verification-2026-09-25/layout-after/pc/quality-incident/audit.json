@@ -1,0 +1,187 @@
+{
+  "device": "pc",
+  "id": "quality-incident",
+  "url": "/?demo=quality-incident",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "製造・品質",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "製造・品質"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "品質トラブルの原因と、是正内容を確認する。",
+      "selector": "h1",
+      "lines": [
+        "品質トラブルの原因と、是正内容を確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "不具合の発見から、原因の調査、是正・承認まで。架空の事例で、対応の手順を試せます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "不具合の発見から、原因の調査、是正・承認まで。架空の事例で、対応の手順を試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "品質管理のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "品質・製造",
+      "selector": "strong",
+      "lines": [
+        "品質・製造"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "原因調査と是正",
+      "selector": "strong",
+      "lines": [
+        "原因調査と是正"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "是正・承認",
+      "selector": "strong",
+      "lines": [
+        "是正・承認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "不具合の状況を確認する。",
+      "selector": "h3",
+      "lines": [
+        "不具合の状況を",
+        "確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "優先して対応する案件を確認。",
+      "selector": "p",
+      "lines": [
+        "優先して対応する案件を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "原因の候補を見比べる。",
+      "selector": "h3",
+      "lines": [
+        "原因の候補を見比べる。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "原因候補と、その根拠を確認。",
+      "selector": "p",
+      "lines": [
+        "原因候補と、その根拠を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "是正内容と承認の手順を確認する。",
+      "selector": "h3",
+      "lines": [
+        "是正内容と承認の",
+        "手順を確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "処置内容と記録を確認。",
+      "selector": "p",
+      "lines": [
+        "処置内容と記録を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の工場を使った、用意された事例のデモです。原因候補は表示されますが、原因を自動で確定するものではありません。PDF保存では印刷プレビューが開きます。提出はデモ内の通知のみで、実際の送信や業務データの保管は行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の工場を使った、用意された事例のデモです。原因候補は表示されますが、原因を自動で確定するものではありません。",
+        "PDF保存では印刷プレビューが開きます。提出はデモ内の通知のみで、実際の送信や業務データの保管は行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "品質管理のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 940,
+  "links": [
+    {
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "href": "https://axeonmanufacturing02.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "href": "https://axeonmanufacturing02.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

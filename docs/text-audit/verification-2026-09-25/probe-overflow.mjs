@@ -1,0 +1,4 @@
+import {chromium} from 'playwright'
+const b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'})
+for(const url of ['/','/?demo=construction-record','/?demo=quality-incident']){await p.goto('http://127.0.0.1:5173'+url,{waitUntil:'networkidle'});if(url!=='/')await p.locator('#detail.open').waitFor();console.log(url,await p.evaluate(()=>({doc:document.documentElement.scrollWidth,body:document.body.scrollWidth,items:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&(r.right>innerWidth+2||r.left< -2)}).map(e=>({tag:e.tagName,cls:typeof e.className==='string'?e.className:'',left:Math.round(e.getBoundingClientRect().left),right:Math.round(e.getBoundingClientRect().right),client:e.clientWidth,scroll:e.scrollWidth,overflow:getComputedStyle(e).overflowX})).slice(0,25)})))}
+await b.close()

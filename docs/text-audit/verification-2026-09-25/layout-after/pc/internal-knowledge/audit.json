@@ -1,0 +1,188 @@
+{
+  "device": "pc",
+  "id": "internal-knowledge",
+  "url": "/?demo=internal-knowledge",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "社内規程・マニュアル",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "社内規程・マニュアル"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "規程を探す前に、聞いてみる。",
+      "selector": "h1",
+      "lines": [
+        "規程を探す前に、聞いてみる。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "規程への質問を試す↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "総務・人事",
+      "selector": "strong",
+      "lines": [
+        "総務・人事"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "質問と回答の確認",
+      "selector": "strong",
+      "lines": [
+        "質問と回答の確認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "該当する規程",
+      "selector": "strong",
+      "lines": [
+        "該当する規程"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "知りたいことを質問する。",
+      "selector": "h3",
+      "lines": [
+        "知りたいことを",
+        "質問する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "用意された質問から試せます。",
+      "selector": "p",
+      "lines": [
+        "用意された質問から試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "回答と手続きを確認する。",
+      "selector": "h3",
+      "lines": [
+        "回答と手続きを",
+        "確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "条件や必要な申請を確認。",
+      "selector": "p",
+      "lines": [
+        "条件や必要な申請を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "回答の根拠となる規程を確認する。",
+      "selector": "h3",
+      "lines": [
+        "回答の根拠となる",
+        "規程を確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "該当する規程を開く。",
+      "selector": "p",
+      "lines": [
+        "該当する規程を開く。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の会社の規程を使ったデモです。APIキーを用意せずに、質問・回答・根拠の確認を試せます。自社文書の追加や接続方法の切り替えは、設定画面で試せます。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の会社の規程を使ったデモです。APIキーを用意せずに、質問・回答・根拠の確認を試せます。",
+        "自社文書の追加や接続方法の切り替えは、設定画面で試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "規程への質問を試す↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 940,
+  "links": [
+    {
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "href": "https://internal-knowledge-demo.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "href": "https://internal-knowledge-demo.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

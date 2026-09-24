@@ -1,0 +1,192 @@
+{
+  "device": "mobile",
+  "id": "kaigo-handoff",
+  "url": "/?demo=kaigo-handoff",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "介護・記録",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "介護・記録"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "申し送りから、日々の記録まで。",
+      "selector": "h1",
+      "lines": [
+        "申し送りから、",
+        "日々の記録まで。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "申し送り・面談・日報。それぞれの記録をまとめ、内容を確認する操作を試せます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "申し送り・面談・日報。",
+        "それぞれの記録をまとめ、内容を確認する操作を",
+        "試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "介護記録のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "介護記録のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "介護職員",
+      "selector": "strong",
+      "lines": [
+        "介護職員"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "3種類",
+      "selector": "strong",
+      "lines": [
+        "3種類"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "担当者が確認",
+      "selector": "strong",
+      "lines": [
+        "担当者が確認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "申し送りを、記録に。",
+      "selector": "h3",
+      "lines": [
+        "申し送りを、記録に。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "録音する",
+      "selector": "p",
+      "lines": [
+        "録音する"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "面談の内容を見直す。",
+      "selector": "h3",
+      "lines": [
+        "面談の内容を見直す。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "面談から経過記録を作る。",
+      "selector": "p",
+      "lines": [
+        "面談から経過記録を作る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "日報にまとめて確認する。",
+      "selector": "h3",
+      "lines": [
+        "日報にまとめて",
+        "確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "提出された記録を確認。",
+      "selector": "p",
+      "lines": [
+        "提出された記録を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の利用者データで試せます。録音画面では、用意された会話や入力した内容を使い、記録を作る手順を体験できます。記録はブラウザの sessionStorage に保持されます。再読み込みで消えます。実際の送信は行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の利用者データで試せます。録音画面では、",
+        "用意された会話や入力した内容を使い、記録を作る手順を",
+        "体験できます。",
+        "記録はブラウザのsessionStorageに保持されます。",
+        "再読み込みで消えます。実際の送信は行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "介護記録のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "介護記録のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 390,
+  "viewportWidth": 390,
+  "rootWidth": 390,
+  "links": [
+    {
+      "text": "介護記録のデモを開く ↗（別タブで開きます）",
+      "href": "https://kaigo-handoff-demo.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "介護記録のデモを開く ↗（別タブで開きます）",
+      "href": "https://kaigo-handoff-demo.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

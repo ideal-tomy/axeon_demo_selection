@@ -1,0 +1,188 @@
+{
+  "device": "pc",
+  "id": "gym-facility",
+  "url": "/?demo=gym-facility",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "指定管理・施設",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "指定管理・施設"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体育館の利用状況と、設備の記録を確認する。",
+      "selector": "h1",
+      "lines": [
+        "体育館の利用状況と、設備の記録を確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "施設の利用可否や、設備ごとの記録を確認できます。画像を見て、対応が必要か判断する操作も試せます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "施設の利用可否や、設備ごとの記録を確認できます。画像を見て、対応が必要か判断する操作も試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "施設管理のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "施設管理のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "指定管理者・施設担当",
+      "selector": "strong",
+      "lines": [
+        "指定管理者・施設担当"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "施設・設備の状況",
+      "selector": "strong",
+      "lines": [
+        "施設・設備の状況"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "画像を見て確認",
+      "selector": "strong",
+      "lines": [
+        "画像を見て確認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "施設が利用できるか確認する。",
+      "selector": "h3",
+      "lines": [
+        "施設が利用できるか",
+        "確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "施設の状況と要対応の項目を確認。",
+      "selector": "p",
+      "lines": [
+        "施設の状況と要対応の項目を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "設備ごとの点検・対応記録を確認する。",
+      "selector": "h3",
+      "lines": [
+        "設備ごとの点検・",
+        "対応記録を確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "場所・設備一覧から記録を開く。",
+      "selector": "p",
+      "lines": [
+        "場所・設備一覧から記録を開く。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "画像を見て、対応が必要か記録する。",
+      "selector": "h3",
+      "lines": [
+        "画像を見て、対応が",
+        "必要か記録する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "対応が必要か、問題なしかを選ぶ。",
+      "selector": "p",
+      "lines": [
+        "対応が必要か、問題なしかを選ぶ。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の施設を使い、日時を固定したデモです。画像の判定はタブ内のみです。リロードで消え、送信・本番保管は行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の施設を使い、日時を固定したデモです。",
+        "画像の判定はタブ内のみです。リロードで消え、送信・本番保管は行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "施設管理のデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "施設管理のデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 940,
+  "links": [
+    {
+      "text": "施設管理のデモを開く ↗（別タブで開きます）",
+      "href": "https://disaster-prevention-demo02.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "施設管理のデモを開く ↗（別タブで開きます）",
+      "href": "https://disaster-prevention-demo02.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

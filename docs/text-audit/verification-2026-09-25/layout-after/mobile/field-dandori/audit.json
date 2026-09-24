@@ -1,0 +1,196 @@
+{
+  "device": "mobile",
+  "id": "field-dandori",
+  "url": "/?demo=field-dandori",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "電気工事・段取り",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "電気工事・段取り"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "工事の依頼をもとに、申請と人員の準備を進める。",
+      "selector": "h1",
+      "lines": [
+        "工事の依頼を",
+        "もとに、",
+        "申請と人員の準備を",
+        "進める。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "メールやFAXの依頼内容と、段取り案を確認します。申請書の確認と人員の手配も、画面で試せます。",
+      "selector": "p.story-intro",
+      "lines": [
+        "メールやFAXの依頼内容と、段取り案を確認します。",
+        "申請書の確認と人員の手配も、画面で試せます。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "工事の段取りのデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "工事の段取りのデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "現場監督・手配担当",
+      "selector": "strong",
+      "lines": [
+        "現場監督・手配担当"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "依頼確認と準備",
+      "selector": "strong",
+      "lines": [
+        "依頼確認と準備"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "担当者が確認",
+      "selector": "strong",
+      "lines": [
+        "担当者が確認"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "メールやFAXで届いた依頼を確認する。",
+      "selector": "h3",
+      "lines": [
+        "メールやFAXで届いた",
+        "依頼を確認する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "依頼一覧から選ぶ。",
+      "selector": "p",
+      "lines": [
+        "依頼一覧から選ぶ。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "依頼の原文と照らし合わせて確定する。",
+      "selector": "h3",
+      "lines": [
+        "依頼の原文と",
+        "照らし合わせて",
+        "確定する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "工事内容や日程を確認。",
+      "selector": "p",
+      "lines": [
+        "工事内容や日程を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "申請と人員の準備を進める。",
+      "selector": "h3",
+      "lines": [
+        "申請と人員の",
+        "準備を進める。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "申請書を確認。",
+      "selector": "p",
+      "lines": [
+        "申請書を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "サンプルの工事依頼を使ったデモです。所轄・期限・人員は説明用の情報です。実際の申請に必要な条件を満たすかは、担当者が確認してください。申請の提出や人員の配置依頼は、実際には行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "サンプルの工事依頼を使ったデモです。所轄・期限・",
+        "人員は説明用の情報です。",
+        "実際の申請に必要な条件を満たすかは、担当者が",
+        "確認してください。申請の提出や人員の配置依頼は、",
+        "実際には行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "工事の段取りのデモを開く ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "工事の段取りのデモを開く↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 390,
+  "viewportWidth": 390,
+  "rootWidth": 390,
+  "links": [
+    {
+      "text": "工事の段取りのデモを開く ↗（別タブで開きます）",
+      "href": "https://denkigenba-dandori-demo.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "工事の段取りのデモを開く ↗（別タブで開きます）",
+      "href": "https://denkigenba-dandori-demo.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}

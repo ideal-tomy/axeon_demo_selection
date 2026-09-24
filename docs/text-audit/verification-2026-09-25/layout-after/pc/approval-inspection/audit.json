@@ -1,0 +1,188 @@
+{
+  "device": "pc",
+  "id": "approval-inspection",
+  "url": "/?demo=approval-inspection",
+  "errors": [],
+  "blocks": [
+    {
+      "text": "製造・受入検査",
+      "selector": "p.story-eyebrow",
+      "lines": [
+        "製造・受入検査"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "図面と材料証明書を照合して、確認・承認まで。",
+      "selector": "h1",
+      "lines": [
+        "図面と材料証明書を照合して、確認・承認まで。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "照合結果と保留理由、承認記録を確認できます。タブを切り替えて、各画面をご覧ください。",
+      "selector": "p.story-intro",
+      "lines": [
+        "照合結果と保留理由、承認記録を確認できます。タブを切り替えて、各画面をご覧ください。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "受入検査の画面を見る ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "受入検査の画面を見る↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "検査・品質",
+      "selector": "strong",
+      "lines": [
+        "検査・品質"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "照合から基準改定",
+      "selector": "strong",
+      "lines": [
+        "照合から基準改定"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "画面紹介",
+      "selector": "strong",
+      "lines": [
+        "画面紹介"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "このデモで見られること",
+      "selector": "h2",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "図面と材料証明書を照合する。",
+      "selector": "h3",
+      "lines": [
+        "図面と材料証明書を",
+        "照合する。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "照合結果を確認。",
+      "selector": "p",
+      "lines": [
+        "照合結果を確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "確認が必要な項目と理由を見る。",
+      "selector": "h3",
+      "lines": [
+        "確認が必要な",
+        "項目と理由を見る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "保留一覧で確認。",
+      "selector": "p",
+      "lines": [
+        "保留一覧で確認。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "承認記録と基準改定の画面を見る。",
+      "selector": "h3",
+      "lines": [
+        "承認記録と基準改定の",
+        "画面を見る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "承認時の確認内容を見る。",
+      "selector": "p",
+      "lines": [
+        "承認時の確認内容を見る。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "体験について",
+      "selector": "h2",
+      "lines": [
+        "体験について"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "架空の案件を使った画面紹介です。タブを切り替えて、4つの画面をご覧ください。画像内のボタンは操作できません。保存や送信は行いません。",
+      "selector": "p.story-section-lead",
+      "lines": [
+        "架空の案件を使った画面紹介です。タブを切り替えて、4つの画面をご覧ください。",
+        "画像内のボタンは操作できません。保存や送信は行いません。"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "受入検査の画面を見る ↗（別タブで開きます）",
+      "selector": "a.story-button",
+      "lines": [
+        "受入検査の画面を見る↗"
+      ],
+      "short": [],
+      "overflow": false
+    },
+    {
+      "text": "関連するデモも見る",
+      "selector": "h2",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "short": [],
+      "overflow": false
+    }
+  ],
+  "docWidth": 1280,
+  "viewportWidth": 1280,
+  "rootWidth": 940,
+  "links": [
+    {
+      "text": "受入検査の画面を見る ↗（別タブで開きます）",
+      "href": "https://approval-diagram.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "受入検査の画面を見る ↗（別タブで開きます）",
+      "href": "https://approval-diagram.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "badImages": []
+}
