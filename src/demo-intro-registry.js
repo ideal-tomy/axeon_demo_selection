@@ -56,19 +56,38 @@ export const DEMO_INTRO_EMBEDS = {
 }
 
 /**
- * 厳選版を localhost で見るとき、起動中の各デモへ iframe を向ける（未記載・未起動は Vercel のまま）。
- * stage 表示のコードは各デモ側。Vercel が古いと「使い方を見てみる」バーや建設ハブ全体が iframe に出る。
+ * 開発時だけ ?intro=local で、起動中の各デモへ iframe を向ける。
+ * 厳選版の 5173 と重ならないポート。未起動のデモは接続できない表示になる。
  */
 const LOCAL_INTRO_ORIGIN = {
   'internal-knowledge': 'http://127.0.0.1:5175',
+  'quality-incident': 'http://127.0.0.1:5176',
   'construction-record': 'http://127.0.0.1:3010',
+  'kaigo-handoff': 'http://127.0.0.1:3011',
+  'logistics-dispatch': 'http://127.0.0.1:5177',
+  'wholesale-quote': 'http://127.0.0.1:5178',
+  'approval-inspection': 'http://127.0.0.1:5179',
+  'gym-facility': 'http://127.0.0.1:3012',
+  'field-dandori': 'http://127.0.0.1:5180',
+  'dd-ma': 'http://127.0.0.1:5181',
+}
+
+/** 初回読込時の ?intro=local を保持（syncUrl が他パラメータを差し替えても残す） */
+let localIntroLatched = null
+
+function wantsLocalIntro() {
+  if (typeof window === 'undefined') return false
+  const pageHost = window.location.hostname
+  if (pageHost !== 'localhost' && pageHost !== '127.0.0.1') return false
+  if (!import.meta.env?.DEV) return false
+  if (localIntroLatched === null) {
+    localIntroLatched = new URLSearchParams(window.location.search).get('intro') === 'local'
+  }
+  return localIntroLatched || new URLSearchParams(window.location.search).get('intro') === 'local'
 }
 
 function resolveIntroSrc(id, src) {
-  if (typeof window === 'undefined') return src
-  const pageHost = window.location.hostname
-  if (pageHost !== 'localhost' && pageHost !== '127.0.0.1') return src
-  if (!import.meta.env?.DEV) return src
+  if (!wantsLocalIntro()) return src
   const localOrigin = LOCAL_INTRO_ORIGIN[id]
   if (!localOrigin) return src
   try {

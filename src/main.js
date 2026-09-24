@@ -198,6 +198,8 @@ function syncUrl(replace) {
     else if (state.view === 'v-how') params.set('view', 'how')
     else if (state.view === 'v-me') params.set('view', 'me')
   }
+  // 開発時の ?intro=local はルーティング更新で落とさない
+  if (new URLSearchParams(location.search).get('intro') === 'local') params.set('intro', 'local')
   var qs = params.toString()
   var url = qs ? (location.pathname + '?' + qs) : location.pathname
   var hist = { view: state.view, category: state.category, query: state.query, demoId: state.demoId }
@@ -331,7 +333,7 @@ function buildDetail(d) {
 
   return ''
     + '<div class="d-hero ' + esc(d.cls) + '">'
-    +   '<button type="button" class="back" id="dBack" aria-label="紹介を閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>'
+    +   '<button type="button" class="back" id="dBack" aria-label="紹介を閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>'
     +   '<div class="art">' + mockBody(d) + '</div>'
     + '</div>'
     + '<div class="d-head">'
