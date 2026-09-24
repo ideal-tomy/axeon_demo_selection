@@ -1,0 +1,282 @@
+{
+  "device": "mobile",
+  "id": "internal-knowledge",
+  "url": "/?demo=internal-knowledge",
+  "detail": true,
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "p.story-eyebrow",
+      "text": "社内規程・マニュアル",
+      "lines": [
+        "社内規程・マニュアル"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h1",
+      "text": "規程を探す前に、聞いてみる。",
+      "lines": [
+        "規程を探す前に、",
+        "聞いてみる。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-intro",
+      "text": "知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。",
+      "lines": [
+        "知りたいことを質問すると、",
+        "回答と必要な手続き、根拠となる規程を確認できます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "lines": [
+        "規程への質問を試す↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "使う人",
+      "lines": [
+        "使う人"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "総務・人事",
+      "lines": [
+        "総務・人事"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "体験する作業",
+      "lines": [
+        "体験する作業"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "質問と回答の確認",
+      "lines": [
+        "質問と回答の確認"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "回答の根拠",
+      "lines": [
+        "回答の根拠"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "該当する規程",
+      "lines": [
+        "該当する規程"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "このデモで見られること",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "01 / 質問する",
+      "lines": [
+        "01/質問する"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "知りたいことを質問する。",
+      "lines": [
+        "知りたいことを",
+        "質問する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "用意された質問から試せます。",
+      "lines": [
+        "用意された質問から試せます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "02 / 回答を見る",
+      "lines": [
+        "02/回答を見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "回答と手続きを確認する。",
+      "lines": [
+        "回答と手続きを",
+        "確認する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "条件や必要な申請を確認。",
+      "lines": [
+        "条件や必要な申請を確認。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "03 / 根拠を見る",
+      "lines": [
+        "03/根拠を見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "回答の根拠となる規程を確認する。",
+      "lines": [
+        "回答の根拠となる",
+        "規程を確認する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "該当する規程を開く。",
+      "lines": [
+        "該当する規程を開く。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "体験について",
+      "lines": [
+        "体験について"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-section-lead",
+      "text": "架空の会社の規程を使ったデモです。APIキーを用意せずに、質問・回答・根拠の確認を試せます。自社文書の追加や接続方法の切り替えは、設定画面で試せます。",
+      "lines": [
+        "架空の会社の規程を使ったデモです。APIキーを",
+        "用意せずに、質問・回答・根拠の確認を試せます。",
+        "自社文書の追加や接続方法の切り替えは、設定画面で",
+        "試せます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "lines": [
+        "規程への質問を試す↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "関連するデモも見る",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "現場写真の整理から、報告書と確認業務まで建設・現場",
+      "lines": [
+        "現場写真の整理から、報告書と確認業務まで",
+        "建設・現場"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "品質インシデントの原因と是正を確認する製造・設備",
+      "lines": [
+        "品質インシデントの原因と是正を確認する",
+        "製造・設備"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "申し送り・面談・日報をまとめる医療・介護・保育・薬局",
+      "lines": [
+        "申し送り・面談・日報をまとめる",
+        "医療・介護・保育・薬局"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": true,
+  "links": [
+    {
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "href": "https://internal-knowledge-demo.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "規程への質問を試す ↗（別タブで開きます）",
+      "href": "https://internal-knowledge-demo.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "brokenImages": []
+}

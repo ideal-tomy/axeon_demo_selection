@@ -1,0 +1,1250 @@
+[
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "照合の結果を、",
+    "after": "図面と材料証明書を照合して、",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "承認につなぐ。",
+    "after": "確認・承認まで。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "図面と証明書の照合・保留・承認。",
+    "after": "照合結果と保留理由、承認記録を確認できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "実画面をタブで追えます。",
+    "after": "タブを切り替えて、各画面をご覧ください。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "照合画面から見る",
+    "after": "受入検査の画面を見る",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "体験の流れ",
+    "after": "見られる内容",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "代表3手",
+    "after": "照合から基準改定",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "図面と証明書を並べる。",
+    "after": "図面と材料証明書を照合する。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "人が見る項目だけ残す。",
+    "after": "確認が必要な項目と理由を見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "根拠を残し、基準へ戻す。",
+    "after": "承認記録と基準改定の画面を見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "架空の案件・固定シナリオです。タブ切替で4画面をご覧ください。",
+    "after": "架空の案件を使った画面紹介です。タブを切り替えて、4つの画面をご覧ください。",
+    "inMD": true
+  },
+  {
+    "file": "src/approval-inspection-story.js",
+    "before": "画像内の確認記録・割当・履歴出力などは操作対象外です。保存・送信は行いません。",
+    "after": "画像内のボタンは操作できません。保存や送信は行いません。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "写真をデジタルで保存するだけでは、探す・書き写す・確認する作業は残ります。写真を報告に使える形に整え、下書きを人が確認し、管理側へ引き継ぐ。このつながりを作ることが、業務を簡素化する一つの方法です。",
+    "after": "このデモでは、写真を工種別に整理し、報告書の下書きを確認・修正して提出できます。管理側では、届いた日報を確認し、不足写真の依頼画面を見ることができます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "提出後の確認や不足依頼を個別に行う",
+    "after": "提出後の確認や不足写真の依頼を個別に行う",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "写真を分類・命名して整理",
+    "after": "写真を工種別に分類し、ファイル名を付ける",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "下書きをもとに内容を確認・修正",
+    "after": "下書きをもとに内容を確認・修正する",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "写真を探して整理する手間を見直す",
+    "after": "写真を工種別に整理する",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "工種ごとの分類と、現場名・工種・日付を含むファイル名への変化をご覧ください。報告に使う写真を見つけやすくする方法を確かめられます。",
+    "after": "工種ごとの分類と、現場名・工種・日付を含むファイル名への変更を確認できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "書類を一から作る作業を、下書きの確認へ",
+    "after": "報告書の下書きを確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "写真付きの報告書に、作業内容や進捗などの下書きが入ります。文章を起こす負担を見直し、人が確認・修正する流れを試せます。",
+    "after": "写真付きの報告書に、作業内容や進捗などの下書きが入ります。内容を確認し、必要な箇所を修正できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "提出前に確認し、修正の手戻りを減らす工夫を知る",
+    "after": "提出前に内容を見直す",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "下書きには「要確認」の表示があります。写真や記載内容を見直し、修正してから帳票へ進む体験を通じて、自社で必要な確認箇所を考えられます。",
+    "after": "下書きの「要確認」欄や写真、記載内容を見直し、修正してから帳票の確認へ進めます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "現場と事務の確認・依頼をつなぐ",
+    "after": "提出された日報を確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "提出した日報を管理側で開き、確認済みにする流れを試せます。不足写真の催促画面も見ながら、確認や依頼をまとめる方法を検討できます。",
+    "after": "提出された日報を管理画面で開き、確認済みにする操作を試せます。不足写真の催促画面も見られます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "写真を整える",
+    "after": "写真を整理する",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "「整理する」を押し、工種別の分類とファイル名の変化を確認。「報告書下書きへ」へ進みます。",
+    "after": "「整理する」を押し、工種別の分類とファイル名の変更を確認します。そのあと「報告書下書きへ」を選びます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "「管理画面で確認」から届いた日報を開き、内容を確認。確認済みの表示までをご覧ください。",
+    "after": "「管理画面で確認」から届いた日報を開き、内容を確認します。確認済みにする操作まで試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "写真整理と報告書のサンプルは、実際の写真のアップロードやAPIキーの用意なしで試せます。分類や下書きには、用意された内容を使います。",
+    "after": "写真整理と報告書のサンプルは、自分の写真やAPIキーを用意せずに試せます。分類結果や下書きには、用意された内容を使います。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "「提出」「通知」「催促」はデモ内の体験です。実際の担当者への送信や、業務データのサーバー保存は行いません。",
+    "after": "「提出」「通知」「催促」はデモ内の操作です。実際の担当者への送信や、業務データのサーバーへの保存は行いません。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "「要確認」は見直す箇所の例です。すべての誤りを検出する機能ではありません。下書き全体を人が確認する前提です。",
+    "after": "「要確認」は見直す箇所の例です。すべての誤りを検出する機能ではありません。下書き全体を担当者が確認してください。",
+    "inMD": true
+  },
+  {
+    "file": "src/construction-story.js",
+    "before": "体験しながら、今の報告書で毎回書いている項目、現場への聞き直しが多い項目、提出前に確認したい項目を思い浮かべてみてください。自社ではどこを自動化し、どこを人が確認するかを考える材料になります。",
+    "after": "今の報告書で毎回書いている項目、現場への聞き直しが多い項目、提出前に確認したい項目を思い浮かべてみてください。どの作業を自動化し、どこを担当者が確認するかを検討できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "受付・ナレッジ・投稿",
+    "after": "受付・社内情報・投稿",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "写真を探す、書き写す、聞き直す。その負担を見直すヒントを、写真整理・下書き・管理側の確認までの体験で。",
+    "after": "写真の整理、報告書の下書きの確認・修正、提出後の管理側の確認を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "品質インシデントを<br>画面で追う",
+    "after": "品質インシデントの<br>原因と是正を確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "品質インシデントを画面で追う",
+    "after": "品質インシデントの原因と是正を確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "発見→原因候補→是正・承認まで、架空データで画面構成を確認できます。",
+    "after": "品質トラブルの事例を開き、原因候補の比較から是正・承認までを試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "発見",
+    "after": "優先して対応する案件を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "原因候補",
+    "after": "原因候補と、その根拠を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "是正・承認",
+    "after": "処置内容と記録を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "時刻ごとのメモをまとめ、確認して記録する体験です。面談・日報・一覧もあります。",
+    "after": "申し送りや面談のメモを記録にまとめ、内容を確認できます。日報の確認も試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "面談を確認",
+    "after": "面談から経過記録を作る。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "日報を見る",
+    "after": "提出された記録を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "1タップ質問→結論カード→条文根拠確認の代表3手を、社員向けチャット画面で体験できます。",
+    "after": "知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "質問する",
+    "after": "用意された質問から試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "結論を見る",
+    "after": "条件や必要な申請を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "根拠を見る",
+    "after": "該当する規程を開く。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "受入検査の照合と<br>承認を見る",
+    "after": "受入検査の<br>照合と承認を見る",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "図面と証明書の照合、保留、承認の画面構成を確認できます。",
+    "after": "図面と材料証明書の照合、保留理由の確認、承認の画面を見られます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "照合",
+    "after": "照合結果を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "保留一覧",
+    "after": "保留一覧で確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "承認",
+    "after": "承認時の確認内容を見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "指定管理者向けの単一体育館デモです。自治体版とは別の体験です。",
+    "after": "施設の利用可否や設備の記録を確認し、画像を見て対応が必要か判断する操作を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "施設状況",
+    "after": "施設の状況と要対応の項目を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "設備カルテ",
+    "after": "場所・設備一覧から記録を開く。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "画像確認",
+    "after": "対応が必要か、問題なしかを選ぶ。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "空で戻る車に<br>帰り荷候補を出す",
+    "after": "空で戻る車に<br>積める荷物を探す",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "空で戻る車に帰り荷候補を出す",
+    "after": "空で戻る車に積める荷物を探す",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "依頼を同じ一覧に揃え、空で戻る車へ隣の荷物を候補として出します。載せるかは人が決めます。",
+    "after": "配車状況と帰り荷の候補を確認できます。積む荷物は担当者が決めます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "今日の手配",
+    "after": "受注一覧と配車盤を見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "帰り荷候補",
+    "after": "候補を積むかどうか決める。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "人が確定",
+    "after": "休息時間やFAXの確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "DDからEXIT試算まで<br>ひとつの画面で",
+    "after": "DDの結果を確認し、<br>EXITを試算する",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "DDからEXIT試算までひとつの画面で",
+    "after": "DDの結果を確認し、EXITを試算する",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "サンプル企業で主軸を変え、簿外処置と株式価値の連動を試せます。買収・再生の伴走向けです。",
+    "after": "サンプル企業の改善策を切り替えて、株式価値と目標との差を比較できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "EXIT",
+    "after": "企業情報と試算結果を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "主軸切替",
+    "after": "効率化・不採算整理・戦略見直し。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "届いた問い合わせに確認結果と返信下書きを並べます。根拠の表を見てから、返す内容は人が決めます。",
+    "after": "在庫表と照らし合わせながら、問い合わせへの返信下書きを確認できます。返信内容は担当者が決めます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "問い合わせを開く",
+    "after": "届いた問い合わせを確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "在庫表",
+    "after": "在庫数を照らし合わせる。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "人が返す",
+    "after": "デモでは実際に送信しません。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "現場の段取り案を<br>組み立てる",
+    "after": "電気工事の<br>段取りを確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "現場の段取り案を組み立てる",
+    "after": "電気工事の段取りを確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "入力から計画・出力まで、電気工事の段取り生成を想定したデモです。",
+    "after": "メールやFAXの依頼をもとに段取り案を確認し、申請と人員の準備を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "依頼一覧",
+    "after": "依頼一覧から選ぶ。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "段取り案",
+    "after": "工事内容や日程を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/data.js",
+    "before": "申請の準備",
+    "after": "申請書を確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "DDからEXIT試算まで、",
+    "after": "DDの結果を確認し、",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "ひとつの画面で。",
+    "after": "EXITを試算する。",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "サンプル企業で主軸を変え、",
+    "after": "サンプル企業の改善策を切り替えて、",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "簿外処置と株式価値の連動を試せます。",
+    "after": "株式価値の試算と、目標との差を比較できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "EXIT試算から体験する",
+    "after": "EXIT試算のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "買収・再生",
+    "after": "買収・再生の担当者",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "体験の流れ",
+    "after": "試せること",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "代表3手",
+    "after": "改善策ごとの試算",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "サンプル企業でEXITを見る。",
+    "after": "サンプル企業のEXIT試算を見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "主軸切替",
+    "after": "改善策の比較",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "主軸を変えて処置が動く。",
+    "after": "改善策を変えて、試算結果を比較する。",
+    "inMD": true
+  },
+  {
+    "file": "src/dd-ma-story.js",
+    "before": "架空のサンプル企業・固定試算です。サンプルモードはAPIキー不要です。",
+    "after": "架空の企業を使い、用意された条件で試算するデモです。サンプルはAPIキーを用意せずに試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "探していた写真が、すぐそこに。",
+    "after": "工種ごとに写真を整理する。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "一から書く前に、下書きから。",
+    "after": "報告書の下書きを確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "現場の記録を、事務へつなぐ。",
+    "after": "提出された日報を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "工種で分類。名前もわかりやすく。",
+    "after": "現場名・工種・日付でファイル名を付ける。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "報告書のサンプルを選ぶ入口。",
+    "after": "日報サンプルを選んで試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "届いた日報と確認状況を、一か所で。",
+    "after": "日報の内容と確認状況を、管理画面で確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "写真を整え、下書きを確認。",
+    "after": "写真を整理し、報告書の下書きを確認。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "現場と事務をつなぐ流れを、体験できます。",
+    "after": "提出した日報を、管理側で確認する操作も試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "体験の流れ",
+    "after": "体験する作業",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "下書きの仕上げ",
+    "after": "下書きの確認",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "人が確認",
+    "after": "担当者が確認",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "写真整理から体験する",
+    "after": "写真整理のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "探す・書き写す時間を、",
+    "after": "写真整理と報告書作成を、",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "確認して仕上げる時間へ。",
+    "after": "サンプルで試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "削減効果は業務や運用によって異なります。このデモでは、改善の方法を確かめられます。",
+    "after": "削減できる時間は業務や使い方によって異なります。このデモでは、写真整理と報告書作成の手順を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "写真整理から順に進むと、提出後の確認までつながります。",
+    "after": "写真整理から、日報の提出後の確認まで順番に試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "写真整理を試す",
+    "after": "写真整理のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "下書きから試す",
+    "after": "報告書のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "管理側の画面を見る",
+    "after": "管理側のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "用意された写真・文章を使うサンプルです。",
+    "after": "用意された写真と文章で試すデモです。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "提出・通知・催促はデモ内の体験で、実際の送信やサーバー保存は行いません。",
+    "after": "提出・通知・催促はデモ内の操作です。実際の送信やサーバーへの保存は行いません。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "毎日の記録を、",
+    "after": "写真整理と報告書づくりを、",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "もう少し軽く。",
+    "after": "試してみてください。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "毎回書く項目、聞き直しが多い項目。",
+    "after": "毎回書く項目や、現場に聞き直すことが多い項目。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "どの作業を変えたいか、試しながら考えてみませんか。",
+    "after": "今の仕事と比べながら、操作してみてください。",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "建設デモの入口を見る",
+    "after": "建設デモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/demo-story.js",
+    "before": "どんな業務の悩みに役立つ？",
+    "after": "こんな業務で使えます",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "届いた依頼から、",
+    "after": "工事の依頼をもとに、",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "申請・人員・書類が並びます。",
+    "after": "申請と人員の準備を進める。",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "メールやFAXの依頼を開き、根拠を見て確定する。",
+    "after": "メールやFAXの依頼内容と、段取り案を確認します。",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "申請と人員の準備まで同じ流れで進めます。",
+    "after": "申請書の確認と人員の手配も、画面で試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "届いた依頼から見る",
+    "after": "工事の段取りのデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "現場・手配",
+    "after": "現場監督・手配担当",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "体験の流れ",
+    "after": "体験する作業",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "代表3手",
+    "after": "依頼確認と準備",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "仕上げ",
+    "after": "段取りの確定",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "人が確認",
+    "after": "担当者が確認",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "メールかFAXの依頼から始める。",
+    "after": "メールやFAXで届いた依頼を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "根拠を見て、段取り案を確定する。",
+    "after": "依頼の原文と照らし合わせて確定する。",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "サンプル依頼のデモです。所轄・期限・人員は説明用の値です。",
+    "after": "サンプルの工事依頼を使ったデモです。所轄・期限・人員は説明用の情報です。",
+    "inMD": true
+  },
+  {
+    "file": "src/field-dandori-story.js",
+    "before": "実案件の申請適合や、自動での提出・配置依頼は行いません。最終確認は担当者が行います。",
+    "after": "実際の申請に必要な条件を満たすかは、担当者が確認してください。申請の提出や人員の配置依頼は、実際には行いません。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "体育館の状態と履歴を、",
+    "after": "体育館の利用状況と、",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "ひとつの視点で。",
+    "after": "設備の記録を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "施設の状況からカルテ、画像確認へ。",
+    "after": "施設の利用可否や、設備ごとの記録を確認できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "指定管理の仕事を画面で追えます。",
+    "after": "画像を見て、対応が必要か判断する操作も試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "施設の状況から見る",
+    "after": "施設管理のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "指定管理・施設",
+    "after": "指定管理者・施設担当",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "体験の流れ",
+    "after": "確認する内容",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "代表3手",
+    "after": "施設・設備の状況",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "仕上げ",
+    "after": "対応の判断",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "画像確認",
+    "after": "画像を見て確認",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "今日の利用可否を見渡す。",
+    "after": "施設が利用できるか確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "カルテ",
+    "after": "設備の記録",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "設備の記録の線を開く。",
+    "after": "設備ごとの点検・対応記録を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "判断",
+    "after": "画像確認",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "画像で対応の要否を残す。",
+    "after": "画像を見て、対応が必要か記録する。",
+    "inMD": true
+  },
+  {
+    "file": "src/gym-facility-story.js",
+    "before": "架空の指定管理・固定日時のシナリオです。",
+    "after": "架空の施設を使い、日時を固定したデモです。",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "業種横断・社内ナレッジ",
+    "after": "社内規程・マニュアル",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "社内の用件から質問。",
+    "after": "知りたいことを質問すると、",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "結論と手続き、根拠の条文を確認できます。",
+    "after": "回答と必要な手続き、根拠となる規程を確認できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "チャットで体験する",
+    "after": "規程への質問を試す",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "体験の流れ",
+    "after": "体験する作業",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "代表3手",
+    "after": "質問と回答の確認",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "根拠",
+    "after": "回答の根拠",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "条文まで辿れる",
+    "after": "該当する規程",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "社内の用件から始める。",
+    "after": "知りたいことを質問する。",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "結論を見る",
+    "after": "回答を見る",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "結論と手続きを確認する。",
+    "after": "回答と手続きを確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "根拠の条文へ戻れる。",
+    "after": "回答の根拠となる規程を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "架空の会社のサンプル規程で試せます。APIキーなしでも代表3手を完走できます。",
+    "after": "架空の会社の規程を使ったデモです。APIキーを用意せずに、質問・回答・根拠の確認を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/internal-knowledge-story.js",
+    "before": "自社文書の投入や接続モードの切替は、設定から後段で試せます。",
+    "after": "自社文書の追加や接続方法の切り替えは、設定画面で試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "記録の種類に合わせて、整理と確認の画面を試せます。",
+    "after": "それぞれの記録をまとめ、内容を確認する操作を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "申し送りから体験する",
+    "after": "介護記録のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "体験の流れ",
+    "after": "記録の種類",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "3つの記録",
+    "after": "3種類",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "仕上げ",
+    "after": "内容の確認",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "人が確認",
+    "after": "担当者が確認",
+    "inMD": true
+  },
+  {
+    "file": "src/kaigo-handoff-story.js",
+    "before": "架空の利用者データです。録音は枠タップまたは入力の演出で、固定清書が主導線です。",
+    "after": "架空の利用者データで試せます。録音画面では、用意された会話や入力した内容を使い、記録を作る手順を体験できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "隣の荷物を候補として。",
+    "after": "積める荷物がないか探す。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "依頼が同じ一覧に並び、",
+    "after": "配車状況と帰り荷の候補を確認できます。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "載せるかは人が決めます。",
+    "after": "積む荷物は担当者が決めます。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "今日の配車から体験する",
+    "after": "配車のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "配車・運行",
+    "after": "配車・運行管理",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "体験の流れ",
+    "after": "体験する作業",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "代表3手",
+    "after": "帰り荷の選定",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "仕上げ",
+    "after": "荷物の決定",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "人が確定",
+    "after": "担当者が判断",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "件数と受注を見渡す。",
+    "after": "今日の受注と配車状況を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "空の車に候補が出る。",
+    "after": "帰り荷の候補から、積む荷物を選ぶ。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "人が確定",
+    "after": "未確認の項目",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "決めても確認は残る。",
+    "after": "配車後に必要な確認事項を見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "架空の fixtures・API 不要です。自動配車・運賃確定はありません。",
+    "after": "架空の依頼と車両を使ったデモです。APIへの接続は不要です。自動配車や運賃の確定は行いません。",
+    "inMD": true
+  },
+  {
+    "file": "src/logistics-dispatch-story.js",
+    "before": "提出・本番保管は行いません。商談用の図解フローは代表3手の範囲外です。",
+    "after": "実際の送信や業務データの保管は行いません。業務の仕組みを説明する図も、別に用意しています。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "品質トラブルの対応を、",
+    "after": "品質トラブルの原因と、",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "画面で追う。",
+    "after": "是正内容を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "発見から原因候補、是正・承認へ。",
+    "after": "不具合の発見から、原因の調査、是正・承認まで。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "架空の事例で対応の流れを試せます。",
+    "after": "架空の事例で、対応の手順を試せます。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "対応の流れを体験する",
+    "after": "品質管理のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "体験の流れ",
+    "after": "体験する作業",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "代表3手",
+    "after": "原因調査と是正",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "仕上げ",
+    "after": "最後の作業",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "発見した状況を残す。",
+    "after": "不具合の状況を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "是正と承認へつなぐ。",
+    "after": "是正内容と承認の手順を確認する。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "架空の工場・固定シナリオです。原因は候補の提示であり、自動確定ではありません。",
+    "after": "架空の工場を使った、用意された事例のデモです。原因候補は表示されますが、原因を自動で確定するものではありません。",
+    "inMD": true
+  },
+  {
+    "file": "src/quality-incident-story.js",
+    "before": "PDF保存は印刷プレビュー、提出はデモ内の通知です。実際の送信・本番保管は行いません。",
+    "after": "PDF保存では印刷プレビューが開きます。提出はデモ内の通知のみで、実際の送信や業務データの保管は行いません。",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "届いた型番から、",
+    "after": "型番の問い合わせを確認し、",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "下書きまで。",
+    "after": "返信の下書きを見直す。",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "確認結果と返信下書きが並び、",
+    "after": "在庫などの確認結果と、返信の下書きを見られます。",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "返す内容は人が決めます。",
+    "after": "在庫表と照らし合わせ、担当者が返信内容を決めます。",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "今日の問い合わせから体験する",
+    "after": "問い合わせ対応のデモを開く",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "営業・受注",
+    "after": "営業・受注担当",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "体験の流れ",
+    "after": "体験する作業",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "代表3手",
+    "after": "在庫確認と返信",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "仕上げ",
+    "after": "返信内容",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "人が返す",
+    "after": "担当者が確認",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "確認結果と下書きが並ぶ。",
+    "after": "在庫の確認結果と返信下書きを見る。",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "根拠を見る",
+    "after": "在庫表を確認する",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "人が返す",
+    "after": "返信内容を決める",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "架空の電材卸です。APIキーなしで代表3手を完走できます。",
+    "after": "架空の電材卸の問い合わせで、在庫確認と返信下書きの確認を試せます。APIキーは不要です。",
+    "inMD": true
+  },
+  {
+    "file": "src/wholesale-quote-story.js",
+    "before": "自動返信・価格の自動確定・在庫引当はありません。",
+    "after": "実際の返信や価格の自動確定、在庫引当は行いません。",
+    "inMD": true
+  }
+]

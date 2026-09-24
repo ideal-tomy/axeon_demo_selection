@@ -1,0 +1,97 @@
+{
+  "device": "pc",
+  "id": "how",
+  "url": "/?view=how",
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "h3",
+      "text": "先に動く画面を見てもらいます",
+      "lines": [
+        "先に動く画面を見てもらいます"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "提案書だけでは、どんな画面になるか伝わりにくいことがあります。お話を聞いたあと、実際に操作できる画面をつくり、それを見ながら決めていきます。",
+      "lines": [
+        "提案書だけでは、どんな画面になるか",
+        "伝わりにくいことがあります。お話を聞いたあと、実際に",
+        "操作できる画面をつくり、それを見ながら決めて",
+        "いきます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "b",
+      "text": "いまのやり方を聞く",
+      "lines": [
+        "いまのやり方を聞く"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "誰が、何を、どの紙に書いているかを教えてください。1時間ほどです。",
+      "lines": [
+        "誰が、何を、どの紙に書いているかを",
+        "教えてください。1時間ほどです。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "b",
+      "text": "動く画面をつくる",
+      "lines": [
+        "動く画面をつくる"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "実際に触れる画面をこちらで用意します。ここまでは費用をいただきません。",
+      "lines": [
+        "実際に触れる画面をこちらで用意します。ここまでは",
+        "費用をいただきません。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "b",
+      "text": "使ってもらい、直す",
+      "lines": [
+        "使ってもらい、直す"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "現場の方に使ってもらい、実際の仕事に合わないところを直します。そのうえで、開発を進めるか決めてください。",
+      "lines": [
+        "現場の方に使ってもらい、実際の仕事に合わない",
+        "ところを直します。そのうえで、開発を進めるか",
+        "決めてください。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": false,
+  "links": [],
+  "brokenImages": []
+}

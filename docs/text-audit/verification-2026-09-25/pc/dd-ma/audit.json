@@ -1,0 +1,278 @@
+{
+  "device": "pc",
+  "id": "dd-ma",
+  "url": "/?demo=dd-ma",
+  "detail": true,
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "p.story-eyebrow",
+      "text": "買収・再生・DD",
+      "lines": [
+        "買収・再生・DD"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h1",
+      "text": "DDの結果を確認し、EXITを試算する。",
+      "lines": [
+        "DDの結果を確認し、EXITを試算する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-intro",
+      "text": "サンプル企業の改善策を切り替えて、株式価値の試算と、目標との差を比較できます。",
+      "lines": [
+        "サンプル企業の改善策を切り替えて、株式価値の試算と、目標との差を比較できます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "lines": [
+        "EXIT試算のデモを開く↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "使う人",
+      "lines": [
+        "使う人"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "買収・再生の担当者",
+      "lines": [
+        "買収・再生の担当者"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "試せること",
+      "lines": [
+        "試せること"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "改善策ごとの試算",
+      "lines": [
+        "改善策ごとの試算"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "仕上げ",
+      "lines": [
+        "仕上げ"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "問いと返した時間",
+      "lines": [
+        "問いと返した時間"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "このデモで見られること",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "01 / 企業選択",
+      "lines": [
+        "01/企業選択"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "サンプル企業のEXIT試算を見る。",
+      "lines": [
+        "サンプル企業の",
+        "EXIT試算を見る。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "企業情報と試算結果を確認。",
+      "lines": [
+        "企業情報と試算結果を確認。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "02 / 改善策の比較",
+      "lines": [
+        "02/改善策の比較"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "改善策を変えて、試算結果を比較する。",
+      "lines": [
+        "改善策を変えて、",
+        "試算結果を比較する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "効率化・不採算整理・戦略見直し。",
+      "lines": [
+        "効率化・不採算整理・戦略見直し。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "03 / 問いと時間",
+      "lines": [
+        "03/問いと時間"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "判断の問いと返した時間。",
+      "lines": [
+        "判断の問いと",
+        "返した時間。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "問いと時間",
+      "lines": [
+        "問いと時間"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "体験について",
+      "lines": [
+        "体験について"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-section-lead",
+      "text": "架空の企業を使い、用意された条件で試算するデモです。サンプルはAPIキーを用意せずに試せます。提出・本番保管は行いません。自社入力やライブ層は代表3手の範囲外です。",
+      "lines": [
+        "架空の企業を使い、用意された条件で試算するデモです。サンプルはAPIキーを用意せずに試せます。",
+        "提出・本番保管は行いません。自社入力やライブ層は代表3手の範囲外です。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "lines": [
+        "EXIT試算のデモを開く↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "関連するデモも見る",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "規程・マニュアルに聞いてみる業種を選ばない",
+      "lines": [
+        "規程・マニュアルに聞いてみる",
+        "業種を選ばない"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "品質インシデントの原因と是正を確認する製造・設備",
+      "lines": [
+        "品質インシデントの原因と是正を確認する",
+        "製造・設備"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "現場写真の整理から、報告書と確認業務まで建設・現場",
+      "lines": [
+        "現場写真の整理から、報告書と確認業務まで",
+        "建設・現場"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": false,
+  "links": [
+    {
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "href": "https://dd-demo-red.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "EXIT試算のデモを開く ↗（別タブで開きます）",
+      "href": "https://dd-demo-red.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "brokenImages": []
+}

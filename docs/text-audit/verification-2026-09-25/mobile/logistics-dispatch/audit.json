@@ -1,0 +1,284 @@
+{
+  "device": "mobile",
+  "id": "logistics-dispatch",
+  "url": "/?demo=logistics-dispatch",
+  "detail": true,
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "p.story-eyebrow",
+      "text": "運送・配車",
+      "lines": [
+        "運送・配車"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h1",
+      "text": "空で戻る車に、積める荷物がないか探す。",
+      "lines": [
+        "空で戻る車に、",
+        "積める荷物が",
+        "ないか探す。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-intro",
+      "text": "配車状況と帰り荷の候補を確認できます。積む荷物は担当者が決めます。",
+      "lines": [
+        "配車状況と帰り荷の候補を確認できます。",
+        "積む荷物は担当者が決めます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "配車のデモを開く ↗（別タブで開きます）",
+      "lines": [
+        "配車のデモを開く↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "使う人",
+      "lines": [
+        "使う人"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "配車・運行管理",
+      "lines": [
+        "配車・運行管理"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "体験する作業",
+      "lines": [
+        "体験する作業"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "帰り荷の選定",
+      "lines": [
+        "帰り荷の選定"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "荷物の決定",
+      "lines": [
+        "荷物の決定"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "担当者が判断",
+      "lines": [
+        "担当者が判断"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "このデモで見られること",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "01 / 今日の手配",
+      "lines": [
+        "01/今日の手配"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "今日の受注と配車状況を確認する。",
+      "lines": [
+        "今日の受注と",
+        "配車状況を",
+        "確認する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "受注一覧と配車盤を見る。",
+      "lines": [
+        "受注一覧と配車盤を見る。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "02 / 帰り荷候補",
+      "lines": [
+        "02/帰り荷候補"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "帰り荷の候補から、積む荷物を選ぶ。",
+      "lines": [
+        "帰り荷の候補から、",
+        "積む荷物を選ぶ。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "候補を積むかどうか決める。",
+      "lines": [
+        "候補を積むかどうか決める。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "03 / 未確認の項目",
+      "lines": [
+        "03/未確認の項目"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "配車後に必要な確認事項を見る。",
+      "lines": [
+        "配車後に必要な",
+        "確認事項を見る。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "休息時間やFAXの確認。",
+      "lines": [
+        "休息時間やFAXの確認。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "体験について",
+      "lines": [
+        "体験について"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-section-lead",
+      "text": "架空の依頼と車両を使ったデモです。APIへの接続は不要です。自動配車や運賃の確定は行いません。実際の送信や業務データの保管は行いません。業務の仕組みを説明する図も、別に用意しています。",
+      "lines": [
+        "架空の依頼と車両を使ったデモです。APIへの接続は",
+        "不要です。自動配車や運賃の確定は行いません。",
+        "実際の送信や業務データの保管は行いません。業務の",
+        "仕組みを説明する図も、別に用意しています。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "配車のデモを開く ↗（別タブで開きます）",
+      "lines": [
+        "配車のデモを開く↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "関連するデモも見る",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "DDの結果を確認し、EXITを試算する業種を選ばない",
+      "lines": [
+        "DDの結果を確認し、EXITを試算する",
+        "業種を選ばない"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "現場写真の整理から、報告書と確認業務まで建設・現場",
+      "lines": [
+        "現場写真の整理から、報告書と確認業務まで",
+        "建設・現場"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "受入検査の照合と承認を見る製造・設備",
+      "lines": [
+        "受入検査の照合と承認を見る",
+        "製造・設備"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": true,
+  "links": [
+    {
+      "text": "配車のデモを開く ↗（別タブで開きます）",
+      "href": "https://driver-dash-demo.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "配車のデモを開く ↗（別タブで開きます）",
+      "href": "https://driver-dash-demo.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "brokenImages": []
+}

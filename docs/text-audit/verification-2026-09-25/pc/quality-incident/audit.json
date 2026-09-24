@@ -1,0 +1,278 @@
+{
+  "device": "pc",
+  "id": "quality-incident",
+  "url": "/?demo=quality-incident",
+  "detail": true,
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "p.story-eyebrow",
+      "text": "製造・品質",
+      "lines": [
+        "製造・品質"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h1",
+      "text": "品質トラブルの原因と、是正内容を確認する。",
+      "lines": [
+        "品質トラブルの原因と、是正内容を確認する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-intro",
+      "text": "不具合の発見から、原因の調査、是正・承認まで。架空の事例で、対応の手順を試せます。",
+      "lines": [
+        "不具合の発見から、原因の調査、是正・承認まで。架空の事例で、対応の手順を試せます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "lines": [
+        "品質管理のデモを開く↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "使う人",
+      "lines": [
+        "使う人"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "品質・製造",
+      "lines": [
+        "品質・製造"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "体験する作業",
+      "lines": [
+        "体験する作業"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "原因調査と是正",
+      "lines": [
+        "原因調査と是正"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "最後の作業",
+      "lines": [
+        "最後の作業"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "strong",
+      "text": "是正・承認",
+      "lines": [
+        "是正・承認"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "このデモで見られること",
+      "lines": [
+        "このデモで見られること"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "01 / 発見",
+      "lines": [
+        "01/発見"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "不具合の状況を確認する。",
+      "lines": [
+        "不具合の状況を",
+        "確認する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "優先して対応する案件を確認。",
+      "lines": [
+        "優先して対応する案件を確認。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "02 / 原因候補",
+      "lines": [
+        "02/原因候補"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "原因の候補を見比べる。",
+      "lines": [
+        "原因の候補を",
+        "見比べる。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "原因候補と、その根拠を確認。",
+      "lines": [
+        "原因候補と、その根拠を確認。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.story-number",
+      "text": "03 / 是正・承認",
+      "lines": [
+        "03/是正・承認"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h3",
+      "text": "是正内容と承認の手順を確認する。",
+      "lines": [
+        "是正内容と承認の",
+        "手順を確認する。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "処置内容と記録を確認。",
+      "lines": [
+        "処置内容と記録を確認。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "体験について",
+      "lines": [
+        "体験について"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p.story-section-lead",
+      "text": "架空の工場を使った、用意された事例のデモです。原因候補は表示されますが、原因を自動で確定するものではありません。PDF保存では印刷プレビューが開きます。提出はデモ内の通知のみで、実際の送信や業務データの保管は行いません。",
+      "lines": [
+        "架空の工場を使った、用意された事例のデモです。原因候補は表示されますが、原因を自動で確定するものではありません。",
+        "PDF保存では印刷プレビューが開きます。提出はデモ内の通知のみで、実際の送信や業務データの保管は行いません。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "a.story-button",
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "lines": [
+        "品質管理のデモを開く↗"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "h2",
+      "text": "関連するデモも見る",
+      "lines": [
+        "関連するデモも見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "受入検査の照合と承認を見る製造・設備",
+      "lines": [
+        "受入検査の照合と承認を見る",
+        "製造・設備"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "規程・マニュアルに聞いてみる業種を選ばない",
+      "lines": [
+        "規程・マニュアルに聞いてみる",
+        "業種を選ばない"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span",
+      "text": "申し送り・面談・日報をまとめる医療・介護・保育・薬局",
+      "lines": [
+        "申し送り・面談・日報をまとめる",
+        "医療・介護・保育・薬局"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": false,
+  "links": [
+    {
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "href": "https://axeonmanufacturing02.vercel.app/?from=axeon-demo-selection"
+    },
+    {
+      "text": "品質管理のデモを開く ↗（別タブで開きます）",
+      "href": "https://axeonmanufacturing02.vercel.app/?from=axeon-demo-selection"
+    }
+  ],
+  "brokenImages": []
+}

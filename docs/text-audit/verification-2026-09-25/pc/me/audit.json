@@ -1,0 +1,83 @@
+{
+  "device": "pc",
+  "id": "me",
+  "url": "/?view=me",
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "h3",
+      "text": "AXEON株式会社",
+      "lines": [
+        "AXEON株式会社"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "横浜で、Webサイトと業務システムをつくっています。中小企業の現場で使うシステムを、必要なところからつくり、使いながら直していきます。",
+      "lines": [
+        "横浜で、Webサイトと業務システムをつくっています。中",
+        "小企業の現場で使うシステムを、必要なところから",
+        "つくり、使いながら直していきます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "相談する",
+      "lines": [
+        "相談する"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "メールで受け付けています",
+      "lines": [
+        "メールで受け付けています"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "会社のサイト",
+      "lines": [
+        "会社のサイト"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "AXEON株式会社",
+      "lines": [
+        "AXEON株式会社"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": false,
+  "links": [
+    {
+      "text": "相談するメールで受け付けています›",
+      "href": "#"
+    },
+    {
+      "text": "会社のサイトAXEON株式会社›",
+      "href": "#"
+    }
+  ],
+  "brokenImages": []
+}

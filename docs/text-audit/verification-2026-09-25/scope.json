@@ -1,0 +1,22 @@
+{
+  "changed": [
+    "index.html",
+    "src/approval-inspection-story.js",
+    "src/construction-story.js",
+    "src/data.js",
+    "src/dd-ma-story.js",
+    "src/demo-story.js",
+    "src/field-dandori-story.js",
+    "src/gym-facility-story.js",
+    "src/internal-knowledge-story.js",
+    "src/kaigo-handoff-story.js",
+    "src/logistics-dispatch-story.js",
+    "src/quality-incident-story.js",
+    "src/wholesale-quote-story.js"
+  ],
+  "structure": "JS AST unchanged except Japanese string values; HTML tags and attributes unchanged",
+  "unchanged": [
+    "src/style.css",
+    "src/main.js"
+  ]
+}

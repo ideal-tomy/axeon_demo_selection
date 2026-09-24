@@ -2,14 +2,14 @@
 export const kaigoHandoffStory = {
   eyebrow: '介護・記録',
   title: ['申し送りから、', '日々の記録まで。'],
-  intro: ['申し送り・面談・日報。', '記録の種類に合わせて、整理と確認の画面を試せます。'],
+  intro: ['申し送り・面談・日報。', 'それぞれの記録をまとめ、内容を確認する操作を試せます。'],
   audience: '介護職員と施設管理者',
-  cta: '申し送りから体験する',
+  cta: '介護記録のデモを開く',
   path: '/?from=axeon-demo-selection',
   meta: [
     ['使う人', '介護職員'],
-    ['体験の流れ', '3つの記録'],
-    ['仕上げ', '人が確認'],
+    ['記録の種類', '3種類'],
+    ['内容の確認', '担当者が確認'],
   ],
   steps: [
     {
@@ -32,7 +32,7 @@ export const kaigoHandoffStory = {
     },
   ],
   conditionSummary: [
-    '架空の利用者データです。録音は枠タップまたは入力の演出で、固定清書が主導線です。',
+    '架空の利用者データで試せます。録音画面では、用意された会話や入力した内容を使い、記録を作る手順を体験できます。',
     '記録はブラウザの sessionStorage に保持されます。再読み込みで消えます。実際の送信は行いません。',
   ],
   related: ['internal-knowledge', 'gym-facility', 'quality-incident'],

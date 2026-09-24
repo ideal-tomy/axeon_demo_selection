@@ -198,8 +198,6 @@ function syncUrl(replace) {
     else if (state.view === 'v-how') params.set('view', 'how')
     else if (state.view === 'v-me') params.set('view', 'me')
   }
-  // 開発時の ?intro=local はルーティング更新で落とさない
-  if (new URLSearchParams(location.search).get('intro') === 'local') params.set('intro', 'local')
   var qs = params.toString()
   var url = qs ? (location.pathname + '?' + qs) : location.pathname
   var hist = { view: state.view, category: state.category, query: state.query, demoId: state.demoId }
@@ -378,11 +376,6 @@ function openDetail(id, opts) {
   detail.scrollTop = 0
   detail.classList.add('open')
   document.body.classList.add('lock')
-  var introFrame = dIn.querySelector('[data-intro-embed]')
-  if (introFrame) {
-    var src = introFrame.getAttribute('data-intro-src')
-    if (src) introFrame.setAttribute('src', src)
-  }
   var back = document.getElementById('dBack')
   if (back) back.focus()
   if (!opts.skipUrl) syncUrl(!!opts.replace)
@@ -390,8 +383,6 @@ function openDetail(id, opts) {
 
 function closeDetail(opts) {
   opts = opts || {}
-  var introFrame = dIn.querySelector('[data-intro-embed]')
-  if (introFrame) introFrame.setAttribute('src', '')
   detail.classList.remove('open')
   document.body.classList.remove('lock')
   setDetailBackground(false)

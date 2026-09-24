@@ -1,0 +1,180 @@
+{
+  "device": "mobile",
+  "id": "cat",
+  "url": "/?view=cat",
+  "errors": [
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "WebSocket connection to 'ws://127.0.0.1:5173/?token=RVEZ9GA_GiP_' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS",
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5173/ <--[HTTP]--> 127.0.0.1:5173/ (server)\n  (browser) 127.0.0.1:5173/ <--[WebSocket (failing)]--> 127.0.0.1:5173/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr ."
+  ],
+  "failedRequests": [],
+  "responseErrors": [],
+  "structureMatches": true,
+  "blocks": [
+    {
+      "selector": "h3",
+      "text": "業種から見る",
+      "lines": [
+        "業種から見る"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "p",
+      "text": "業種を選ぶと、関連するデモを見られます。",
+      "lines": [
+        "業種を選ぶと、関連するデモを見られます。"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "建設・現場",
+      "lines": [
+        "建設・現場"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "写真・報告書・手配",
+      "lines": [
+        "写真・報告書・手配"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "製造・設備",
+      "lines": [
+        "製造・設備"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "点検・検査・品質",
+      "lines": [
+        "点検・検査・品質"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "医療・介護・保育・薬局",
+      "lines": [
+        "医療・介護・保育・薬局"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "記録・引き継ぎ",
+      "lines": [
+        "記録・引き継ぎ"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "自治体・地域",
+      "lines": [
+        "自治体・地域"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "施設・防災",
+      "lines": [
+        "施設・防災"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "飲食・食品",
+      "lines": [
+        "飲食・食品"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "シフト・仕込み",
+      "lines": [
+        "シフト・仕込み"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "人材・士業",
+      "lines": [
+        "人材・士業"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "派遣・紹介・SFA",
+      "lines": [
+        "派遣・紹介・SFA"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "不動産",
+      "lines": [
+        "不動産"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "物件マッチング",
+      "lines": [
+        "物件マッチング"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.tt",
+      "text": "業種を選ばない",
+      "lines": [
+        "業種を選ばない"
+      ],
+      "shortLines": [],
+      "overflow": false
+    },
+    {
+      "selector": "span.cc",
+      "text": "受付・社内情報・投稿",
+      "lines": [
+        "受付・社内情報・投稿"
+      ],
+      "shortLines": [],
+      "overflow": false
+    }
+  ],
+  "pageOverflow": false,
+  "links": [],
+  "brokenImages": []
+}

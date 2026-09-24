@@ -57,7 +57,7 @@ export const CATEGORIES = [
   { id:'food', label:'飲食・食品', tile:null, desc:'シフト・仕込み', bg:'#c45a2a' },
   { id:'talent', label:'人材・士業', tile:null, desc:'派遣・紹介・SFA', bg:'#2b3fa0' },
   { id:'realestate', label:'不動産', tile:null, desc:'物件マッチング', bg:'#3a5f4a' },
-  { id:'cross-industry', label:'業種を選ばない', tile:null, desc:'受付・ナレッジ・投稿', bg:'#5b34c4' }
+  { id:'cross-industry', label:'業種を選ばない', tile:null, desc:'受付・社内情報・投稿', bg:'#5b34c4' }
 ]
 
 /**
@@ -73,7 +73,7 @@ export const DEMOS = [
     cls:'c1', icon:'camera', mock:'photos',
     title:'現場写真の整理から<br>報告書と確認業務まで',
     plain:'現場写真の整理から、報告書と確認業務まで',
-    lead:'写真を探す、書き写す、聞き直す。その負担を見直すヒントを、写真整理・下書き・管理側の確認までの体験で。',
+    lead:'写真の整理、報告書の下書きの確認・修正、提出後の管理側の確認を試せます。',
     one:'写真の整理から報告書の下書き、確認・提出、管理側への引き継ぎまでをサンプルで体験できます。',
     audience:'現場監督と事務担当者・工事責任者',
     url:'https://construction-demo-six.vercel.app/',
@@ -137,9 +137,9 @@ export const DEMOS = [
     id:'quality-incident', listed:true, featuredOrder:3,
     category:'factory', tile:'factory', tags:['製造','品質','是正'],
     cls:'c2', icon:'gear', mock:'incident',
-    title:'品質インシデントを<br>画面で追う',
-    plain:'品質インシデントを画面で追う',
-    lead:'発見→原因候補→是正・承認まで、架空データで画面構成を確認できます。',
+    title:'品質インシデントの<br>原因と是正を確認する',
+    plain:'品質インシデントの原因と是正を確認する',
+    lead:'品質トラブルの事例を開き、原因候補の比較から是正・承認までを試せます。',
     one:'品質トラブルの対応フローを、コンソール画面で追えます。',
     audience:'品質と製造の担当',
     url:'https://axeonmanufacturing02.vercel.app/',
@@ -149,9 +149,9 @@ export const DEMOS = [
     can:['ダッシュボードから優先案件の発見とAI分析を確認できます','原因候補を根拠付きで見比べられます','是正・承認画面でPDF保存と提出をデモ内で試せます'],
     planned:[],
     shots:[
-      { key:'list', cap:'発見', image:'/images/demos/quality-incident/01.jpg' },
-      { key:'card', cap:'原因候補', image:'/images/demos/quality-incident/02.jpg' },
-      { key:'form', cap:'是正・承認', image:'/images/demos/quality-incident/03.jpg' }
+      { key:'list', cap:'優先して対応する案件を確認。', image:'/images/demos/quality-incident/01.jpg' },
+      { key:'card', cap:'原因候補と、その根拠を確認。', image:'/images/demos/quality-incident/02.jpg' },
+      { key:'form', cap:'処置内容と記録を確認。', image:'/images/demos/quality-incident/03.jpg' }
     ],
     relatedIds:['approval-inspection','internal-knowledge','kaigo-handoff']
   },
@@ -161,7 +161,7 @@ export const DEMOS = [
     cls:'c4', icon:'user', mock:'handoff',
     title:'申し送り・面談・<br>日報をまとめる',
     plain:'申し送り・面談・日報をまとめる',
-    lead:'時刻ごとのメモをまとめ、確認して記録する体験です。面談・日報・一覧もあります。',
+    lead:'申し送りや面談のメモを記録にまとめ、内容を確認できます。日報の確認も試せます。',
     one:'介護施設の申し送り・面談・日報を、同じ流れで触れます。',
     audience:'介護職員と管理者',
     url:'https://kaigo-handoff-demo.vercel.app/',
@@ -172,8 +172,8 @@ export const DEMOS = [
     planned:[],
     shots:[
       { key:'form', cap:'録音する', image:'/images/demos/kaigo-handoff/01.jpg' },
-      { key:'list', cap:'面談を確認', image:'/images/demos/kaigo-handoff/02.jpg' },
-      { key:'card', cap:'日報を見る', image:'/images/demos/kaigo-handoff/03.jpg' }
+      { key:'list', cap:'面談から経過記録を作る。', image:'/images/demos/kaigo-handoff/02.jpg' },
+      { key:'card', cap:'提出された記録を確認。', image:'/images/demos/kaigo-handoff/03.jpg' }
     ],
     relatedIds:['internal-knowledge','gym-facility','quality-incident']
   },
@@ -201,7 +201,7 @@ export const DEMOS = [
     cls:'c3', icon:'search',
     title:'規程・マニュアルに<br>聞いてみる',
     plain:'規程・マニュアルに聞いてみる',
-    lead:'1タップ質問→結論カード→条文根拠確認の代表3手を、社員向けチャット画面で体験できます。',
+    lead:'知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。',
     one:'社内規程への質問から結論・根拠条文の確認まで、代表3手で体験できます。',
     audience:'総務・人事・DX推進の決裁者と現場社員',
     url:'https://internal-knowledge-demo.vercel.app/',
@@ -211,9 +211,9 @@ export const DEMOS = [
     can:['代表用件を1タップで質問し、結論・手続き・次のアクションを確認できます','根拠を見るから該当条文の抜粋と照合理由を確認できます','自社ナレッジ投入やアクセスモード切り替えを試せます'],
     planned:[],
     shots:[
-      { key:'form', cap:'質問する', image:'/images/demos/internal-knowledge/01.jpg' },
-      { key:'card', cap:'結論を見る', image:'/images/demos/internal-knowledge/02.jpg' },
-      { key:'list', cap:'根拠を見る', image:'/images/demos/internal-knowledge/03.jpg' }
+      { key:'form', cap:'用意された質問から試せます。', image:'/images/demos/internal-knowledge/01.jpg' },
+      { key:'card', cap:'条件や必要な申請を確認。', image:'/images/demos/internal-knowledge/02.jpg' },
+      { key:'list', cap:'該当する規程を開く。', image:'/images/demos/internal-knowledge/03.jpg' }
     ],
     relatedIds:['construction-record','quality-incident','kaigo-handoff']
   },
@@ -275,9 +275,9 @@ export const DEMOS = [
     id:'approval-inspection', listed:true, featuredOrder:5,
     category:'factory', tile:'factory', tags:['製造','受入検査','承認'],
     cls:'c2', icon:'check',
-    title:'受入検査の照合と<br>承認を見る',
+    title:'受入検査の<br>照合と承認を見る',
     plain:'受入検査の照合と承認を見る',
-    lead:'図面と証明書の照合、保留、承認の画面構成を確認できます。',
+    lead:'図面と材料証明書の照合、保留理由の確認、承認の画面を見られます。',
     one:'受入検査の照合・保留・承認の画面を追えます。',
     audience:'検査と品質の担当',
     url:'https://approval-diagram.vercel.app/',
@@ -287,9 +287,9 @@ export const DEMOS = [
     can:['照合・保留・承認・基準改定をタブで辿れます','画面紹介としてご覧ください（画像内ボタンは操作対象外）'],
     planned:['Vercel反映'],
     shots:[
-      { key:'list', cap:'照合', image:'/images/demos/approval-inspection/01.jpg' },
-      { key:'check', cap:'保留一覧', image:'/images/demos/approval-inspection/02.jpg' },
-      { key:'form', cap:'承認', image:'/images/demos/approval-inspection/03.jpg' }
+      { key:'list', cap:'照合結果を確認。', image:'/images/demos/approval-inspection/01.jpg' },
+      { key:'check', cap:'保留一覧で確認。', image:'/images/demos/approval-inspection/02.jpg' },
+      { key:'form', cap:'承認時の確認内容を見る。', image:'/images/demos/approval-inspection/03.jpg' }
     ],
     relatedIds:['quality-incident','construction-record','internal-knowledge']
   },
@@ -371,7 +371,7 @@ export const DEMOS = [
     cls:'c5', icon:'bldg',
     title:'総合体育館の<br>施設管理を見る',
     plain:'総合体育館の施設管理を見る',
-    lead:'指定管理者向けの単一体育館デモです。自治体版とは別の体験です。',
+    lead:'施設の利用可否や設備の記録を確認し、画像を見て対応が必要か判断する操作を試せます。',
     one:'総合体育館の施設管理コンソールを触れます。',
     audience:'指定管理者と施設担当',
     url:'https://disaster-prevention-demo02.vercel.app/',
@@ -381,9 +381,9 @@ export const DEMOS = [
     can:['施設の状況・カルテ・画像確認を辿れます','判定の記録とやり直しをデモ内で試せます'],
     planned:['Vercel反映'],
     shots:[
-      { key:'list', cap:'施設状況', image:'/images/demos/gym-facility/01.jpg' },
-      { key:'card', cap:'設備カルテ', image:'/images/demos/gym-facility/02.jpg' },
-      { key:'form', cap:'画像確認', image:'/images/demos/gym-facility/03.jpg' }
+      { key:'list', cap:'施設の状況と要対応の項目を確認。', image:'/images/demos/gym-facility/01.jpg' },
+      { key:'card', cap:'場所・設備一覧から記録を開く。', image:'/images/demos/gym-facility/02.jpg' },
+      { key:'form', cap:'対応が必要か、問題なしかを選ぶ。', image:'/images/demos/gym-facility/03.jpg' }
     ],
     relatedIds:['construction-record','kaigo-handoff','internal-knowledge']
   },
@@ -391,9 +391,9 @@ export const DEMOS = [
     id:'logistics-dispatch', listed:true, featuredOrder:4,
     category:'cross-industry', tile:null, tags:['運送','配車','帰り荷'],
     cls:'c3', icon:'list',
-    title:'空で戻る車に<br>帰り荷候補を出す',
-    plain:'空で戻る車に帰り荷候補を出す',
-    lead:'依頼を同じ一覧に揃え、空で戻る車へ隣の荷物を候補として出します。載せるかは人が決めます。',
+    title:'空で戻る車に<br>積める荷物を探す',
+    plain:'空で戻る車に積める荷物を探す',
+    lead:'配車状況と帰り荷の候補を確認できます。積む荷物は担当者が決めます。',
     one:'配車コンソールで帰り荷候補を載せる／載せない体験です。',
     audience:'配車担当と運行管理者',
     url:'https://driver-dash-demo.vercel.app/',
@@ -403,9 +403,9 @@ export const DEMOS = [
     can:['今日の手配と帰り荷候補を確認できます','載せる／載せないを人が決められます'],
     planned:['カード公開（波0）'],
     shots:[
-      { key:'list', cap:'今日の手配', image:'/images/demos/logistics-dispatch/01.jpg' },
-      { key:'card', cap:'帰り荷候補', image:'/images/demos/logistics-dispatch/02.jpg' },
-      { key:'form', cap:'人が確定', image:'/images/demos/logistics-dispatch/03.jpg' }
+      { key:'list', cap:'受注一覧と配車盤を見る。', image:'/images/demos/logistics-dispatch/01.jpg' },
+      { key:'card', cap:'候補を積むかどうか決める。', image:'/images/demos/logistics-dispatch/02.jpg' },
+      { key:'form', cap:'休息時間やFAXの確認。', image:'/images/demos/logistics-dispatch/03.jpg' }
     ],
     relatedIds:['dd-ma','construction-record','approval-inspection']
   },
@@ -413,9 +413,9 @@ export const DEMOS = [
     id:'dd-ma', listed:true, featuredOrder:9,
     category:'cross-industry', tile:null, tags:['DD','M&A','買収','EXIT'],
     cls:'c3', icon:'search',
-    title:'DDからEXIT試算まで<br>ひとつの画面で',
-    plain:'DDからEXIT試算までひとつの画面で',
-    lead:'サンプル企業で主軸を変え、簿外処置と株式価値の連動を試せます。買収・再生の伴走向けです。',
+    title:'DDの結果を確認し、<br>EXITを試算する',
+    plain:'DDの結果を確認し、EXITを試算する',
+    lead:'サンプル企業の改善策を切り替えて、株式価値と目標との差を比較できます。',
     one:'DD診断からバリューアップ・EXIT試算までの画面体験です。',
     audience:'買収・再生の担当と決裁者',
     url:'https://dd-demo-red.vercel.app/',
@@ -425,8 +425,8 @@ export const DEMOS = [
     can:['サンプル企業でEXIT試算を確認できます','主軸切替と問い・返した時間を辿れます'],
     planned:['カード公開（波0）'],
     shots:[
-      { key:'card', cap:'EXIT', image:'/images/demos/dd-ma/01.jpg' },
-      { key:'list', cap:'主軸切替', image:'/images/demos/dd-ma/02.jpg' },
+      { key:'card', cap:'企業情報と試算結果を確認。', image:'/images/demos/dd-ma/01.jpg' },
+      { key:'list', cap:'効率化・不採算整理・戦略見直し。', image:'/images/demos/dd-ma/02.jpg' },
       { key:'form', cap:'問いと時間', image:'/images/demos/dd-ma/03.jpg' }
     ],
     relatedIds:['internal-knowledge','quality-incident','construction-record']
@@ -437,7 +437,7 @@ export const DEMOS = [
     cls:'c3', icon:'doc',
     title:'型番の問い合わせから<br>見積下書き',
     plain:'型番の問い合わせから見積下書き',
-    lead:'届いた問い合わせに確認結果と返信下書きを並べます。根拠の表を見てから、返す内容は人が決めます。',
+    lead:'在庫表と照らし合わせながら、問い合わせへの返信下書きを確認できます。返信内容は担当者が決めます。',
     one:'問い合わせ机で、確認結果・根拠・下書きまでを体験します。',
     audience:'卸の営業・受注担当と決裁者',
     url:'https://wholesale-quote-demo-lovat.vercel.app/',
@@ -447,9 +447,9 @@ export const DEMOS = [
     can:['確認結果と返信下書きを同じ画面で見られます','根拠の表を見てから人が返せます'],
     planned:[],
     shots:[
-      { key:'list', cap:'問い合わせを開く', image:'/images/demos/wholesale-quote/01.jpg' },
-      { key:'card', cap:'在庫表', image:'/images/demos/wholesale-quote/02.jpg' },
-      { key:'form', cap:'人が返す', image:'/images/demos/wholesale-quote/03.jpg' }
+      { key:'list', cap:'届いた問い合わせを確認。', image:'/images/demos/wholesale-quote/01.jpg' },
+      { key:'card', cap:'在庫数を照らし合わせる。', image:'/images/demos/wholesale-quote/02.jpg' },
+      { key:'form', cap:'デモでは実際に送信しません。', image:'/images/demos/wholesale-quote/03.jpg' }
     ],
     relatedIds:['logistics-dispatch','internal-knowledge','approval-inspection']
   },
@@ -493,9 +493,9 @@ export const DEMOS = [
     id:'field-dandori', listed:true, featuredOrder:7,
     category:'construction', tile:'construction', tags:['電気工事','段取り','現場'],
     cls:'c1', icon:'list',
-    title:'現場の段取り案を<br>組み立てる',
-    plain:'現場の段取り案を組み立てる',
-    lead:'入力から計画・出力まで、電気工事の段取り生成を想定したデモです。',
+    title:'電気工事の<br>段取りを確認する',
+    plain:'電気工事の段取りを確認する',
+    lead:'メールやFAXの依頼をもとに段取り案を確認し、申請と人員の準備を試せます。',
     one:'電気工事の現場段取りを、画面上で組み立てる体験です。',
     audience:'現場監督と手配担当',
     url:'https://denkigenba-dandori-demo.vercel.app/',
@@ -505,9 +505,9 @@ export const DEMOS = [
     can:['現場を選んで段取り案を確認できます','申請・人員・書類の組み立てを追えます','申請書の下書きを開けます'],
     planned:['LPの要否判断'],
     shots:[
-      { key:'list', cap:'依頼一覧', image:'/images/demos/field-dandori/01.jpg' },
-      { key:'form', cap:'段取り案', image:'/images/demos/field-dandori/02.jpg' },
-      { key:'card', cap:'申請の準備', image:'/images/demos/field-dandori/03.jpg' }
+      { key:'list', cap:'依頼一覧から選ぶ。', image:'/images/demos/field-dandori/01.jpg' },
+      { key:'form', cap:'工事内容や日程を確認。', image:'/images/demos/field-dandori/02.jpg' },
+      { key:'card', cap:'申請書を確認。', image:'/images/demos/field-dandori/03.jpg' }
     ],
     relatedIds:['construction-record','approval-inspection','gym-facility']
   },

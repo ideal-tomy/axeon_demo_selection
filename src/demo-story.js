@@ -11,7 +11,6 @@ import { wholesaleQuoteStory } from './wholesale-quote-story.js'
 import { fieldDandoriStory } from './field-dandori-story.js'
 import { storyCopy } from './demo-stories.js'
 import { storyImages } from './story-images.js'
-import { getDemoIntroEmbed } from './demo-intro-registry.js'
 
 export function hasStory(d) {
   return Boolean(d && d.linkState === 'available' && /^https:\/\//i.test(d.url || ''))
@@ -39,39 +38,28 @@ function external(d, _path, label, esc, cls = 'story-link') {
   return `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} <span aria-hidden="true">↗</span><span class="sr-only">（別タブで開きます）</span></a>`
 }
 
-function introEmbedHtml(d, esc) {
-  const emb = getDemoIntroEmbed(d.id)
-  if (!emb) return ''
-  const h = Number(emb.height) || 420
-  return `<section class="story-intro-embed" aria-label="${esc(emb.title)}">
-    <div class="story-intro-frame" style="--intro-height:${h}px">
-      <iframe data-intro-embed data-intro-src="${esc(emb.src)}" title="${esc(emb.title)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="autoplay"></iframe>
-    </div>
-  </section>`
-}
-
 function disclosure(title, body, esc, index) {
   return `<details class="story-disclosure"><summary>${index == null ? '' : `<span class="story-number">${number(index)}</span>`}${esc(title)}</summary><div class="story-disclosure-body">${body}</div></details>`
 }
 
 function constructionModel(d, esc) {
   const c = constructionStory
-  const headlines = ['探していた写真が、すぐそこに。', '一から書く前に、下書きから。', '現場の記録を、事務へつなぐ。']
-  const captions = ['工種で分類。名前もわかりやすく。', '報告書のサンプルを選ぶ入口。', '届いた日報と確認状況を、一か所で。']
+  const headlines = ['工種ごとに写真を整理する。', '報告書の下書きを確認する。', '提出された日報を確認する。']
+  const captions = ['現場名・工種・日付でファイル名を付ける。', '日報サンプルを選んで試せます。', '日報の内容と確認状況を、管理画面で確認。']
   return {
-    title: ['現場写真から、', '報告書まで。'], intro: ['写真を整え、下書きを確認。', '現場と事務をつなぐ流れを、体験できます。'],
-    eyebrow: c.eyebrow, meta: [['使う人','現場・事務'],['体験の流れ','3ステップ'],['下書きの仕上げ','人が確認']],
-    cta: '写真整理から体験する', path: '/?from=axeon-demo-selection',
+    title: ['現場写真から、', '報告書まで。'], intro: ['写真を整理し、報告書の下書きを確認。', '提出した日報を、管理側で確認する操作も試せます。'],
+    eyebrow: c.eyebrow, meta: [['使う人','現場・事務'],['体験する作業','3ステップ'],['下書きの確認','担当者が確認']],
+    cta: '写真整理のデモを開く', path: '/?from=axeon-demo-selection',
     previews: c.steps.map((s,i) => ({label:s.title,headline:headlines[i],caption:captions[i],image:s.image,alt:s.cap})),
-    changeTitle:['探す・書き写す時間を、','確認して仕上げる時間へ。'], changes:c.before.map((b,i)=>[b,c.after[i]]),
+    changeTitle:['写真整理と報告書作成を、','サンプルで試せます。'], changes:c.before.map((b,i)=>[b,c.after[i]]),
     background:`<p>${esc(c.audience)}</p>${list(c.problems,esc)}<p>${esc(c.approach)}</p>`,
-    note:'削減効果は業務や運用によって異なります。このデモでは、改善の方法を確かめられます。',
-    detailsLead:'写真整理から順に進むと、提出後の確認までつながります。',
-    details:c.steps.map((s,i)=>({title:s.title,body:(i===0?[c.benefits[0]]:i===1?[c.benefits[1],c.benefits[2]]:[c.benefits[3]]).map(b=>`<h3>${esc(b.title)}</h3><p>${esc(b.body)}</p><p class="story-look"><strong>見るポイント</strong>${esc(b.point)}</p>`).join('')+`<h3>操作の流れ</h3><p>${esc(s.body)}</p>`+(i===1?'<p>下書きから試す場合は「サンプルで試す」から日報サンプルを選びます。スマートフォンでは「体験をはじめる」から進みます。</p>':'')+external(d,s.path,i===0?'写真整理を試す':i===1?'下書きから試す':'管理側の画面を見る',esc)})),
-    conditionSummary:['用意された写真・文章を使うサンプルです。','提出・通知・催促はデモ内の体験で、実際の送信やサーバー保存は行いません。'],
+    note:'削減できる時間は業務や使い方によって異なります。このデモでは、写真整理と報告書作成の手順を試せます。',
+    detailsLead:'写真整理から、日報の提出後の確認まで順番に試せます。',
+    details:c.steps.map((s,i)=>({title:s.title,body:(i===0?[c.benefits[0]]:i===1?[c.benefits[1],c.benefits[2]]:[c.benefits[3]]).map(b=>`<h3>${esc(b.title)}</h3><p>${esc(b.body)}</p><p class="story-look"><strong>見るポイント</strong>${esc(b.point)}</p>`).join('')+`<h3>操作の流れ</h3><p>${esc(s.body)}</p>`+(i===1?'<p>下書きから試す場合は「サンプルで試す」から日報サンプルを選びます。スマートフォンでは「体験をはじめる」から進みます。</p>':'')+external(d,s.path,i===0?'写真整理のデモを開く':i===1?'報告書のデモを開く':'管理側のデモを開く',esc)})),
+    conditionSummary:['用意された写真と文章で試すデモです。','提出・通知・催促はデモ内の操作です。実際の送信やサーバーへの保存は行いません。'],
     conditionTitle:'体験の範囲と、写真を使う際の注意',conditionBody:list(c.conditions,esc),
-    closingTitle:['毎日の記録を、','もう少し軽く。'],closing:['毎回書く項目、聞き直しが多い項目。','どの作業を変えたいか、試しながら考えてみませんか。'],
-    closingDetail:`<p>${esc(c.closing)}</p>${external(d,'','建設デモの入口を見る',esc)}`,
+    closingTitle:['写真整理と報告書づくりを、','試してみてください。'],closing:['毎回書く項目や、現場に聞き直すことが多い項目。','今の仕事と比べながら、操作してみてください。'],
+    closingDetail:`<p>${esc(c.closing)}</p>${external(d,'','建設デモを開く',esc)}`,
     related:['field-dandori','contractor-matching']
   }
 }
@@ -202,22 +190,20 @@ export function buildDemoStory(d,esc) {
   if (m.layout === 'thin') {
     return `<article class="demo-story story-theme-${esc(d.category)} story-layout-thin">
     <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>AXEON / ${esc(category)}</span></header>
-    <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div><div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
-    ${introEmbedHtml(d, esc)}
-    <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">代表3手で体験する</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
+    <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div>    <div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
+    <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">このデモで見られること</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
     <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div></section>
     ${relatedNav}
   </article>`
   }
   return `<article class="demo-story story-theme-${esc(d.category)}">
     <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>AXEON / ${esc(category)}</span></header>
-    <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div><div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
-    ${introEmbedHtml(d, esc)}
-    <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">画面で見る、仕事の変化</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
-    <section class="story-section" id="story-benefits"><p class="story-eyebrow">この体験でわかること</p><h2>${lines(m.changeTitle,esc)}</h2><div class="story-changes">${m.changes.map(([before,after],i)=>`<div><span class="story-number">${number(i)}</span><div><p>${esc(before)}</p><h3>${esc(after)}</h3></div><span aria-hidden="true">↗</span></div>`).join('')}</div>${disclosure('どんな業務の悩みに役立つ？',m.background,esc)}${m.note?`<p class="story-note">${esc(m.note)}</p>`:''}</section>
-    <section class="story-section"><p class="story-eyebrow">気になるところを、もう少し詳しく</p><h2>体験の見どころと進め方</h2><p class="story-section-lead">${esc(m.detailsLead)}</p>${m.details.map((s,i)=>disclosure(s.title,s.body,esc,i)).join('')}</section>
+    <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div>    <div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
+    <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">写真整理から提出後の確認まで</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
+    <section class="story-section" id="story-benefits"><p class="story-eyebrow">このデモでできること</p><h2>${lines(m.changeTitle,esc)}</h2><div class="story-changes">${m.changes.map(([before,after],i)=>`<div><span class="story-number">${number(i)}</span><div><p>${esc(before)}</p><h3>${esc(after)}</h3></div><span aria-hidden="true">↗</span></div>`).join('')}</div>${disclosure('こんな業務で使えます',m.background,esc)}${m.note?`<p class="story-note">${esc(m.note)}</p>`:''}</section>
+    <section class="story-section"><p class="story-eyebrow">詳しい操作方法</p><h2>デモの操作手順</h2><p class="story-section-lead">${esc(m.detailsLead)}</p>${m.details.map((s,i)=>disclosure(s.title,s.body,esc,i)).join('')}</section>
     <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p>${m.conditionBody?disclosure(m.conditionTitle,m.conditionBody,esc):''}</section>
-    <section class="story-closing"><p class="story-eyebrow">自社の仕事に、置き換えてみる</p><h2>${lines(m.closingTitle,esc)}</h2><p>${lines(m.closing,esc)}</p>${external(d,m.path,m.cta,esc,'story-button')}${m.closingDetail?disclosure('自社で使うときに考えたいこと',m.closingDetail,esc):''}</section>
+    <section class="story-closing"><p class="story-eyebrow">自社で使う場合を考える</p><h2>${lines(m.closingTitle,esc)}</h2><p>${lines(m.closing,esc)}</p>${external(d,m.path,m.cta,esc,'story-button')}${m.closingDetail?disclosure('自社で使うときに考えたいこと',m.closingDetail,esc):''}</section>
     ${relatedNav}
   </article>`
 }
