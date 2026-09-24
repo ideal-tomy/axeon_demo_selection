@@ -16,7 +16,7 @@ export const DEMO_INTRO_EMBEDS = {
   'construction-record': {
     src: 'https://construction-demo-six.vercel.app/?embed=intro&view=stage&from=axeon-demo-selection',
     title: '現場写真から報告書までの使い方',
-    height: 400,
+    height: 428,
   },
   'kaigo-handoff': {
     src: 'https://kaigo-handoff-demo.vercel.app/?embed=intro&view=stage&from=axeon-demo-selection',
