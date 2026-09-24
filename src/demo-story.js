@@ -42,9 +42,8 @@ function external(d, _path, label, esc, cls = 'story-link') {
 function introEmbedHtml(d, esc) {
   const emb = getDemoIntroEmbed(d.id)
   if (!emb) return ''
-  const h = Number(emb.height) || 480
-  return `<section class="story-intro-embed" aria-labelledby="introTitle">
-    <div class="story-section-heading"><h2 id="introTitle">使い方を見てみる</h2></div>
+  const h = Number(emb.height) || 420
+  return `<section class="story-intro-embed" aria-label="${esc(emb.title)}">
     <div class="story-intro-frame" style="--intro-height:${h}px">
       <iframe data-intro-embed data-intro-src="${esc(emb.src)}" title="${esc(emb.title)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="autoplay"></iframe>
     </div>
