@@ -288,8 +288,10 @@ a{color:inherit;text-decoration:none;}
 .story-preview-card{flex:0 0 calc((100% - 28px)/3);min-width:240px;margin:0;overflow:hidden;border-radius:24px;background:#f4f7fc;border:1px solid #d7deec;color:#1c2740;scroll-snap-align:start;}
 .story-preview-1,.story-preview-2{background:#f4f7fc;}
 .story-preview-card figcaption{padding:23px 20px 19px;}
+.story-preview-card.story-preview-compact figcaption{min-height:0;padding:16px 20px 0;}
 .story-number{font-size:10px;font-weight:700;letter-spacing:.07em;color:var(--story-accent);}
-  .story-preview-card h3{font-size:22px;line-height:1.5;letter-spacing:-.04em;margin-top:12px;}
+.story-preview-card h3{font-size:22px;line-height:1.5;letter-spacing:-.04em;margin-top:12px;}
+.story-preview-card.story-preview-compact h3{margin-top:0;}
 .story-preview-card p{font-size:11px;color:#4a5874;margin-top:8px;}
 /* 390×600相当の窓で上部を切り出す。説明を含めても約600px以内の密度にする。 */
 .story-preview-card img{display:block;width:calc(100% - 40px);height:auto;aspect-ratio:390 / 600;max-height:400px;object-fit:cover;object-position:center top;margin:0 20px;border-radius:17px 17px 0 0;border:4px solid #fff;box-shadow:0 8px 22px #26418e1f;}

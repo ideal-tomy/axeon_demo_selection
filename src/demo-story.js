@@ -44,13 +44,12 @@ function disclosure(title, body, esc, index) {
 
 function constructionModel(d, esc) {
   const c = constructionStory
-  const headlines = ['工種ごとに写真を整理する。', '報告書の下書きを確認する。', '提出された日報を確認する。']
-  const captions = ['現場名・工種・日付でファイル名を付ける。', '日報サンプルを選んで試せます。', '日報の内容と確認状況を、管理画面で確認。']
+  const headlines = ['写真を送る', '整理して下書き', '提出後を確認']
   return {
     title: ['現場写真から、', '報告書まで。'], intro: ['写真を整理し、報告書の下書きを確認。', '提出した日報を、管理側で確認する操作も試せます。'],
     eyebrow: c.eyebrow, meta: [['使う人','現場・事務'],['体験する作業','3ステップ'],['下書きの確認','担当者が確認']],
     cta: '写真整理のデモを開く', path: '/?from=axeon-demo-selection',
-    previews: c.steps.map((s,i) => ({label:s.title,headline:headlines[i],caption:captions[i],image:s.image,alt:s.cap})),
+    previews: c.steps.map((s,i) => ({label:s.title,headline:headlines[i],image:s.image,alt:s.cap,compact:true})),
     changeTitle:['写真整理と報告書作成を、','サンプルで試せます。'], changes:c.before.map((b,i)=>[b,c.after[i]]),
     background:`<p>${esc(c.audience)}</p>${list(c.problems,esc)}<p>${esc(c.approach)}</p>`,
     note:'削減できる時間は業務や使い方によって異なります。このデモでは、写真整理と報告書作成の手順を試せます。',
@@ -165,7 +164,9 @@ function preview(p,i,esc) {
   const visual=p.image
     ? `<img src="${esc(p.image)}" alt="${esc(p.alt)}" loading="${i===0?'eager':'lazy'}" width="390" height="844">`
     : `<div class="story-diagram"><span class="story-diagram-label">機能のイメージ</span><ol>${p.diagram.map((label,j)=>`<li class="${j===p.active?'is-current':''}"><span>${number(j)}</span><strong>${esc(label)}</strong></li>`).join('')}</ol><p>${esc(p.point)}</p></div>`
-  return `<figure class="story-preview-card story-preview-${i}"><figcaption><span class="story-number">${number(i)} / ${esc(p.label)}</span><h3>${esc(p.headline)}</h3><p>${esc(p.caption)}</p></figcaption>${visual}</figure>`
+  const compact = p.compact ? ' story-preview-compact' : ''
+  const caption = p.compact ? `<h3>${esc(p.headline)}</h3>` : `<span class="story-number">${number(i)} / ${esc(p.label)}</span><h3>${esc(p.headline)}</h3><p>${esc(p.caption)}</p>`
+  return `<figure class="story-preview-card story-preview-${i}${compact}"><figcaption>${caption}</figcaption>${visual}</figure>`
 }
 
 function pickModel(d, esc) {

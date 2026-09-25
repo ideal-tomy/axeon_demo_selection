@@ -421,58 +421,28 @@
         "overflow": false
       },
       {
-        "text": "工種ごとに写真を整理する。",
+        "text": "写真を送る",
         "selector": "h3",
         "lines": [
-          "工種ごとに写真を",
-          "整理する。"
+          "写真を送る"
         ],
         "short": [],
         "overflow": false
       },
       {
-        "text": "現場名・工種・日付でファイル名を付ける。",
-        "selector": "p",
-        "lines": [
-          "現場名・工種・日付でファイル名を付ける。"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "報告書の下書きを確認する。",
+        "text": "整理して下書き",
         "selector": "h3",
         "lines": [
-          "報告書の下書きを",
-          "確認する。"
+          "整理して下書き"
         ],
         "short": [],
         "overflow": false
       },
       {
-        "text": "日報サンプルを選んで試せます。",
-        "selector": "p",
-        "lines": [
-          "日報サンプルを選んで試せます。"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "提出された日報を確認する。",
+        "text": "提出後を確認",
         "selector": "h3",
         "lines": [
-          "提出された日報を",
-          "確認する。"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "日報の内容と確認状況を、管理画面で確認。",
-        "selector": "p",
-        "lines": [
-          "日報の内容と確認状況を、管理画面で確認。"
+          "提出後を確認"
         ],
         "short": [],
         "overflow": false
@@ -3129,58 +3099,28 @@
         "overflow": false
       },
       {
-        "text": "工種ごとに写真を整理する。",
+        "text": "写真を送る",
         "selector": "h3",
         "lines": [
-          "工種ごとに写真を",
-          "整理する。"
+          "写真を送る"
         ],
         "short": [],
         "overflow": false
       },
       {
-        "text": "現場名・工種・日付でファイル名を付ける。",
-        "selector": "p",
-        "lines": [
-          "現場名・工種・日付でファイル名を付ける。"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "報告書の下書きを確認する。",
+        "text": "整理して下書き",
         "selector": "h3",
         "lines": [
-          "報告書の下書きを",
-          "確認する。"
+          "整理して下書き"
         ],
         "short": [],
         "overflow": false
       },
       {
-        "text": "日報サンプルを選んで試せます。",
-        "selector": "p",
-        "lines": [
-          "日報サンプルを選んで試せます。"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "提出された日報を確認する。",
+        "text": "提出後を確認",
         "selector": "h3",
         "lines": [
-          "提出された日報を",
-          "確認する。"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "日報の内容と確認状況を、管理画面で確認。",
-        "selector": "p",
-        "lines": [
-          "日報の内容と確認状況を、管理画面で確認。"
+          "提出後を確認"
         ],
         "short": [],
         "overflow": false
