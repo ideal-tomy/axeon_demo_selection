@@ -656,7 +656,7 @@
   {
     "file": "src/demo-story.js",
     "before": "毎日の記録を、",
-    "after": "写真整理と報告書づくりを、",
+    "after": "",
     "inMD": true
   },
   {

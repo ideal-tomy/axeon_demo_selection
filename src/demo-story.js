@@ -54,9 +54,8 @@ function constructionModel(d, esc) {
     background:`<p>${esc(c.audience)}</p>${list(c.problems,esc)}<p>${esc(c.approach)}</p>`,
     conditionSummary:['用意された写真と文章で試すデモです。','提出・通知・催促はデモ内の操作です。実際の送信やサーバーへの保存は行いません。'],
     conditionTitle:'体験の範囲と、写真を使う際の注意',conditionBody:list(c.conditions,esc),
-    closingTitle:['写真整理と報告書づくりを、','試してみてください。'],closing:['毎回書く項目や、現場に聞き直すことが多い項目。','今の仕事と比べながら、操作してみてください。'],
-    closingDetail:`<p>${esc(c.closing)}</p>${external(d,'','建設デモを開く',esc)}`,
-    related:['field-dandori','contractor-matching']
+    closingTitle:['','試してください'],closing:['毎回書く項目や、現場に聞き直すことが多い項目。','今の仕事と比べながら、操作してみてください。'],
+    related:[]
   }
 }
 
@@ -153,7 +152,7 @@ function demoModel(d, esc) {
     details:(d.can || []).map((text,i)=>({title:(copy?.detailTitles || copy?.headlines)?.[i] || '見られること '+number(i),body:`<p>${esc(text)}</p><p class="story-look"><strong>見るポイント</strong>${esc(copy?.changes[Math.min(i,copy.changes.length-1)]?.[1] || text)}</p>`})),
     conditionSummary:d.experienceNote || '体験版の入口で利用案内をご確認ください。',
     conditionTitle:'体験の範囲について',conditionBody:copy?.limits?.length ? list(copy.limits,esc) : '',
-    closingTitle:['自社の仕事なら、','どこが変わるか。'],closing:copy?.question || d.when,related:d.relatedIds || []
+    closingEyebrow:'自社で使う場合を考える',closingTitle:['自社の仕事なら、','どこが変わるか。'],closing:copy?.question || d.when,related:d.relatedIds || []
   }
 }
 
@@ -172,11 +171,30 @@ const COMPARE_STACK_ICONS = [
   '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="6" cy="7" r="2" fill="#5ec995"/><line x1="10" y1="7" x2="18" y2="7" stroke="#c5d0e4" stroke-width="1.5" stroke-linecap="round"/><circle cx="6" cy="12" r="2" fill="#f5b75e"/><line x1="10" y1="12" x2="18" y2="12" stroke="#c5d0e4" stroke-width="1.5" stroke-linecap="round"/><circle cx="6" cy="17" r="2" fill="#5ec995"/><line x1="10" y1="17" x2="18" y2="17" stroke="#c5d0e4" stroke-width="1.5" stroke-linecap="round"/></svg>'
 ]
 
+function compareAfterBlock(after, esc) {
+  const lines = Array.isArray(after) ? after : [after]
+  return `<div class="story-compare-afters">${lines.map(line => `<p class="story-compare-after">${esc(line)}</p>`).join('')}</div>`
+}
+
 function changeCompareStack(changes, esc) {
   const items = changes.map(([before, after], i) =>
-    `<li class="story-compare-stack-item"><div class="story-compare-stack-rail"><span class="story-compare-stack-icon">${COMPARE_STACK_ICONS[i] || COMPARE_STACK_ICONS[0]}</span></div><div class="story-compare-stack-copy"><p class="story-compare-before">${esc(before)}</p><p class="story-compare-after">${esc(after)}</p></div></li>`
+    `<li class="story-compare-stack-item"><div class="story-compare-stack-rail"><span class="story-compare-stack-icon">${COMPARE_STACK_ICONS[i] || COMPARE_STACK_ICONS[0]}</span></div><div class="story-compare-stack-copy"><p class="story-compare-before">${esc(before)}</p>${compareAfterBlock(after, esc)}</div></li>`
   ).join('')
   return `<ul class="story-compare-stack" aria-label="いまの作業とデモでの変化">${items}</ul>`
+}
+
+function usecaseSection(m, esc) {
+  if (!m.background) return ''
+  return `<section class="story-section story-usecase" id="story-usecase">${disclosure('こんな業務で使えます', m.background, esc)}</section>`
+}
+
+function experienceDetailSection(m, esc) {
+  if (!m.conditionBody) return ''
+  return `<section class="story-section story-experience-detail" id="story-experience-detail"><h2>${esc(m.conditionTitle)}</h2><div class="story-experience-detail-body">${m.conditionBody}</div></section>`
+}
+
+function experienceSection(m, esc, extras = '') {
+  return `<section class="story-section story-conditions" id="story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary, esc)}</p>${extras}</section>${experienceDetailSection(m, esc)}`
 }
 
 function benefitsSection(m, esc) {
@@ -187,9 +205,21 @@ function benefitsSection(m, esc) {
   const body = m.changeLayout === 'compare'
     ? changeCompareStack(m.changes, esc)
     : `<div class="story-changes">${m.changes.map(([before, after], i) => `<div><span class="story-number">${number(i)}</span><div><p>${esc(before)}</p><h3>${esc(after)}</h3></div><span aria-hidden="true">↗</span></div>`).join('')}</div>`
-  const sectionClass = m.changeLayout === 'compare' ? 'story-section story-compare' : 'story-section'
   const note = m.note ? `<p class="story-note">${esc(m.note)}</p>` : ''
-  return `<section class="${sectionClass}" id="story-benefits">${eyebrow}${titleBlock}${body}${disclosure('こんな業務で使えます', m.background, esc)}${note}</section>`
+  const usecaseInline = m.changeLayout === 'compare' ? '' : (m.background ? disclosure('こんな業務で使えます', m.background, esc) : '')
+  const compareBlock = m.changeLayout === 'compare'
+    ? `<section class="story-section story-compare" id="story-benefits">${eyebrow}${titleBlock}${body}${note}</section>${usecaseSection(m, esc)}`
+    : `<section class="story-section" id="story-benefits">${eyebrow}${titleBlock}${body}${usecaseInline}${note}</section>`
+  return compareBlock
+}
+
+function closingSection(m, d, esc) {
+  const eyebrow = m.closingEyebrow ? `<p class="story-eyebrow">${esc(m.closingEyebrow)}</p>` : ''
+  const extra =
+    m.closingDetail && m.closingExtraTitle
+      ? disclosure(m.closingExtraTitle, m.closingDetail, esc)
+      : ''
+  return `<section class="story-closing">${eyebrow}<h2>${lines(m.closingTitle, esc)}</h2><p class="story-closing-lead">${lines(m.closing, esc)}</p>${external(d, m.path, m.cta, esc, 'story-button')}${extra}</section>`
 }
 
 function operationDetailsSection(m, esc) {
@@ -232,8 +262,8 @@ export function buildDemoStory(d,esc) {
     <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">写真整理から提出後の確認まで</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
     ${benefitsSection(m, esc)}
     ${operationDetailsSection(m, esc)}
-    <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p>${m.conditionBody?disclosure(m.conditionTitle,m.conditionBody,esc):''}</section>
-    <section class="story-closing"><p class="story-eyebrow">自社で使う場合を考える</p><h2>${lines(m.closingTitle,esc)}</h2><p>${lines(m.closing,esc)}</p>${external(d,m.path,m.cta,esc,'story-button')}${m.closingDetail?disclosure('自社で使うときに考えたいこと',m.closingDetail,esc):''}</section>
+    ${experienceSection(m, esc)}
+    ${closingSection(m, d, esc)}
     ${relatedNav}
   </article>`
 }

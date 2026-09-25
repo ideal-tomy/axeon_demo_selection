@@ -15,10 +15,10 @@ await page.screenshot({path:`docs/construction-redesign-${width}.png`});
 const gallery=page.locator('.story-gallery');await gallery.focus();await page.keyboard.press('ArrowRight');await page.waitForTimeout(400);
 if(width<701) assert(await gallery.evaluate(e=>e.scrollLeft>0));
 assert.equal(await page.getByText('デモの操作手順',{exact:true}).count(),0);
-const summary=page.locator('summary').filter({hasText:'体験の範囲と、写真を使う際の注意'});await summary.click();assert(await summary.evaluate(e=>e.parentElement.open));
-await summary.press('Enter');assert(!(await summary.evaluate(e=>e.parentElement.open)));
-await page.locator('[data-goto="field-dandori"]').click();assert.equal(new URL(page.url()).searchParams.get('demo'),'field-dandori');
-await page.goto('http://127.0.0.1:4173/?demo=construction-record');await page.locator('#dBack').click();assert(new URL(page.url()).searchParams.get('view')==='all');
+const experienceDetail=page.locator('#story-experience-detail');assert.equal(await experienceDetail.locator('h2').count(),1);assert(await experienceDetail.locator('ul li').first().isVisible());
+assert.equal(await page.locator('.story-related').count(),0);
+await page.locator('#dBack').click();assert(new URL(page.url()).searchParams.get('view')==='all');
+await page.goto('http://127.0.0.1:4173/?demo=construction-record');
 console.log(width,metrics,'interactions passed');
 }
 await page.setViewportSize({width:390,height:844});await page.goto('http://127.0.0.1:4173/?demo=shift');await page.waitForTimeout(500);await page.screenshot({path:'docs/construction-redesign-reference.png'});
