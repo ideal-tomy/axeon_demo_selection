@@ -50,11 +50,8 @@ function constructionModel(d, esc) {
     eyebrow: c.eyebrow, meta: [['使う人','現場・事務'],['体験する作業','3ステップ'],['下書きの確認','担当者が確認']],
     cta: '写真整理のデモを開く', path: '/?from=axeon-demo-selection',
     previews: c.steps.map((s,i) => ({label:s.title,headline:headlines[i],image:s.image,alt:s.cap,compact:true})),
-    changeTitle:['写真整理と報告書作成を、','サンプルで試せます。'], changes:c.before.map((b,i)=>[b,c.after[i]]),
+    changeLayout:'compare', changes:c.before.map((b,i)=>[b,c.after[i]]),
     background:`<p>${esc(c.audience)}</p>${list(c.problems,esc)}<p>${esc(c.approach)}</p>`,
-    note:'削減できる時間は業務や使い方によって異なります。このデモでは、写真整理と報告書作成の手順を試せます。',
-    detailsLead:'写真整理から、日報の提出後の確認まで順番に試せます。',
-    details:c.steps.map((s,i)=>({title:s.title,body:(i===0?[c.benefits[0]]:i===1?[c.benefits[1],c.benefits[2]]:[c.benefits[3]]).map(b=>`<h3>${esc(b.title)}</h3><p>${esc(b.body)}</p><p class="story-look"><strong>見るポイント</strong>${esc(b.point)}</p>`).join('')+`<h3>操作の流れ</h3><p>${esc(s.body)}</p>`+(i===1?'<p>下書きから試す場合は「サンプルで試す」から日報サンプルを選びます。スマートフォンでは「体験をはじめる」から進みます。</p>':'')+external(d,s.path,i===0?'写真整理のデモを開く':i===1?'報告書のデモを開く':'管理側のデモを開く',esc)})),
     conditionSummary:['用意された写真と文章で試すデモです。','提出・通知・催促はデモ内の操作です。実際の送信やサーバーへの保存は行いません。'],
     conditionTitle:'体験の範囲と、写真を使う際の注意',conditionBody:list(c.conditions,esc),
     closingTitle:['写真整理と報告書づくりを、','試してみてください。'],closing:['毎回書く項目や、現場に聞き直すことが多い項目。','今の仕事と比べながら、操作してみてください。'],
@@ -169,6 +166,38 @@ function preview(p,i,esc) {
   return `<figure class="story-preview-card story-preview-${i}${compact}"><figcaption>${caption}</figcaption>${visual}</figure>`
 }
 
+const COMPARE_STACK_ICONS = [
+  '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><rect x="3" y="3" width="8" height="8" rx="2" fill="#9b87f5"/><rect x="13" y="3" width="8" height="8" rx="2" fill="#5ec995"/><rect x="3" y="13" width="8" height="8" rx="2" fill="#f5b75e"/><rect x="13" y="13" width="8" height="8" rx="2" fill="#6ec5cf"/></svg>',
+  '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2" fill="#fff" stroke="#c5d0e4" stroke-width="1.2"/><line x1="8" y1="8" x2="16" y2="8" stroke="#26418e" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="11" x2="16" y2="11" stroke="#26418e" stroke-width="1.2" stroke-linecap="round"/><rect x="8" y="14" width="8" height="4" rx="1" fill="#9b87f5"/></svg>',
+  '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="6" cy="7" r="2" fill="#5ec995"/><line x1="10" y1="7" x2="18" y2="7" stroke="#c5d0e4" stroke-width="1.5" stroke-linecap="round"/><circle cx="6" cy="12" r="2" fill="#f5b75e"/><line x1="10" y1="12" x2="18" y2="12" stroke="#c5d0e4" stroke-width="1.5" stroke-linecap="round"/><circle cx="6" cy="17" r="2" fill="#5ec995"/><line x1="10" y1="17" x2="18" y2="17" stroke="#c5d0e4" stroke-width="1.5" stroke-linecap="round"/></svg>'
+]
+
+function changeCompareStack(changes, esc) {
+  const items = changes.map(([before, after], i) =>
+    `<li class="story-compare-stack-item"><div class="story-compare-stack-rail"><span class="story-compare-stack-icon">${COMPARE_STACK_ICONS[i] || COMPARE_STACK_ICONS[0]}</span></div><div class="story-compare-stack-copy"><p class="story-compare-before">${esc(before)}</p><p class="story-compare-after">${esc(after)}</p></div></li>`
+  ).join('')
+  return `<ul class="story-compare-stack" aria-label="いまの作業とデモでの変化">${items}</ul>`
+}
+
+function benefitsSection(m, esc) {
+  const eyebrow = m.changeLayout === 'compare' ? '' : `<p class="story-eyebrow">${esc(m.changeEyebrow || 'このデモでできること')}</p>`
+  const titleBlock = m.changeTitle
+    ? `<h2>${Array.isArray(m.changeTitle) ? lines(m.changeTitle, esc) : esc(m.changeTitle)}</h2>`
+    : ''
+  const body = m.changeLayout === 'compare'
+    ? changeCompareStack(m.changes, esc)
+    : `<div class="story-changes">${m.changes.map(([before, after], i) => `<div><span class="story-number">${number(i)}</span><div><p>${esc(before)}</p><h3>${esc(after)}</h3></div><span aria-hidden="true">↗</span></div>`).join('')}</div>`
+  const sectionClass = m.changeLayout === 'compare' ? 'story-section story-compare' : 'story-section'
+  const note = m.note ? `<p class="story-note">${esc(m.note)}</p>` : ''
+  return `<section class="${sectionClass}" id="story-benefits">${eyebrow}${titleBlock}${body}${disclosure('こんな業務で使えます', m.background, esc)}${note}</section>`
+}
+
+function operationDetailsSection(m, esc) {
+  if (!m.details?.length) return ''
+  const lead = m.detailsLead ? `<p class="story-section-lead">${esc(m.detailsLead)}</p>` : ''
+  return `<section class="story-section"><p class="story-eyebrow">詳しい操作方法</p><h2>デモの操作手順</h2>${lead}${m.details.map((s, i) => disclosure(s.title, s.body, esc, i)).join('')}</section>`
+}
+
 function pickModel(d, esc) {
   if (d.id === 'construction-record') return constructionModel(d, esc)
   if (d.id === 'internal-knowledge') return internalKnowledgeModel(d)
@@ -201,8 +230,8 @@ export function buildDemoStory(d,esc) {
     <header class="story-top"><button type="button" id="dBack" class="story-back" aria-label="紹介を閉じる">← 一覧へ</button><span>AXEON / ${esc(category)}</span></header>
     <section class="story-hero" aria-labelledby="detailTitle"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title,esc)}</h1></div></div><p class="story-intro">${lines(m.intro,esc)}</p><div class="story-actions">${external(d,m.path,m.cta,esc,'story-button')}</div>    <div class="story-meta">${m.meta.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></section>
     <section class="story-preview" aria-labelledby="previewTitle"><div class="story-section-heading"><h2 id="previewTitle">写真整理から提出後の確認まで</h2></div><div class="story-gallery" tabindex="0" role="region" aria-label="${m.previews.length}つのプレビュー。横にスクロールできます">${m.previews.map((p,i)=>preview(p,i,esc)).join('')}</div></section>
-    <section class="story-section" id="story-benefits"><p class="story-eyebrow">このデモでできること</p><h2>${lines(m.changeTitle,esc)}</h2><div class="story-changes">${m.changes.map(([before,after],i)=>`<div><span class="story-number">${number(i)}</span><div><p>${esc(before)}</p><h3>${esc(after)}</h3></div><span aria-hidden="true">↗</span></div>`).join('')}</div>${disclosure('こんな業務で使えます',m.background,esc)}${m.note?`<p class="story-note">${esc(m.note)}</p>`:''}</section>
-    <section class="story-section"><p class="story-eyebrow">詳しい操作方法</p><h2>デモの操作手順</h2><p class="story-section-lead">${esc(m.detailsLead)}</p>${m.details.map((s,i)=>disclosure(s.title,s.body,esc,i)).join('')}</section>
+    ${benefitsSection(m, esc)}
+    ${operationDetailsSection(m, esc)}
     <section class="story-section story-conditions"><h2>体験について</h2><p class="story-section-lead">${lines(m.conditionSummary,esc)}</p>${m.conditionBody?disclosure(m.conditionTitle,m.conditionBody,esc):''}</section>
     <section class="story-closing"><p class="story-eyebrow">自社で使う場合を考える</p><h2>${lines(m.closingTitle,esc)}</h2><p>${lines(m.closing,esc)}</p>${external(d,m.path,m.cta,esc,'story-button')}${m.closingDetail?disclosure('自社で使うときに考えたいこと',m.closingDetail,esc):''}</section>
     ${relatedNav}
