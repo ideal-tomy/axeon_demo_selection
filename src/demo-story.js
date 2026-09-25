@@ -173,7 +173,11 @@ const COMPARE_STACK_ICONS = [
 
 function compareAfterBlock(after, esc) {
   const lines = Array.isArray(after) ? after : [after]
-  return `<div class="story-compare-afters">${lines.map(line => `<p class="story-compare-after">${esc(line)}</p>`).join('')}</div>`
+  if (lines.length <= 1) {
+    return `<div class="story-compare-afters"><p class="story-compare-after">${esc(lines[0])}</p></div>`
+  }
+  const parts = lines.map(line => `<span class="story-compare-after-part">${esc(line)}</span>`).join('')
+  return `<div class="story-compare-afters"><p class="story-compare-after">${parts}</p></div>`
 }
 
 function changeCompareStack(changes, esc) {
