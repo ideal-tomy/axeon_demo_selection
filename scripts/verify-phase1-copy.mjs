@@ -16,7 +16,6 @@ try {
   await page.goto(base);
   await page.locator('#cards .card').first().waitFor();
   assert.equal(await page.locator('#cards .card').count(),featuredDemos().length);
-  assert.equal(await page.locator('#countListed').innerText(),'28');
   await page.screenshot({path:fileURLToPath(new URL(`home-${width}.png`,out))});
   await page.locator('#openAll').click();
   await page.locator('.catalog-card').first().waitFor();

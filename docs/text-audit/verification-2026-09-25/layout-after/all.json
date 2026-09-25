@@ -6,24 +6,11 @@
     "errors": [],
     "blocks": [
       {
-        "text": "現場写真の整理から報告書と確認業務まで",
+        "text": "現場写真から報告書まで",
         "selector": "h2",
         "lines": [
-          "現場写真の",
-          "整理から",
-          "報告書と",
-          "確認業務まで"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "写真の整理、報告書の下書きの確認・修正、提出後の管理側の確認を試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "写真の整理、報告書の下書きの",
-          "確認・修正、提出後の管理側の",
-          "確認を試せます。"
+          "現場写真から",
+          "報告書まで"
         ],
         "short": [],
         "overflow": false
@@ -38,23 +25,11 @@
         "overflow": false
       },
       {
-        "text": "規程・マニュアルに聞いてみる",
+        "text": "規程マニュアルに聞く",
         "selector": "h2",
         "lines": [
-          "規程・",
-          "マニュアルに",
-          "聞いてみる"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。",
-        "selector": "p.lead",
-        "lines": [
-          "知りたいことを質問すると、",
-          "回答と必要な手続き、根拠となる",
-          "規程を確認できます。"
+          "規程マニュアル",
+          "に聞く"
         ],
         "short": [],
         "overflow": false
@@ -69,23 +44,11 @@
         "overflow": false
       },
       {
-        "text": "品質インシデントの原因と是正を確認する",
+        "text": "品質トラブルの原因是正",
         "selector": "h2",
         "lines": [
-          "品質インシデント",
-          "の原因と是正を",
-          "確認する"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "品質トラブルの事例を開き、原因候補の比較から是正・承認までを試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "品質トラブルの事例を開き、",
-          "原因候補の比較から是正・",
-          "承認までを試せます。"
+          "品質トラブルの",
+          "原因是正"
         ],
         "short": [],
         "overflow": false
@@ -100,23 +63,11 @@
         "overflow": false
       },
       {
-        "text": "空で戻る車に積める荷物を探す",
+        "text": "帰り荷の候補を探す",
         "selector": "h2",
         "lines": [
-          "空で戻る",
-          "車に積める",
-          "荷物を探す"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "配車状況と帰り荷の候補を確認できます。積む荷物は担当者が決めます。",
-        "selector": "p.lead",
-        "lines": [
-          "配車状況と帰り荷の候補を",
-          "確認できます。積む荷物は",
-          "担当者が決めます。"
+          "帰り荷の",
+          "候補を探す"
         ],
         "short": [],
         "overflow": false
@@ -131,22 +82,11 @@
         "overflow": false
       },
       {
-        "text": "受入検査の照合と承認を見る",
+        "text": "受入検査の照合承認",
         "selector": "h2",
         "lines": [
-          "受入検査の照合",
-          "と承認を見る"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "図面と材料証明書の照合、保留理由の確認、承認の画面を見られます。",
-        "selector": "p.lead",
-        "lines": [
-          "図面と材料証明書の照合、",
-          "保留理由の確認、承認の画面を",
-          "見られます。"
+          "受入検査の",
+          "照合承認"
         ],
         "short": [],
         "overflow": false
@@ -161,23 +101,11 @@
         "overflow": false
       },
       {
-        "text": "申し送り・面談・日報をまとめる",
+        "text": "申し送りと日々の記録",
         "selector": "h2",
         "lines": [
-          "申し送り・",
-          "面談・",
-          "日報をまとめる"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "申し送りや面談のメモを記録にまとめ、内容を確認できます。日報の確認も試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "申し送りや面談のメモを記録に",
-          "まとめ、内容を確認できます。",
-          "日報の確認も試せます。"
+          "申し送りと",
+          "日々の記録"
         ],
         "short": [],
         "overflow": false
@@ -192,23 +120,11 @@
         "overflow": false
       },
       {
-        "text": "電気工事の段取りを確認する",
+        "text": "電気工事の段取り",
         "selector": "h2",
         "lines": [
           "電気工事の",
-          "段取りを",
-          "確認する"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "メールやFAXの依頼をもとに段取り案を確認し、申請と人員の準備を試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "メールやFAXの依頼をもとに",
-          "段取り案を確認し、申請と人員の",
-          "準備を試せます。"
+          "段取り"
         ],
         "short": [],
         "overflow": false
@@ -223,22 +139,11 @@
         "overflow": false
       },
       {
-        "text": "総合体育館の施設管理を見る",
+        "text": "体育館の施設管理",
         "selector": "h2",
         "lines": [
-          "総合体育館の",
-          "施設管理を見る"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "施設の利用可否や設備の記録を確認し、画像を見て対応が必要か判断する操作を試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "施設の利用可否や設備の記録を",
-          "確認し、画像を見て対応が必要か",
-          "判断する操作を試せます。"
+          "体育館の",
+          "施設管理"
         ],
         "short": [],
         "overflow": false
@@ -253,23 +158,10 @@
         "overflow": false
       },
       {
-        "text": "DDの結果を確認し、EXITを試算する",
+        "text": "DDEXIT試算",
         "selector": "h2",
         "lines": [
-          "DDの結果を",
-          "確認し、",
-          "EXITを試算する"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "サンプル企業の改善策を切り替えて、株式価値と目標との差を比較できます。",
-        "selector": "p.lead",
-        "lines": [
-          "サンプル企業の改善策を",
-          "切り替えて、株式価値と目標との",
-          "差を比較できます。"
+          "DDEXIT試算"
         ],
         "short": [],
         "overflow": false
@@ -284,24 +176,11 @@
         "overflow": false
       },
       {
-        "text": "型番の問い合わせから見積下書き",
+        "text": "型番問い合わせと返信下書き",
         "selector": "h2",
         "lines": [
-          "型番の問い",
-          "合わせから",
-          "見積下書き"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "在庫表と照らし合わせながら、問い合わせへの返信下書きを確認できます。返信内容は担当者が決めます。",
-        "selector": "p.lead",
-        "lines": [
-          "在庫表と照らし合わせながら、",
-          "問い合わせへの返信下書きを",
-          "確認できます。返信内容は",
-          "担当者が決めます。"
+          "型番問い合わせ",
+          "と返信下書き"
         ],
         "short": [],
         "overflow": false
@@ -316,7 +195,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 400,
     "links": [],
@@ -1060,7 +939,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -1272,7 +1151,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -1464,7 +1343,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -1656,7 +1535,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -1849,7 +1728,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -2042,7 +1921,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -2235,7 +2114,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -2427,7 +2306,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -2620,7 +2499,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -2816,7 +2695,7 @@
         "overflow": false
       }
     ],
-    "docWidth": 390,
+    "docWidth": 416,
     "viewportWidth": 390,
     "rootWidth": 390,
     "links": [
@@ -2838,24 +2717,11 @@
     "errors": [],
     "blocks": [
       {
-        "text": "現場写真の整理から報告書と確認業務まで",
+        "text": "現場写真から報告書まで",
         "selector": "h2",
         "lines": [
-          "現場写真の",
-          "整理から",
-          "報告書と",
-          "確認業務まで"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "写真の整理、報告書の下書きの確認・修正、提出後の管理側の確認を試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "写真の整理、報告書の下書きの確認・",
-          "修正、提出後の管理側の確認を",
-          "試せます。"
+          "現場写真から",
+          "報告書まで"
         ],
         "short": [],
         "overflow": false
@@ -2870,23 +2736,11 @@
         "overflow": false
       },
       {
-        "text": "規程・マニュアルに聞いてみる",
+        "text": "規程マニュアルに聞く",
         "selector": "h2",
         "lines": [
-          "規程・",
-          "マニュアルに",
-          "聞いてみる"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "知りたいことを質問すると、回答と必要な手続き、根拠となる規程を確認できます。",
-        "selector": "p.lead",
-        "lines": [
-          "知りたいことを質問すると、回答と",
-          "必要な手続き、根拠となる規程を",
-          "確認できます。"
+          "規程マニュアル",
+          "に聞く"
         ],
         "short": [],
         "overflow": false
@@ -2901,23 +2755,11 @@
         "overflow": false
       },
       {
-        "text": "品質インシデントの原因と是正を確認する",
+        "text": "品質トラブルの原因是正",
         "selector": "h2",
         "lines": [
-          "品質インシデント",
-          "の原因と是正を",
-          "確認する"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "品質トラブルの事例を開き、原因候補の比較から是正・承認までを試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "品質トラブルの事例を開き、",
-          "原因候補の比較から是正・承認までを",
-          "試せます。"
+          "品質トラブルの",
+          "原因是正"
         ],
         "short": [],
         "overflow": false
@@ -2932,23 +2774,11 @@
         "overflow": false
       },
       {
-        "text": "空で戻る車に積める荷物を探す",
+        "text": "帰り荷の候補を探す",
         "selector": "h2",
         "lines": [
-          "空で戻る",
-          "車に積める",
-          "荷物を探す"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "配車状況と帰り荷の候補を確認できます。積む荷物は担当者が決めます。",
-        "selector": "p.lead",
-        "lines": [
-          "配車状況と帰り荷の候補を",
-          "確認できます。積む荷物は担当者が",
-          "決めます。"
+          "帰り荷の",
+          "候補を探す"
         ],
         "short": [],
         "overflow": false
@@ -2963,21 +2793,11 @@
         "overflow": false
       },
       {
-        "text": "受入検査の照合と承認を見る",
+        "text": "受入検査の照合承認",
         "selector": "h2",
         "lines": [
-          "受入検査の照合",
-          "と承認を見る"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "図面と材料証明書の照合、保留理由の確認、承認の画面を見られます。",
-        "selector": "p.lead",
-        "lines": [
-          "図面と材料証明書の照合、保留理由の",
-          "確認、承認の画面を見られます。"
+          "受入検査の",
+          "照合承認"
         ],
         "short": [],
         "overflow": false
@@ -2992,22 +2812,11 @@
         "overflow": false
       },
       {
-        "text": "申し送り・面談・日報をまとめる",
+        "text": "申し送りと日々の記録",
         "selector": "h2",
         "lines": [
-          "申し送り・面談・",
-          "日報をまとめる"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "申し送りや面談のメモを記録にまとめ、内容を確認できます。日報の確認も試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "申し送りや面談のメモを記録に",
-          "まとめ、内容を確認できます。日報の",
-          "確認も試せます。"
+          "申し送りと",
+          "日々の記録"
         ],
         "short": [],
         "overflow": false
@@ -3022,22 +2831,11 @@
         "overflow": false
       },
       {
-        "text": "電気工事の段取りを確認する",
+        "text": "電気工事の段取り",
         "selector": "h2",
         "lines": [
           "電気工事の",
-          "段取りを確認する"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "メールやFAXの依頼をもとに段取り案を確認し、申請と人員の準備を試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "メールやFAXの依頼をもとに",
-          "段取り案を確認し、申請と人員の",
-          "準備を試せます。"
+          "段取り"
         ],
         "short": [],
         "overflow": false
@@ -3052,22 +2850,11 @@
         "overflow": false
       },
       {
-        "text": "総合体育館の施設管理を見る",
+        "text": "体育館の施設管理",
         "selector": "h2",
         "lines": [
-          "総合体育館の",
-          "施設管理を見る"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "施設の利用可否や設備の記録を確認し、画像を見て対応が必要か判断する操作を試せます。",
-        "selector": "p.lead",
-        "lines": [
-          "施設の利用可否や設備の記録を",
-          "確認し、画像を見て対応が必要か",
-          "判断する操作を試せます。"
+          "体育館の",
+          "施設管理"
         ],
         "short": [],
         "overflow": false
@@ -3082,23 +2869,10 @@
         "overflow": false
       },
       {
-        "text": "DDの結果を確認し、EXITを試算する",
+        "text": "DDEXIT試算",
         "selector": "h2",
         "lines": [
-          "DDの結果を",
-          "確認し、",
-          "EXITを試算する"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "サンプル企業の改善策を切り替えて、株式価値と目標との差を比較できます。",
-        "selector": "p.lead",
-        "lines": [
-          "サンプル企業の改善策を切り替えて、",
-          "株式価値と目標との差を",
-          "比較できます。"
+          "DDEXIT試算"
         ],
         "short": [],
         "overflow": false
@@ -3113,24 +2887,11 @@
         "overflow": false
       },
       {
-        "text": "型番の問い合わせから見積下書き",
+        "text": "型番問い合わせと返信下書き",
         "selector": "h2",
         "lines": [
-          "型番の問い",
-          "合わせから",
-          "見積下書き"
-        ],
-        "short": [],
-        "overflow": false
-      },
-      {
-        "text": "在庫表と照らし合わせながら、問い合わせへの返信下書きを確認できます。返信内容は担当者が決めます。",
-        "selector": "p.lead",
-        "lines": [
-          "在庫表と照らし合わせながら、問い",
-          "合わせへの返信下書きを",
-          "確認できます。返信内容は担当者が",
-          "決めます。"
+          "型番問い合わせ",
+          "と返信下書き"
         ],
         "short": [],
         "overflow": false

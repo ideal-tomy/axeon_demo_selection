@@ -4,7 +4,7 @@ import { buildDemoStory, demoEntryUrl, hasStory } from './demo-story.js'
 import {
   ICON, SCR, CATEGORIES, DEMOS,
   featuredDemos, listedDemos, getDemoById,
-  countListed, countAvailableLinks, countByCategory, countByTile, categoryLabel
+  countListed, countByCategory, countByTile, categoryLabel
 } from './data.js'
 
 function esc(s) {
@@ -103,12 +103,7 @@ function badgeHtml(d) {
   return '<span class="badge badge-prep">紹介のみ</span>'
 }
 
-/* ---------- header counts & tiles ---------- */
-document.getElementById('countListed').textContent = String(countListed())
-var linksN = countAvailableLinks()
-var linksEl = document.getElementById('countLinks')
-linksEl.textContent = '体験リンク ' + linksN + '件'
-
+/* ---------- header tiles ---------- */
 var TILES = [
   { id:'construction', label:'建設', icon:'<path d="M3 14a9 9 0 0 1 18 0"/><path d="M2 14h20v3H2z"/><path d="M12 5v9"/><path d="M9 5.6 12 5l3 .6"/>' },
   { id:'factory', label:'製造', icon:'<path d="M3 20V10l5 3V10l5 3V10l5 3v7z"/><path d="M3 20h18"/><path d="M6 6V4"/>' },
@@ -128,13 +123,24 @@ document.getElementById('moreAllCc').textContent = '掲載 ' + countListed() + '
 /* ---------- featured cards ---------- */
 var cardsBox = document.getElementById('cards')
 var featured = featuredDemos()
+var featuredCardTitles = {
+  'construction-record': '現場写真から<br>報告書まで',
+  'internal-knowledge': '規程マニュアル<br>に聞く',
+  'quality-incident': '品質トラブルの<br>原因是正',
+  'logistics-dispatch': '帰り荷の<br>候補を探す',
+  'approval-inspection': '受入検査の<br>照合承認',
+  'kaigo-handoff': '申し送りと<br>日々の記録',
+  'field-dandori': '電気工事の<br>段取り',
+  'gym-facility': '体育館の<br>施設管理',
+  'dd-ma': 'DDEXIT試算',
+  'wholesale-quote': '型番問い合わせ<br>と返信下書き'
+}
 cardsBox.innerHTML = featured.map(function (d, i) {
   return '<button type="button" class="card ' + esc(d.cls) + '" data-id="' + esc(d.id) + '" style="--i:' + i + '">'
     + '<div class="dim"></div>'
     + '<div class="mock">' + mockBody(d) + '</div>'
     + '<div class="eyebrow"><span class="chip">' + (ICON[d.icon] || ICON.doc) + '</span>' + esc(categoryLabel(d.category)) + '</div>'
-    + '<h2>' + d.title + '</h2>'
-    + '<p class="lead">' + esc(d.lead) + '</p>'
+    + '<h2>' + (featuredCardTitles[d.id] || d.title) + '</h2>'
     + '<span class="cta">くわしく見る</span></button>'
 }).join('')
 
