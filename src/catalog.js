@@ -4,7 +4,7 @@ import { storyImages } from './story-images.js'
 // 一覧用の短いコピーと画像。詳細原稿とは独立して編集する。
 // [title, description, index?, objectPosition?, image?]
 export const catalogCopy = {
- 'construction-record':['現場写真から報告書へ','写真整理から下書き、管理側の確認まで。',0,'top','/images/demos/construction-record/01.jpg'],
+ 'construction-record':['現場写真から報告書へ','写真整理から下書き、管理側の確認まで。',0,'top','/images/demos/construction-record/01.png'],
  'field-dandori':['現場の段取りを組み立てる','申請・人員・書類の準備を見渡す。',0,'top','/images/demos/field-dandori/catalog.jpg'],
  'contractor-matching':['協力業者を比べる','候補のスコアと選定の材料を確認。',0,'top','/images/demos/contractor-matching/catalog.jpg'],
  'quality-incident':['品質トラブルの対応を追う','発見から原因候補、是正・承認へ。',0,'top','/images/demos/quality-incident/01.jpg'],

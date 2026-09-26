@@ -304,6 +304,24 @@ function renderAllList(opts) {
 
 /* ---------- detail ---------- */
 var detail = document.getElementById('detail')
+
+function initToolIntroGallery(root) {
+  var gallery = root.querySelector('.story-layout-tool-intro .story-gallery')
+  var dots = root.querySelectorAll('.story-gallery-dot')
+  if (!gallery || !dots.length) return
+  function syncDots() {
+    var card = gallery.querySelector('.story-preview-card')
+    if (!card) return
+    var gap = parseFloat(getComputedStyle(gallery).columnGap || getComputedStyle(gallery).gap || '0') || 0
+    var step = card.getBoundingClientRect().width + gap
+    if (!step) return
+    var index = Math.round(gallery.scrollLeft / step)
+    index = Math.max(0, Math.min(dots.length - 1, index))
+    dots.forEach(function (dot, i) { dot.classList.toggle('is-active', i === index) })
+  }
+  gallery.addEventListener('scroll', syncDots, { passive: true })
+  syncDots()
+}
 var dIn = document.getElementById('dIn')
 
 function openCta(d) {
@@ -379,6 +397,7 @@ function openDetail(id, opts) {
   document.title = hasStory(d) ? d.plain + ' | AXEON' : defaultTitle
   dIn.classList.toggle('d-in-story', hasStory(d))
   dIn.innerHTML = buildDetail(d)
+  initToolIntroGallery(dIn)
   detail.scrollTop = 0
   detail.classList.add('open')
   document.body.classList.add('lock')

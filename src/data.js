@@ -83,9 +83,9 @@ export const DEMOS = [
     can:['サンプル写真の分類・命名の前後を見比べられます','報告書の下書きを修正し、確認・提出へ進めます','提出した日報を管理画面で開き、確認済みにできます'],
     planned:[],
     shots:[
-      { key:'photos', cap:'写真を整える', image:'/images/demos/construction-record/01.jpg' },
-      { key:'form', cap:'報告書', image:'/images/demos/construction-record/02.jpg' },
-      { key:'list', cap:'現場オペ', image:'/images/demos/construction-record/03.jpg' }
+      { key:'photos', cap:'写真を整える', image:'/images/demos/construction-record/01.png' },
+      { key:'form', cap:'報告書', image:'/images/demos/construction-record/02.png' },
+      { key:'list', cap:'現場オペ', image:'/images/demos/construction-record/03.png' }
     ],
     relatedIds:['field-dandori','approval-inspection','gym-facility']
   },

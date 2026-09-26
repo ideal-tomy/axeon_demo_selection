@@ -33,7 +33,7 @@ ${c.approach}
 
 | 今の業務で起きがちなこと | デモで見る改善の流れ |
 |---|---|
-${c.before.map((x, i) => `| ${x} | ${c.after[i]} |`).join('\n')}
+${c.workChanges.map(([before, after]) => `| ${before} | ${after} |`).join('\n')}
 
 ## このデモで確かめられること
 
