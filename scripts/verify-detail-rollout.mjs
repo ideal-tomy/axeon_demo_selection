@@ -1,3 +1,7 @@
+/**
+ * @deprecated 旧 thin 構成向け。掲載10件の完成版検証は
+ * `node scripts/verify-listed-detail.mjs <demo-id>` を使う。
+ */
 import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';

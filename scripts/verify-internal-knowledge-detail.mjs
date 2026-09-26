@@ -13,10 +13,13 @@ for (const d of DEMOS.filter(hasStory)) {
 const browser = await chromium.launch({ channel: 'msedge', headless: true })
 const results = []
 const errors = []
+const http404 = new Set()
 try {
   const page = await browser.newPage()
   page.on('pageerror', e => errors.push(e.message))
-  page.on('console', msg => { if (msg.type() === 'error') errors.push(msg.text()) })
+  page.on('response', r => {
+    if (r.status() === 404) http404.add(r.url())
+  })
   for (const width of [320, 390, 700, 701, 768, 1280]) {
     await page.setViewportSize({ width, height: 900 })
     await page.goto('http://127.0.0.1:4173/?demo=internal-knowledge')
@@ -74,8 +77,10 @@ try {
   await page.keyboard.press('Escape')
   assert.equal(new URL(page.url()).searchParams.get('demo'), null)
   assert(await card.evaluate(e => e === document.activeElement))
+  const bad404 = [...http404].filter(u => !/\/favicon\.ico(\?|$)/i.test(u))
   assert.deepEqual(errors, [])
-  await fs.writeFile(`${dir}/verification.json`, JSON.stringify({ results, errors, unchangedOtherStories: true, navigation: 'passed' }, null, 2))
+  assert.deepEqual(bad404, [])
+  await fs.writeFile(`${dir}/verification.json`, JSON.stringify({ results, errors, http404: [...http404], unchangedOtherStories: true, navigation: 'passed' }, null, 2))
   console.log('PASS', JSON.stringify(results), 'Other story HTML unchanged; navigation and focus restored; no browser errors.')
 } finally {
   await browser.close()

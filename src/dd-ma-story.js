@@ -1,4 +1,4 @@
-/** DD（M&A）紹介の原稿。厳選版の薄い紹介ページ用。 */
+/** DD（M&A）紹介の原稿。建設と共通のツール紹介レイアウト。 */
 export const ddMaStory = {
   eyebrow: '買収・再生・DD',
   title: ['DDの結果を確認し、', 'EXITを試算する。'],
@@ -6,6 +6,8 @@ export const ddMaStory = {
   audience: '買収・再生の担当と決裁者',
   cta: 'EXIT試算のデモを開く',
   path: '/?from=axeon-demo-selection',
+  heroImage: '/images/demos/dd-ma/top.png',
+  previewTitle: '企業選択から、試算と比較まで',
   meta: [
     ['使う人', '買収・再生の担当者'],
     ['試せること', '改善策ごとの試算'],
@@ -14,26 +16,42 @@ export const ddMaStory = {
   steps: [
     {
       title: '企業選択',
-      headline: 'サンプル企業のEXIT試算を見る。',
+      headline: 'サンプル企業を選ぶ',
+      subtitle: '企業情報とEXIT試算の結果を一望します。',
       caption: 'KPI・簿外・ギャップを一望。',
       point: '5社から選び、EXITダッシュボードを確認',
     },
     {
       title: '改善策の比較',
-      headline: '改善策を変えて、試算結果を比較する。',
+      headline: '改善策で試算を比較',
+      subtitle: '効率化・整理・戦略などの主軸を切り替え、試算の変化を見ます。',
       caption: '効率化・整理・戦略の3タブ。',
       point: '主軸を切り替え、株式価値の連動を見る',
     },
     {
       title: '問いと時間',
-      headline: '判断の問いと返した時間。',
+      headline: '問いと時間を確認',
+      subtitle: '判断に残る問いと、返した時間の内訳を確認します。',
       caption: 'AIが代行したあと、人が考える。',
       point: 'あなたへの問いと返した時間の内訳を見る',
     },
   ],
   conditionSummary: [
     '架空の企業を使い、用意された条件で試算するデモです。サンプルはAPIキーを用意せずに試せます。',
-    '提出・本番保管は行いません。自社入力やライブ層は代表3手の範囲外です。',
+    '提出・本番保管は行いません。',
   ],
+  changes: [
+    ['試算と処置方針が表計算に散らばる', '企業情報と試算結果を同じ画面で確認する'],
+    ['改善策ごとの差を手計算で比べる', '主軸を切り替えて試算の変化を見る'],
+    ['判断の問いが残らない', '問いと返した時間の内訳を確認する'],
+  ],
+  conditionTitle: '利用条件・データを使う際の注意',
+  conditions: [
+    '架空のサンプル企業・固定試算です。サンプルモードではAPIキーは不要です。',
+    '提出や本番保管は行いません。自社データの入力やライブ連携は、この体験の範囲外です。',
+    '表示される数値や改善策は説明用です。実取引の判断材料としてそのまま使わないでください。',
+  ],
+  closingTitle: '実際に試してみる',
+  closing: 'サンプル企業で、EXIT試算と比較の流れを確認できます。',
   related: ['internal-knowledge', 'quality-incident', 'construction-record'],
-};
+}

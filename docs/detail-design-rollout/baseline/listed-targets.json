@@ -1,0 +1,62 @@
+[
+  {
+    "id": "construction-record",
+    "plain": "現場写真の整理から、報告書と確認業務まで",
+    "url": "https://construction-demo-six.vercel.app/",
+    "featuredOrder": 1
+  },
+  {
+    "id": "quality-incident",
+    "plain": "品質インシデントの原因と是正を確認する",
+    "url": "https://axeonmanufacturing02.vercel.app/",
+    "featuredOrder": 3
+  },
+  {
+    "id": "kaigo-handoff",
+    "plain": "申し送り・面談・日報をまとめる",
+    "url": "https://kaigo-handoff-demo.vercel.app/",
+    "featuredOrder": 6
+  },
+  {
+    "id": "internal-knowledge",
+    "plain": "規程・マニュアルに聞いてみる",
+    "url": "https://internal-knowledge-demo.vercel.app/",
+    "featuredOrder": 2
+  },
+  {
+    "id": "approval-inspection",
+    "plain": "受入検査の照合と承認を見る",
+    "url": "https://approval-diagram.vercel.app/",
+    "featuredOrder": 5
+  },
+  {
+    "id": "gym-facility",
+    "plain": "総合体育館の施設管理を見る",
+    "url": "https://disaster-prevention-demo02.vercel.app/",
+    "featuredOrder": 8
+  },
+  {
+    "id": "logistics-dispatch",
+    "plain": "空で戻る車に積める荷物を探す",
+    "url": "https://driver-dash-demo.vercel.app/",
+    "featuredOrder": 4
+  },
+  {
+    "id": "dd-ma",
+    "plain": "DDの結果を確認し、EXITを試算する",
+    "url": "https://dd-demo-red.vercel.app/",
+    "featuredOrder": 9
+  },
+  {
+    "id": "wholesale-quote",
+    "plain": "型番の問い合わせから見積下書き",
+    "url": "https://wholesale-quote-demo-lovat.vercel.app/",
+    "featuredOrder": 10
+  },
+  {
+    "id": "field-dandori",
+    "plain": "電気工事の段取りを確認する",
+    "url": "https://denkigenba-dandori-demo.vercel.app/",
+    "featuredOrder": 7
+  }
+]

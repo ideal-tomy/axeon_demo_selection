@@ -42,40 +42,6 @@ function disclosure(title, body, esc, index) {
   return `<details class="story-disclosure"><summary>${index == null ? '' : `<span class="story-number">${number(index)}</span>`}${esc(title)}</summary><div class="story-disclosure-body">${body}</div></details>`
 }
 
-function constructionModel(d, esc) {
-  const c = constructionStory
-  const headlines = ['写真を送る', '整理して下書き', '提出後を確認']
-  const subtitles = [
-    '現場で撮った写真をまとめて送るだけ。',
-    '写真を現場ごとに整理し、必要な項目を自動で下書きにします。',
-    '提出した日報の確認や、不足写真の依頼もまとめて行えます。'
-  ]
-  return {
-    title: ['現場写真から、', '報告書まで。'], intro: ['写真を整理し、報告書の下書きを確認。', '提出した日報を、管理側で確認する操作も試せます。'],
-    eyebrow: c.eyebrow, meta: [['対象','現場監督・事務担当・工事責任者'],['体験する作業','3ステップ'],['下書きの確認','担当者が確認']],
-    cta: '写真整理のデモを開く', path: '/?from=axeon-demo-selection',
-    heroImage: '/images/demos/construction-record/top.png',
-    previews: c.steps.map((s, i) => ({ label: s.title, headline: headlines[i], subtitle: subtitles[i], image: s.image, alt: s.cap, compact: true, stepBadge: true })),
-    toolIntroLayout: true,
-    changeLayout: 'compare',
-    changeTitle: 'このツールで変わること',
-    compareConstruction: true,
-    changes: [
-      ['写真を探して名前を付け直す', '現場ごとに整理。名前も自動で付ける'],
-      ['一から報告書を書く', '下書きから確認する'],
-      ['一人ずつ不足写真を確認', 'まとめて確認する']
-    ],
-    conditionSummary: ['サンプルの写真と文章ですぐ試せます。', '実際の送信や業務データの保存は行いません。'],
-    conditionTitle: '利用条件・写真を使う際の注意',
-    conditionBody: list(c.conditions, esc),
-    conditionAccordion: true,
-    closingStrong: true,
-    closingTitle: '実際に試してみる',
-    closing: 'サンプルデータですぐ操作できます。',
-    related: []
-  }
-}
-
 function thinStoryModel(d, s) {
   const images = storyImages[d.id] || []
   const shots = (d.shots || []).map(x => (Array.isArray(x) ? { cap: x[1], image: x[2] } : x))
@@ -84,13 +50,13 @@ function thinStoryModel(d, s) {
     const fresh = images[i]
     const shot = shots[i]
     // shots[].image が正本（カード／詳細ギャラリー）。story-images は未設置時のフォールバック
-    const image = shot?.image || fresh?.image
+    const image = shot?.image || fresh?.image || step.image
     return {
       label: step.title,
       headline: step.headline,
-      caption: image ? (shot?.cap || fresh?.label || step.caption) : step.caption,
+      caption: image ? (shot?.cap || fresh?.label || step.caption || step.cap) : step.caption,
       image,
-      alt: shot?.cap || fresh?.label || step.title,
+      alt: shot?.cap || fresh?.label || step.cap || step.title,
       diagram: labels,
       active: i,
       point: step.point,
@@ -122,7 +88,7 @@ function toolIntroStoryModel(d, s, esc) {
     changeLayout: 'compare',
     changeTitle: 'このツールで変わること',
     compareConstruction: true,
-    compareIcons: { before: ['search', 'file', 'search'], after: ['check', 'file', 'check'] },
+    compareIcons: s.compareIcons || { before: ['search', 'file', 'search'], after: ['check', 'file', 'check'] },
     changes: s.changes,
     conditionTitle: s.conditionTitle,
     conditionBody: list(s.conditions, esc),
@@ -132,42 +98,6 @@ function toolIntroStoryModel(d, s, esc) {
     closing: s.closing,
     related: [],
   }
-}
-
-function internalKnowledgeModel(d, esc) {
-  return toolIntroStoryModel(d, internalKnowledgeStory, esc)
-}
-
-function kaigoHandoffModel(d) {
-  return thinStoryModel(d, kaigoHandoffStory)
-}
-
-function qualityIncidentModel(d) {
-  return thinStoryModel(d, qualityIncidentStory)
-}
-
-function approvalInspectionModel(d) {
-  return thinStoryModel(d, approvalInspectionStory)
-}
-
-function gymFacilityModel(d) {
-  return thinStoryModel(d, gymFacilityStory)
-}
-
-function ddMaModel(d) {
-  return thinStoryModel(d, ddMaStory)
-}
-
-function logisticsDispatchModel(d) {
-  return thinStoryModel(d, logisticsDispatchStory)
-}
-
-function wholesaleQuoteModel(d) {
-  return thinStoryModel(d, wholesaleQuoteStory)
-}
-
-function fieldDandoriModel(d) {
-  return thinStoryModel(d, fieldDandoriStory)
 }
 
 function demoModel(d, esc) {
@@ -367,16 +297,19 @@ function operationDetailsSection(m, esc) {
 }
 
 function pickModel(d, esc) {
-  if (d.id === 'construction-record') return constructionModel(d, esc)
-  if (d.id === 'internal-knowledge') return internalKnowledgeModel(d, esc)
-  if (d.id === 'kaigo-handoff') return kaigoHandoffModel(d)
-  if (d.id === 'quality-incident') return qualityIncidentModel(d)
-  if (d.id === 'approval-inspection') return approvalInspectionModel(d)
-  if (d.id === 'gym-facility') return gymFacilityModel(d)
-  if (d.id === 'dd-ma') return ddMaModel(d)
-  if (d.id === 'logistics-dispatch') return logisticsDispatchModel(d)
-  if (d.id === 'wholesale-quote') return wholesaleQuoteModel(d)
-  if (d.id === 'field-dandori') return fieldDandoriModel(d)
+  const toolIntroStories = {
+    'construction-record': constructionStory,
+    'internal-knowledge': internalKnowledgeStory,
+    'kaigo-handoff': kaigoHandoffStory,
+    'quality-incident': qualityIncidentStory,
+    'approval-inspection': approvalInspectionStory,
+    'gym-facility': gymFacilityStory,
+    'dd-ma': ddMaStory,
+    'logistics-dispatch': logisticsDispatchStory,
+    'wholesale-quote': wholesaleQuoteStory,
+    'field-dandori': fieldDandoriStory,
+  }
+  if (toolIntroStories[d.id]) return toolIntroStoryModel(d, toolIntroStories[d.id], esc)
   return demoModel(d, esc)
 }
 
@@ -395,7 +328,7 @@ export function buildDemoStory(d,esc) {
   </article>`
   }
   const layoutClass = m.toolIntroLayout ? ' story-layout-tool-intro' : ''
-  const previewTitle = esc(m.previewTitle || (m.toolIntroLayout ? '写真整理から提出後の確認まで' : 'このデモで見られること'))
+  const previewTitle = esc(m.previewTitle || 'このデモで見られること')
   const stage = m.toolIntroLayout ? heroStage(m.previews, esc, m.heroImage) : ''
   const heroBlock = m.toolIntroLayout
     ? `<div class="story-hero-panel"><section class="story-hero" aria-labelledby="detailTitle"><div class="story-hero-copy"><p class="story-eyebrow">${esc(m.eyebrow)}</p><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><h1 id="detailTitle">${lines(m.title, esc)}</h1></div><p class="story-intro">${lines(m.intro, esc)}</p><div class="story-actions">${external(d, m.path, m.cta, esc, 'story-button')}</div><div class="story-meta">${m.meta.map(([k, v]) => `<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></div>${stage}</section></div>`

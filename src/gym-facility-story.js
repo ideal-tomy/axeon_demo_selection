@@ -1,4 +1,4 @@
-/** 体育館施設管理紹介の原稿。厳選版の薄い紹介ページ用。 */
+/** 体育館施設管理紹介の原稿。建設と共通のツール紹介レイアウト。 */
 export const gymFacilityStory = {
   eyebrow: '指定管理・施設',
   title: ['体育館の利用状況と、', '設備の記録を確認する。'],
@@ -6,6 +6,8 @@ export const gymFacilityStory = {
   audience: '指定管理者と施設担当',
   cta: '施設管理のデモを開く',
   path: '/?from=axeon-demo-selection',
+  heroImage: '/images/demos/gym-facility/top.png',
+  previewTitle: '利用状況から、設備記録と画像確認まで',
   meta: [
     ['使う人', '指定管理者・施設担当'],
     ['確認する内容', '施設・設備の状況'],
@@ -14,19 +16,22 @@ export const gymFacilityStory = {
   steps: [
     {
       title: '状況',
-      headline: '施設が利用できるか確認する。',
+      headline: '利用できるか確認',
+      subtitle: '施設の状況と、要対応の項目を確認します。',
       caption: '件数と要対応バナー。',
       point: '施設の状況で INC を確認し、要対応へ進む',
     },
     {
       title: '設備の記録',
-      headline: '設備ごとの点検・対応記録を確認する。',
+      headline: '設備の記録を開く',
+      subtitle: '場所・設備ごとの点検や対応の履歴を確認します。',
       caption: '場所・設備の履歴を一続きで。',
       point: '一覧から発電機など設備の記録を見る',
     },
     {
       title: '画像確認',
-      headline: '画像を見て、対応が必要か記録する。',
+      headline: '画像で対応を記録',
+      subtitle: '画像を見て、対応が必要か／問題なしかをデモ内で記録します。',
       caption: '判定待ちを記録・やり直し。',
       point: '画像確認で対応が必要／問題なしを試す（デモ内）',
     },
@@ -35,5 +40,18 @@ export const gymFacilityStory = {
     '架空の施設を使い、日時を固定したデモです。',
     '画像の判定はタブ内のみです。リロードで消え、送信・本番保管は行いません。',
   ],
+  changes: [
+    ['施設の状態が表やメモに散らばる', '利用状況と要対応を同じ画面で確認する'],
+    ['設備の履歴を別ファイルで探す', '場所・設備の記録を一覧から開く'],
+    ['画像確認の結果が残らない', '対応要否をデモ内で記録し、やり直しも試す'],
+  ],
+  conditionTitle: '利用条件・データを使う際の注意',
+  conditions: [
+    '架空の指定管理施設・固定日時のデモです。',
+    '画像の判定結果はこのタブ内のみです。リロードすると消え、送信や本番保管は行いません。',
+    '表示内容は説明用です。実施設の運用判断にそのまま適用しないでください。',
+  ],
+  closingTitle: '実際に試してみる',
+  closing: '架空の施設データで、状況確認から画像判定まで試せます。',
   related: ['construction-record', 'kaigo-handoff', 'internal-knowledge'],
-};
+}

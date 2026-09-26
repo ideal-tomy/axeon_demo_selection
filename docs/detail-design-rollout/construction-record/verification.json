@@ -1,0 +1,39 @@
+{
+  "id": "construction-record",
+  "results": [
+    {
+      "width": 320,
+      "passed": true,
+      "conditions": 4
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "conditions": 4
+    },
+    {
+      "width": 700,
+      "passed": true,
+      "conditions": 4
+    },
+    {
+      "width": 701,
+      "passed": true,
+      "conditions": 4
+    },
+    {
+      "width": 768,
+      "passed": true,
+      "conditions": 4
+    },
+    {
+      "width": 1280,
+      "passed": true,
+      "conditions": 4
+    }
+  ],
+  "errors": [],
+  "http404": [],
+  "conditionCount": 4,
+  "navigation": "passed"
+}
