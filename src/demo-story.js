@@ -47,20 +47,21 @@ function constructionModel(d, esc) {
   const headlines = ['写真を送る', '整理して下書き', '提出後を確認']
   const subtitles = [
     '現場で撮った写真をまとめて送るだけ。',
-    '写真を工種ごとに整理し、必要な項目を自動で下書きにします。',
+    '写真を現場ごとに整理し、必要な項目を自動で下書きにします。',
     '提出した日報の確認や、不足写真の依頼もまとめて行えます。'
   ]
   return {
     title: ['現場写真から、', '報告書まで。'], intro: ['写真を整理し、報告書の下書きを確認。', '提出した日報を、管理側で確認する操作も試せます。'],
     eyebrow: c.eyebrow, meta: [['対象','現場監督・事務担当・工事責任者'],['体験する作業','3ステップ'],['下書きの確認','担当者が確認']],
     cta: '写真整理のデモを開く', path: '/?from=axeon-demo-selection',
+    heroImage: '/images/demos/construction-record/top.png',
     previews: c.steps.map((s, i) => ({ label: s.title, headline: headlines[i], subtitle: subtitles[i], image: s.image, alt: s.cap, compact: true, stepBadge: true })),
     toolIntroLayout: true,
     changeLayout: 'compare',
     changeTitle: 'このツールで変わること',
     compareConstruction: true,
     changes: [
-      ['写真を探して名前を付け直す', '工種ごとに整理。名前も自動で付ける'],
+      ['写真を探して名前を付け直す', '現場ごとに整理。名前も自動で付ける'],
       ['一から報告書を書く', '下書きから確認する'],
       ['一人ずつ不足写真を確認', 'まとめて確認する']
     ],
@@ -253,7 +254,10 @@ function changeWorkCompare(changes, esc) {
   return `<div class="story-work-compare"><div class="story-work-compare-pc"><div class="story-work-compare-head"><span>いまの作業</span><span class="story-work-compare-head-gap" aria-hidden="true"></span><span>このツールでは</span></div><div class="story-work-compare-pc-body"><ul class="story-work-compare-before-col">${beforeLines}</ul><div class="story-work-compare-arrows-col">${arrows}</div><div class="story-work-compare-after-col story-work-compare-highlight"><ul class="story-work-compare-after-list">${afterLines}</ul></div></div></div><ul class="story-work-compare-mobile">${mobileItems}</ul></div>`
 }
 
-function heroStage(previews, esc) {
+function heroStage(previews, esc, singleImage) {
+  if (singleImage) {
+    return `<div class="story-hero-stage story-hero-stage-single" aria-hidden="true"><img class="story-hero-shot story-hero-shot-main" src="${esc(singleImage)}" alt="" width="1200" height="680" loading="eager"></div>`
+  }
   const shots = (previews || []).filter(p => p.image).slice(0, 3)
   if (!shots.length) return ''
   return `<div class="story-hero-stage" aria-hidden="true">${shots.map((p, i) => `<img class="story-hero-shot story-hero-shot-${i}" src="${esc(p.image)}" alt="" width="390" height="600">`).join('')}</div>`
@@ -368,7 +372,7 @@ export function buildDemoStory(d,esc) {
   }
   const layoutClass = m.toolIntroLayout ? ' story-layout-tool-intro' : ''
   const previewTitle = m.toolIntroLayout ? '写真整理から提出後の確認まで' : 'このデモで見られること'
-  const stage = m.toolIntroLayout ? heroStage(m.previews, esc) : ''
+  const stage = m.toolIntroLayout ? heroStage(m.previews, esc, m.heroImage) : ''
   const heroBlock = m.toolIntroLayout
     ? `<div class="story-hero-panel"><section class="story-hero" aria-labelledby="detailTitle"><div class="story-hero-copy"><p class="story-eyebrow">${esc(m.eyebrow)}</p><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><h1 id="detailTitle">${lines(m.title, esc)}</h1></div><p class="story-intro">${lines(m.intro, esc)}</p><div class="story-actions">${external(d, m.path, m.cta, esc, 'story-button')}</div><div class="story-meta">${m.meta.map(([k, v]) => `<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></div>${stage}</section></div>`
     : `<section class="story-hero" aria-labelledby="detailTitle"><div class="story-hero-copy"><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><div><p class="story-eyebrow">${esc(m.eyebrow)}</p><h1 id="detailTitle">${lines(m.title, esc)}</h1></div></div><p class="story-intro">${lines(m.intro, esc)}</p><div class="story-actions">${external(d, m.path, m.cta, esc, 'story-button')}</div><div class="story-meta">${m.meta.map(([k, v]) => `<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></div>${stage}</section>`
