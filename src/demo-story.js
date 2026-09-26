@@ -110,8 +110,32 @@ function thinStoryModel(d, s) {
   }
 }
 
-function internalKnowledgeModel(d) {
-  return thinStoryModel(d, internalKnowledgeStory)
+function toolIntroStoryModel(d, s, esc) {
+  const base = thinStoryModel(d, s)
+  return {
+    ...base,
+    layout: 'tool-intro',
+    toolIntroLayout: true,
+    heroImage: s.heroImage,
+    previewTitle: s.previewTitle,
+    previews: base.previews.map((p, i) => ({ ...p, subtitle: s.steps[i].subtitle, compact: true, stepBadge: true })),
+    changeLayout: 'compare',
+    changeTitle: 'このツールで変わること',
+    compareConstruction: true,
+    compareIcons: { before: ['search', 'file', 'search'], after: ['check', 'file', 'check'] },
+    changes: s.changes,
+    conditionTitle: s.conditionTitle,
+    conditionBody: list(s.conditions, esc),
+    conditionAccordion: true,
+    closingStrong: true,
+    closingTitle: s.closingTitle,
+    closing: s.closing,
+    related: [],
+  }
+}
+
+function internalKnowledgeModel(d, esc) {
+  return toolIntroStoryModel(d, internalKnowledgeStory, esc)
 }
 
 function kaigoHandoffModel(d) {
@@ -194,9 +218,9 @@ const LINE_ICON = {
   check: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="m8.2 12.2 2.3 2.3 5.3-5.3" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 }
 
-function constructionToolCompare(changes, esc) {
-  const beforeIcons = ['search', 'file', 'users']
-  const afterIcons = ['folder', 'file', 'check']
+function constructionToolCompare(changes, esc, icons) {
+  const beforeIcons = icons?.before || ['search', 'file', 'users']
+  const afterIcons = icons?.after || ['folder', 'file', 'check']
   const afterText = after => esc(Array.isArray(after) ? after[0] : after)
   const pcRows = changes.map(([before, after], i) =>
     `<li class="story-construction-row"><div class="story-construction-before"><span class="story-construction-icon story-construction-icon-before">${LINE_ICON[beforeIcons[i]] || LINE_ICON.search}</span><p class="story-construction-before-text">${esc(before)}</p><span class="story-construction-row-arrow" aria-hidden="true">→</span></div><div class="story-construction-after"><span class="story-construction-icon story-construction-icon-after">${LINE_ICON[afterIcons[i]] || LINE_ICON.folder}</span><p class="story-construction-after-text">${afterText(after)}</p></div></li>`
@@ -309,7 +333,7 @@ function benefitsSection(m, esc) {
     ? `<h2>${Array.isArray(m.changeTitle) ? lines(m.changeTitle, esc) : esc(m.changeTitle)}</h2>`
     : ''
   const body = m.compareConstruction
-    ? constructionToolCompare(m.changes, esc)
+    ? constructionToolCompare(m.changes, esc, m.compareIcons)
     : m.compareTable
     ? changeWorkCompare(m.changes, esc)
     : m.changeLayout === 'compare'
@@ -344,7 +368,7 @@ function operationDetailsSection(m, esc) {
 
 function pickModel(d, esc) {
   if (d.id === 'construction-record') return constructionModel(d, esc)
-  if (d.id === 'internal-knowledge') return internalKnowledgeModel(d)
+  if (d.id === 'internal-knowledge') return internalKnowledgeModel(d, esc)
   if (d.id === 'kaigo-handoff') return kaigoHandoffModel(d)
   if (d.id === 'quality-incident') return qualityIncidentModel(d)
   if (d.id === 'approval-inspection') return approvalInspectionModel(d)
@@ -371,7 +395,7 @@ export function buildDemoStory(d,esc) {
   </article>`
   }
   const layoutClass = m.toolIntroLayout ? ' story-layout-tool-intro' : ''
-  const previewTitle = m.toolIntroLayout ? '写真整理から提出後の確認まで' : 'このデモで見られること'
+  const previewTitle = esc(m.previewTitle || (m.toolIntroLayout ? '写真整理から提出後の確認まで' : 'このデモで見られること'))
   const stage = m.toolIntroLayout ? heroStage(m.previews, esc, m.heroImage) : ''
   const heroBlock = m.toolIntroLayout
     ? `<div class="story-hero-panel"><section class="story-hero" aria-labelledby="detailTitle"><div class="story-hero-copy"><p class="story-eyebrow">${esc(m.eyebrow)}</p><div class="story-app-heading"><div class="story-app-icon" aria-hidden="true">${ICON[d.icon] || ICON.doc}</div><h1 id="detailTitle">${lines(m.title, esc)}</h1></div><p class="story-intro">${lines(m.intro, esc)}</p><div class="story-actions">${external(d, m.path, m.cta, esc, 'story-button')}</div><div class="story-meta">${m.meta.map(([k, v]) => `<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div></div>${stage}</section></div>`
