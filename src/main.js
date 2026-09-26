@@ -4,7 +4,7 @@ import { buildDemoStory, demoEntryUrl, hasStory } from './demo-story.js'
 import {
   ICON, SCR, CATEGORIES, DEMOS,
   featuredDemos, listedDemos, getDemoById,
-  countListed, countByCategory, countByTile, categoryLabel
+  countListed, countByTile, categoryLabel
 } from './data.js'
 
 function esc(s) {
@@ -144,14 +144,6 @@ cardsBox.innerHTML = featured.map(function (d, i) {
     + '<span class="cta">くわしく見る</span></button>'
 }).join('')
 
-/* ---------- category tab list ---------- */
-document.getElementById('catList').innerHTML = CATEGORIES.map(function (c) {
-  return '<button type="button" class="item rv" data-cat="' + esc(c.id) + '">'
-    + '<span class="th" style="background:' + esc(c.bg) + '"></span>'
-    + '<span><span class="tt">' + esc(c.label) + '</span><span class="cc">' + esc(c.desc) + '</span></span>'
-    + '<span class="go">' + countByCategory(c.id) + '</span></button>'
-}).join('')
-
 /* ---------- state ---------- */
 var state = {
   view: 'v-works',
@@ -200,9 +192,7 @@ function syncUrl(replace) {
   var params = new URLSearchParams()
   if (state.demoId) params.set('demo', state.demoId)
   else {
-    if (state.view === 'v-cat') params.set('view', 'cat')
-    else if (state.view === 'v-how') params.set('view', 'how')
-    else if (state.view === 'v-me') params.set('view', 'me')
+    if (state.view === 'v-me') params.set('view', 'me')
   }
   var qs = params.toString()
   var url = qs ? (location.pathname + '?' + qs) : location.pathname
@@ -219,8 +209,8 @@ function setTabHighlight(viewId) {
 
 function showView(viewId, opts) {
   opts = opts || {}
-  // 厳選版: 全件カタログは出さない。旧URL・内部呼び出しは一覧へ寄せる
-  if (viewId === 'v-all') viewId = 'v-works'
+  // 厳選版: 全件カタログ・業種・進め方は出さない。旧URLは一覧へ寄せる
+  if (viewId === 'v-all' || viewId === 'v-cat' || viewId === 'v-how') viewId = 'v-works'
   if (!state.demoId && state.view === 'v-all' && viewId !== 'v-all') rememberCatalog()
   state.view = viewId
   document.body.classList.toggle('catalog-mode', false)
@@ -466,12 +456,6 @@ document.addEventListener('click', function (e) {
     return
   }
 
-  var catBtn = e.target.closest('#catList [data-cat]')
-  if (catBtn) {
-    setCategory(catBtn.dataset.cat)
-    return
-  }
-
   var clear = e.target.closest('[data-clear]')
   if (clear) {
     state.category = null
@@ -579,11 +563,8 @@ function applyFromLocation(replace) {
   if (qInput) qInput.value = state.query
   updateTileHighlight()
   updateFilterBar()
-  // 厳選版: view=all はカード一覧へ
-  if (view === 'all') showView('v-works', { replace: !!replace, skipUrl: true })
-  else if (view === 'cat') showView('v-cat', { replace: !!replace, skipUrl: true })
-  else if (view === 'how') showView('v-how', { replace: !!replace, skipUrl: true })
-  else if (view === 'me') showView('v-me', { replace: !!replace, skipUrl: true })
+  // 厳選版: view=all / cat / how はカード一覧へ
+  if (view === 'me') showView('v-me', { replace: !!replace, skipUrl: true })
   else showView('v-works', { replace: !!replace, skipUrl: true })
   syncUrl(true)
 }

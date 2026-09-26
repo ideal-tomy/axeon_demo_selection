@@ -56,33 +56,18 @@
     <div class="empty hide" id="allEmpty"><strong>該当するデモがありません</strong><p>別のキーワードや業種で探してみてください。</p><button type="button" class="chip-filter" data-clear="all">条件をすべて解除</button></div>
   </section>
 
-  <section class="view" id="v-cat">
-    <div class="block rv"><h3>業種から見る</h3><p>業種を選ぶと、関連するデモを見られます。</p></div>
-    <div class="list" id="catList" style="margin-top:12px"></div>
-  </section>
-
-  <section class="view" id="v-how">
-    <div class="block rv"><h3>先に動く画面を見てもらいます</h3><p>提案書だけでは、どんな画面になるか伝わりにくいことがあります。お話を聞いたあと、実際に操作できる画面をつくり、それを見ながら決めていきます。</p></div>
-    <div class="block rv">
-      <div class="step"><span class="no">1</span><span class="tx"><b>いまのやり方を聞く</b><p>誰が、何を、どの紙に書いているかを教えてください。1時間ほどです。</p></span></div>
-      <div class="step"><span class="no">2</span><span class="tx"><b>動く画面をつくる</b><p>実際に触れる画面をこちらで用意します。ここまでは費用をいただきません。</p></span></div>
-      <div class="step"><span class="no">3</span><span class="tx"><b>使ってもらい、直す</b><p>現場の方に使ってもらい、実際の仕事に合わないところを直します。そのうえで、開発を進めるか決めてください。</p></span></div>
-    </div>
-  </section>
-
   <section class="view" id="v-me">
-    <div class="block rv"><h3>AXEON株式会社</h3><p>横浜で、Webサイトと業務システムをつくっています。中小企業の現場で使うシステムを、必要なところからつくり、使いながら直していきます。</p></div>
+    <div class="block rv"><h3>これは、提案の前に触る画面です</h3><p>御社向けに作ったシステムではありません。<br>仕事の流れが近い画面を、<br>先に操作してもらうためのサンプルです。<br>近いカードを開き、<br>詳細から動くデモを別画面で見てください。</p></div>
+    <div class="block rv"><h3>AXEON株式会社</h3><p>経営と現場の整理から、<br>動くシステムまでを、同じチームで進めます。<br>ここに並んでいる画面は、<br>その実装のイメージです。</p></div>
     <div class="list" style="margin-top:12px">
-      <a class="item rv" href="#"><span class="th" style="background:#241d33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><span><span class="tt">相談する</span><span class="cc">メールで受け付けています</span></span><span class="go">›</span></a>
-      <a class="item rv" href="#"><span class="th" style="background:#241d33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></span><span><span class="tt">会社のサイト</span><span class="cc">AXEON株式会社</span></span><span class="go">›</span></a>
+      <a class="item rv" href="mailto:contact@axeon.jp"><span class="th" style="background:#241d33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><span><span class="tt">相談する</span><span class="cc">contact@axeon.jp</span></span><span class="go">›</span></a>
+      <a class="item rv" href="https://axeon.jp" target="_blank" rel="noopener noreferrer"><span class="th" style="background:#241d33"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></span><span><span class="tt">会社のサイト</span><span class="cc">axeon.jp</span></span><span class="go">›</span></a>
     </div>
   </section>
 </div>
 
 <nav class="tabbar">
   <button class="tab on" data-view="v-works" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg><span>つくったもの</span></button>
-  <button class="tab" data-view="v-cat" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>業種</span></button>
-  <button class="tab" data-view="v-how" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v6c0 5 3.4 7.4 8 8 4.6-.6 8-3 8-8V7z"/><path d="m9 12 2 2 4-4"/></svg><span>進め方</span></button>
   <button class="tab" data-view="v-me" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6.2 7-6.2s7 2.6 7 6.2"/></svg><span>AXEON</span></button>
 </nav>
 
